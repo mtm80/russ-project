@@ -5,4 +5,4 @@ Our project will seek to analyze the language usage of the Russian presidential 
 ## Candidates
 - Владимир Путин [kremlin](http://kremlin.ru)
 - Павел Грудинин [campaign](http://grudininkprf.ru/)
-- Владимир Жириновскии [LDPR leader bio](https://ldpr.ru/leader/)
+- Владимир Жириновский [LDPR leader bio](https://ldpr.ru/leader/)
