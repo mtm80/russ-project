@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" version="2.9.1" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
+  version="2.9.1" xml:lang="en">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -8,8 +9,9 @@
         <author>Richard Fulop</author>
       </titleStmt>
       <publicationStmt>
-        <authority>Prepared in TEI 5 by Richard Fulop. Github repository: <ref target="http://github.com/mtm80/russ-project/"
-          />. Date last worked on: <date when="2018-02-10"/></authority>
+        <authority>Prepared in TEI 5 by Richard Fulop. Github repository: <ref
+            target="http://github.com/mtm80/russ-project/"/>. Date last worked on: <date
+            when="2018-02-10"/></authority>
         <availability>
           <licence>No rights reserved.</licence>
         </availability>
@@ -20,12 +22,17 @@
     </fileDesc>
   </teiHeader>
   <text>
-    <schemaSpec ident="speech-schema" source="tei:current" start="teiCorpus">
-        <moduleRef key="header"/>
-        <moduleRef key="core" include="author add bibl date"/>
-        <moduleRef key="analysis" include="interp interpGroup span spanGroup"/>
-        <moduleRef key="namesdates" include="person org persName orgName surname roleName affiliation relation"/>
-        <moduleRef key="spoken" include="pause u vocal"/>
-    </schemaSpec>
+    <body>
+      <div>
+        <schemaSpec ident="speech-schema" source="tei:current" start="teiCorpus">
+          <moduleRef key="header"/>
+          <moduleRef key="core"/>
+          <moduleRef key="analysis" include="interp interpGroup span spanGroup"/>
+          <moduleRef key="namesdates"
+            include="person org persName orgName surname roleName affiliation relation"/>
+          <moduleRef key="spoken" include="pause u vocal"/>
+        </schemaSpec>
+      </div>
+    </body>
   </text>
 </TEI>

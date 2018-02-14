@@ -1,0 +1,713 @@
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace rng = "http://relaxng.org/ns/structure/1.0"
+namespace sch = "http://purl.oclc.org/dsdl/schematron"
+default namespace tei = "http://www.tei-c.org/ns/1.0"
+namespace teix = "http://www.tei-c.org/ns/Examples"
+namespace xlink = "http://www.w3.org/1999/xlink"
+
+# Schema generated from ODD source 2018-02-14T17:04:49Z. .
+# TEI Edition: Version 3.3.0. Last updated on
+#	31st January 2018, revision f4d8439
+# TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
+#
+
+# No rights reserved.
+
+sch:ns [ prefix = "tei" uri = "http://www.tei-c.org/ns/1.0" ]
+anyElement-xenoData =
+  element * - (tei:* | teix:egXML) {
+    attribute * { text }*,
+    (text | anyElement-xenoData)*
+  }
+att.milestoneUnit.attributes = att.milestoneUnit.attribute.unit
+att.milestoneUnit.attribute.unit =
+  
+  ## provides a conventional name for the kind of section changing at this milestone.
+  ## Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] canto; 7] speaker; 8] stanza; 9] act; 10] scene; 11] section; 12] absent; 13] unnumbered
+  attribute unit {
+    
+    ## physical page breaks (synonymous with the pb element).
+    "page"
+    | 
+      ## column breaks.
+      "column"
+    | 
+      ## line breaks (synonymous with the lb element).
+      "line"
+    | 
+      ## any units termed book, liber, etc.
+      "book"
+    | 
+      ## individual poems in a collection.
+      "poem"
+    | 
+      ## cantos or other major sections of a poem.
+      "canto"
+    | 
+      ## changes of speaker or narrator.
+      "speaker"
+    | 
+      ## stanzas within a poem, book, or canto.
+      "stanza"
+    | 
+      ## acts within a play.
+      "act"
+    | 
+      ## scenes within a play or act.
+      "scene"
+    | 
+      ## sections of any kind.
+      "section"
+    | 
+      ## passages not present in the reference edition.
+      "absent"
+    | 
+      ## passages present in the text, but not to be included as part of the reference.
+      "unnumbered"
+  }
+desc =
+  
+  ## (description) contains a brief description of the object documented by its parent element, typically a documentation element or an entity. [22.4.1. Description of Components]
+  element desc { empty }
+term =
+  
+  ## contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [3.3.4. Terms, Glosses, Equivalents, and Descriptions]
+  element term { empty }
+choice =
+  
+  ## groups a number of alternative encodings for the same point in a text. [3.4. Simple Editorial Changes]
+  element choice { (choice)+ }
+date =
+  
+  ## contains a date in any format. [3.5.4. Dates and Times 2.2.4. Publication, Distribution, Licensing, etc. 2.6. The Revision Description 3.11.2.4. Imprint, Size of a Document, and Reprint Information 15.2.3. The Setting Description 13.3.6. Dates and Times]
+  element date { (text)*, att.duration.attributes, empty }
+\list =
+  
+  ## contains any sequence of items organized as a list. [3.7. Lists]
+  element list {
+    (empty*,
+     (item+
+      | (headLabel?, headItem?, (label, item)+)))
+    >> sch:pattern [
+         id =
+           "speech-schema-list-gloss-list-must-have-labels-constraint-rule-1"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:list[@type='gloss']"
+           "\x{a}" ~
+           "	              "
+           sch:assert [
+             test = "tei:label"
+             'The content of a "gloss" list should include a sequence of one or more pairs of a label element followed by an item element'
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+  }
+item =
+  
+  ## contains one component of a list. [3.7. Lists 2.6. The Revision Description]
+  element item { empty }
+label =
+  
+  ## contains any label or heading used to identify part of a text, typically but not exclusively in a list or glossary. [3.7. Lists]
+  element label { empty }
+headLabel =
+  
+  ## (heading for list labels) contains the heading for the label or term column in a glossary list or similar structured list. [3.7. Lists]
+  element headLabel { empty }
+headItem =
+  
+  ## (heading for list items) contains the heading for the item or gloss column in a glossary list or similar structured list. [3.7. Lists]
+  element headItem { empty }
+note =
+  
+  ## contains a note or annotation. [3.8.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.11.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]
+  element note {
+    
+    ## indicates whether the copy text shows the exact place of reference for the note.
+    [ a:defaultValue = "true" ] attribute anchored { text }?,
+    
+    ## points to the end of the span to which the note is attached, if the note is not embedded in the text at that point.
+    attribute targetEnd {
+      list { empty }
+    }?,
+    empty
+  }
+index =
+  
+  ## (index entry) marks a location to be indexed for whatever purpose. [3.8.2. Index Entries]
+  element index {
+    (term, index?)*,
+    
+    ## a single word which follows the rules defining a legal XML name (see ), supplying a name to specify which index (of several) the index entry belongs to.
+    attribute indexName { text }?,
+    empty
+  }
+analytic =
+  
+  ## (analytic level) contains bibliographic elements describing an item (e.g. an article or poem) published within a monograph or journal and not as an independent publication. [3.11.2.1. Analytic, Monographic, and Series Levels]
+  element analytic {
+    (author
+     | editor
+     | respStmt
+     | title
+     | date
+     | textLang
+     | idno
+     | availability)*
+  }
+monogr =
+  
+  ## (monographic level) contains bibliographic elements describing an item (e.g. a book or journal) published as an independent item (i.e. as a separate physical object). [3.11.2.1. Analytic, Monographic, and Series Levels]
+  element monogr {
+    (((author | editor | meeting | respStmt),
+      (author | editor | meeting | respStmt)*,
+      title+,
+      (idno | textLang | editor | respStmt)*)
+     | ((title | idno)+,
+        (textLang | author | editor | meeting | respStmt)*)
+     | (authority, idno))?,
+    availability*,
+    (edition, (idno | editor | sponsor | funder | respStmt)*)*,
+    imprint,
+    (imprint | extent | biblScope)*
+  }
+series =
+  
+  ## (series information) contains information about the series in which a book or other bibliographic item has appeared. [3.11.2.1. Analytic, Monographic, and Series Levels]
+  element series {
+    (text
+     | title
+     | editor
+     | respStmt
+     | biblScope
+     | idno
+     | textLang
+     | availability)*
+  }
+author =
+  
+  ## in a bibliographic reference, contains the name(s) of an author, personal or corporate, of a work; for example in the same form as that provided by a recognized bibliographic name authority. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement]
+  element author { empty }
+editor =
+  
+  ## contains a secondary statement of responsibility for a bibliographic item, for example the name of an individual, institution or organization, (or of several such) acting as editor, compiler, translator, etc. [3.11.2.2. Titles, Authors, and Editors]
+  element editor { empty }
+respStmt =
+  
+  ## (statement of responsibility) supplies a statement of responsibility for the intellectual content of a text, edition, recording, or series, where the specialized elements for authors, editors, etc. do not suffice or do not apply. May also be used to encode information about individuals or organizations which have played a role in the production or distribution of a bibliographic work. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.2. The Edition Statement 2.2.5. The Series Statement]
+  element respStmt { (resp+ | resp+), note* }
+resp =
+  
+  ## (responsibility) contains a phrase describing the nature of a person's intellectual responsibility, or an organization's role in the production or distribution of a work. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.2. The Edition Statement 2.2.5. The Series Statement]
+  element resp { empty }
+title =
+  
+  ## contains a title for any kind of work. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.5. The Series Statement]
+  element title {
+    
+    ## indicates the bibliographic level for a title, that is, whether it identifies an article, book, journal, series, or unpublished material.
+    attribute level {
+      
+      ## (analytic) the title applies to an analytic item, such as an article, poem, or other work published as part of a larger item.
+      "a"
+      | 
+        ## (monographic) the title applies to a monograph such as a book or other item considered to be a distinct publication, including single volumes of multi-volume works
+        "m"
+      | 
+        ## (journal) the title applies to any serial or periodical publication such as a journal, magazine, or newspaper
+        "j"
+      | 
+        ## (series) the title applies to a series of otherwise distinct publications such as a collection
+        "s"
+      | 
+        ## (unpublished) the title applies to any unpublished material (including theses and dissertations unless published by a commercial press)
+        "u"
+    }?,
+    empty
+  }
+meeting =
+  
+  ## contains the formalized descriptive title for a meeting or conference, for use in a bibliographic description for an item derived from such a meeting, or as a heading or preamble to publications emanating from it. [3.11.2.2. Titles, Authors, and Editors]
+  element meeting { empty }
+imprint =
+  
+  ## groups information relating to the publication or distribution of a bibliographic item. [3.11.2.4. Imprint, Size of a Document, and Reprint Information]
+  element imprint { (classCode | catRef)*, (empty, respStmt*)+ }
+biblScope =
+  
+  ## (scope of bibliographic reference) defines the scope of a bibliographic reference, for example as a list of page numbers, or a named subdivision of a larger work. [3.11.2.5. Scopes and Ranges in Bibliographic Citations]
+  element biblScope { empty }
+citedRange =
+  
+  ## (cited range) defines the range of cited content, often represented by pages or other units [3.11.2.5. Scopes and Ranges in Bibliographic Citations]
+  element citedRange { empty }
+relatedItem =
+  
+  ## contains or references some other bibliographic item which is related to the present one in some specified manner, for example as a constituent or alternative version of it. [3.11.2.7. Related Items]
+  element relatedItem {
+    (empty?)
+    >> sch:pattern [
+         id =
+           "speech-schema-relatedItem-targetorcontent1-constraint-report-5"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relatedItem"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and count( child::* ) > 0"
+             "\x{a}" ~
+             "If the @target attribute on "
+             sch:name [ ]
+             " is used, the\x{a}" ~
+             "relatedItem element must be empty"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id =
+           "speech-schema-relatedItem-targetorcontent1-constraint-assert-2"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relatedItem"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@target or child::*"
+             "A relatedItem element should have either a 'target' attribute\x{a}" ~
+             "        or a child element to indicate the related bibliographic item"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    
+    ## points to the related bibliographic element by means of an absolute or relative URI reference
+    attribute target { text }?,
+    empty
+  }
+lg =
+  
+  ## (line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [3.12.1. Core Tags for Verse 3.12. Passages of Verse or Drama 7.2.5. Speech Contents]
+  element lg {
+    (empty*, (lg), (lg)*)
+    >> sch:pattern [
+         id = "speech-schema-lg-atleast1oflggapl-constraint-assert-3"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:lg"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test =
+               "count(descendant::tei:lg|descendant::tei:l|descendant::tei:gap) > 0"
+             "An lg element\x{a}" ~
+             "        must contain at least one child l, lg or gap element."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id =
+           "speech-schema-lg-abstractModel-structure-l-constraint-report-7"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:lg"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test =
+               "ancestor::tei:l[not(.//tei:note//tei:lg[. = current()])]"
+             "\x{a}" ~
+             "        Abstract model violation: Lines may not contain line groups.\x{a}" ~
+             "      "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+  }
+speaker =
+  
+  ## contains a specialized form of heading or label, giving the name of one or more speakers in a dramatic text or fragment. [3.12.2. Core Tags for Drama]
+  element speaker { empty }
+teiCorpus =
+  
+  ## contains the whole of a TEI encoded corpus, comprising a single corpus header and one or more TEI elements, each containing a single text header and a text. [4. Default Text Structure 15.1. Varieties of Composite Text]
+  element teiCorpus {
+    (teiHeader,
+     ((teiCorpus)* | (teiCorpus)+)),
+    
+    ## specifies the version number of the TEI Guidelines against which this document is valid.
+    attribute version { text }?,
+    empty
+  }
+textLang =
+  
+  ## (text language) describes the languages and writing systems identified within the bibliographic work being described, rather than its description. [3.11.2.4. Imprint, Size of a Document, and Reprint Information 10.6.6. Languages and Writing Systems]
+  element textLang {
+    
+    ## (main language) supplies a code which identifies the chief language used in the bibliographic work.
+    attribute mainLang { text }?,
+    
+    ## (other languages) one or more codes identifying any other languages used in the bibliographic work.
+    attribute otherLangs {
+      list { empty }
+    }?,
+    empty
+  }
+att.patternReplacement.attributes =
+  att.patternReplacement.attribute.matchPattern,
+  att.patternReplacement.attribute.replacementPattern
+att.patternReplacement.attribute.matchPattern =
+  
+  ## specifies a regular expression against which the values of other attributes can be matched.
+  attribute matchPattern { text }
+att.patternReplacement.attribute.replacementPattern =
+  
+  ## specifies a replacement pattern, that is, the skeleton of a relative or absolute URI containing references to groups in the matchPattern which, once subpattern substitution has been performed, complete the URI.
+  attribute replacementPattern { text }
+teiHeader =
+  
+  ## (TEI header) supplies descriptive and declarative metadata associated with a digital resource or set of resources. [2.1.1. The TEI Header and Its Components 15.1. Varieties of Composite Text]
+  element teiHeader { fileDesc, revisionDesc? }
+fileDesc =
+  
+  ## (file description) contains a full bibliographic description of an electronic file. [2.2. The File Description 2.1.1. The TEI Header and Its Components]
+  element fileDesc {
+    (titleStmt,
+     editionStmt?,
+     extent?,
+     publicationStmt,
+     seriesStmt?,
+     notesStmt?),
+    sourceDesc+
+  }
+titleStmt =
+  
+  ## (title statement) groups information about the title of a work and those responsible for its content. [2.2.1. The Title Statement 2.2. The File Description]
+  element titleStmt { title+ }
+sponsor =
+  
+  ## specifies the name of a sponsoring organization or institution. [2.2.1. The Title Statement]
+  element sponsor { empty }
+funder =
+  
+  ## (funding body) specifies the name of an individual, institution, or organization responsible for the funding of a project or text. [2.2.1. The Title Statement]
+  element funder { empty }
+editionStmt =
+  
+  ## (edition statement) groups information relating to one edition of a text. [2.2.2. The Edition Statement 2.2. The File Description]
+  element editionStmt { edition }
+edition =
+  
+  ## describes the particularities of one edition of a text. [2.2.2. The Edition Statement]
+  element edition { empty }
+extent =
+  
+  ## describes the approximate size of a text stored on some carrier medium or of some other object, digital or non-digital, specified in any convenient units. [2.2.3. Type and Extent of File 2.2. The File Description 3.11.2.4. Imprint, Size of a Document, and Reprint Information 10.7.1. Object Description]
+  element extent { empty }
+publicationStmt =
+  
+  ## (publication statement) groups information concerning the publication or distribution of an electronic or other text. [2.2.4. Publication, Distribution, Licensing, etc. 2.2. The File Description]
+  element publicationStmt { empty }
+authority =
+  
+  ## (release authority) supplies the name of a person or other agency responsible for making a work available, other than a publisher or distributor. [2.2.4. Publication, Distribution, Licensing, etc.]
+  element authority { empty }
+idno =
+  
+  ## (identifier) supplies any form of identifier used to identify some object, such as a bibliographic item, a person, a title, an organization, etc. in a standardized way. [2.2.4. Publication, Distribution, Licensing, etc. 2.2.5. The Series Statement 3.11.2.4. Imprint, Size of a Document, and Reprint Information]
+  element idno { (text | idno)* }
+availability =
+  
+  ## supplies information about the availability of a text, for example any restrictions on its use or distribution, its copyright status, any licence applying to it, etc. [2.2.4. Publication, Distribution, Licensing, etc.]
+  element availability {
+    empty+,
+    
+    ## supplies a code identifying the current availability of the text.
+    attribute status {
+      
+      ## the text is freely available.
+      "free"
+      | 
+        ## the status of the text is unknown.
+        "unknown"
+      | 
+        ## the text is not freely available.
+        "restricted"
+    }?,
+    empty
+  }
+seriesStmt =
+  
+  ## (series statement) groups information about the series, if any, to which a publication belongs. [2.2.5. The Series Statement 2.2. The File Description]
+  element seriesStmt {
+    (title+, (editor | respStmt)*, (idno | biblScope)*)
+  }
+notesStmt =
+  
+  ## (notes statement) collects together any notes providing information about a text additional to that recorded in other parts of the bibliographic description. [2.2.6. The Notes Statement 2.2. The File Description]
+  element notesStmt { (relatedItem)+ }
+sourceDesc =
+  
+  ## (source description) describes the source from which an electronic text was derived or generated, typically a bibliographic description in the case of a digitized text, or a phrase such as "born digital" for a text which has no previous existence. [2.2.7. The Source Description]
+  element sourceDesc { empty }
+tagUsage =
+  
+  ## documents the usage of a specific element within a specified document. [2.3.4. The Tagging Declaration]
+  element tagUsage {
+    
+    ## (generic identifier) specifies the name (generic identifier) of the element indicated by the tag, within the namespace indicated by the parent namespace element.
+    attribute gi { text },
+    
+    ## specifies the number of occurrences of this element within the text.
+    attribute occurs { text }?,
+    
+    ## (with unique identifier) specifies the number of occurrences of this element within the text which bear a distinct value for the global xml:id attribute.
+    attribute withId { text }?,
+    empty
+  }
+\namespace =
+  
+  ## supplies the formal name of the namespace to which the elements documented by its children belong. [2.3.4. The Tagging Declaration]
+  element namespace {
+    tagUsage+,
+    
+    ## specifies the full formal name of the namespace concerned.
+    attribute name { text },
+    empty
+  }
+rendition =
+  
+  ## supplies information about the rendition or appearance of one or more elements in the source text. [2.3.4. The Tagging Declaration]
+  element rendition {
+    
+    ## where CSS is used, provides a way of defining pseudo-elements, that is, styling rules applicable to specific sub-portions of an element.
+    ## Sample values include: 1] first-line; 2] first-letter; 3] before; 4] after
+    attribute scope { text }?,
+    
+    ## contains a selector or series of selectors specifying the elements to which the contained style description applies, expressed in the language specified in the scheme attribute.
+    attribute selector { text }?,
+    empty
+  }
+cRefPattern =
+  
+  ## (canonical reference pattern) specifies an expression and replacement pattern for transforming a canonical reference into a URI. [2.3.6.3. Milestone Method 2.3.6. The Reference System Declaration 2.3.6.2. Search-and-Replace Method]
+  element cRefPattern { att.patternReplacement.attributes, empty }
+prefixDef =
+  
+  ## (prefix definition) defines a prefixing scheme used in data.pointer values, showing how abbreviated URIs using the scheme may be expanded into full URIs. [16.2.3. Using Abbreviated Pointers]
+  element prefixDef {
+    att.patternReplacement.attributes,
+    
+    ## supplies a name which functions as the prefix for an abbreviated pointing scheme such as a private URI scheme. The prefix constitutes the text preceding the first colon.
+    attribute ident { text },
+    empty
+  }
+listPrefixDef =
+  
+  ## (list of prefix definitions) contains a list of definitions of prefixing schemes used in data.pointer values, showing how abbreviated URIs using each scheme may be expanded into full URIs. [16.2.3. Using Abbreviated Pointers]
+  element listPrefixDef { (prefixDef | listPrefixDef)+ }
+refState =
+  
+  ## (reference state) specifies one component of a canonical reference defined by the milestone method. [2.3.6.3. Milestone Method 2.3.6. The Reference System Declaration]
+  element refState {
+    empty,
+    att.milestoneUnit.attributes,
+    
+    ## specifies the fixed length of the reference component.
+    attribute length { text }?,
+    
+    ## (delimiter) supplies a delimiting string following the reference component.
+    attribute delim { text }?,
+    empty
+  }
+taxonomy =
+  
+  ## defines a typology either implicitly, by means of a bibliographic citation, or explicitly by a structured taxonomy. [2.3.7. The Classification Declaration]
+  element taxonomy {
+    ((category | taxonomy)+
+     | (empty+, (category | taxonomy)*))
+    | (category | taxonomy)*
+  }
+category =
+  
+  ## contains an individual descriptive category, possibly nested within a superordinate category, within a user-defined taxonomy. [2.3.7. The Classification Declaration]
+  element category { (catDesc+ | empty*), category* }
+catDesc =
+  
+  ## (category description) describes some category within a taxonomy or text typology, either in the form of a brief prose description or in terms of the situational parameters used by the TEI formal textDesc. [2.3.7. The Classification Declaration]
+  element catDesc { (text)* }
+profileDesc =
+  
+  ## (text-profile description) provides a detailed description of non-bibliographic aspects of a text, specifically the languages and sublanguages used, the situation in which it was produced, the participants and their setting. [2.4. The Profile Description 2.1.1. The TEI Header and Its Components]
+  element profileDesc { empty }
+language =
+  
+  ## characterizes a single language or sublanguage used within a text. [2.4.2. Language Usage]
+  element language {
+    
+    ## (identifier) Supplies a language code constructed as defined in BCP 47 which is used to identify the language documented by this element, and which is referenced by the global xml:lang attribute.
+    attribute ident { text },
+    
+    ## specifies the approximate percentage (by volume) of the text which uses this language.
+    attribute usage { xsd:nonNegativeInteger }?,
+    empty
+  }
+keywords =
+  
+  ## contains a list of keywords or phrases identifying the topic or nature of a text. [2.4.3. The Text Classification]
+  element keywords {
+    (term+ | \list),
+    
+    ## identifies the controlled vocabulary within which the set of keywords concerned is defined, for example by a taxonomy element, or by some other resource.
+    attribute scheme { text }?,
+    empty
+  }
+classCode =
+  
+  ## (classification code) contains the classification code used for this text in some standard classification system. [2.4.3. The Text Classification]
+  element classCode {
+    
+    ## identifies the classification system in use, as defined by, e.g. a taxonomy element, or some other resource.
+    attribute scheme { text },
+    empty
+  }
+catRef =
+  
+  ## (category reference) specifies one or more defined categories within some taxonomy or text typology. [2.4.3. The Text Classification]
+  element catRef {
+    empty,
+    
+    ## identifies the classification scheme within which the set of categories concerned is defined, for example by a taxonomy element, or by some other resource.
+    attribute scheme { text }?,
+    empty
+  }
+calendar =
+  
+  ## describes a calendar or dating system used in a dating formula in the text. [2.4.5. Calendar Description]
+  element calendar { empty }
+revisionDesc =
+  
+  ## (revision description) summarizes the revision history for a file. [2.6. The Revision Description 2.1.1. The TEI Header and Its Components]
+  element revisionDesc { \list | listChange | change+ }
+change =
+  
+  ## documents a change or set of changes made during the production of a source document, or during the revision of an electronic file. [2.6. The Revision Description 2.4.1. Creation 11.7. Identifying Changes and Revisions]
+  element change {
+    
+    ## points to one or more elements that belong to this change.
+    attribute target {
+      list { empty }
+    }?,
+    empty
+  }
+listChange =
+  
+  ## groups a number of change descriptions associated with either the creation of a source text or the revision of an encoded text. [2.6. The Revision Description 11.7. Identifying Changes and Revisions]
+  element listChange {
+    (listChange | change)+,
+    
+    ## indicates whether the ordering of its child change elements is to be considered significant or not
+    [ a:defaultValue = "true" ] attribute ordered { text }?,
+    empty
+  }
+relation =
+  
+  ## (relationship) describes any kind of relationship or linkage amongst a specified group of places, events, persons, objects or other items. [13.3.2.3. Personal Relationships]
+  element relation {
+    (desc?)
+    >> sch:pattern [
+         id =
+           "speech-schema-relation-reforkeyorname-constraint-assert-4"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relation"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@ref or @key or @name"
+             "One of the attributes  'name', 'ref' or 'key' must be supplied"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "speech-schema-relation-activemutual-constraint-report-13"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relation"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@active and @mutual"
+             "Only one of the attributes\x{a}" ~
+             "@active and @mutual may be supplied"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id =
+           "speech-schema-relation-activepassive-constraint-report-14"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relation"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@passive and not(@active)"
+             "the attribute 'passive'\x{a}" ~
+             "	may be supplied only if the attribute 'active' is\x{a}" ~
+             "	supplied"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    
+    ## supplies a name for the kind of relationship of which this is an instance.
+    attribute name { text }?,
+    empty,
+    
+    ## identifies the passive participants in a non-mutual relationship.
+    attribute passive {
+      list { empty }
+    }?,
+    empty
+  }
+att.duration.attributes = empty
+start = teiCorpus
