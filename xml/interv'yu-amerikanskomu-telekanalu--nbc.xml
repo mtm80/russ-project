@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="../../ODD/out/minutes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
         <teiHeader>
                 <fileDesc>
@@ -11,13 +10,14 @@
                                 <author>NBC</author>
                                 <respStmt>
                                         <resp>interviewee</resp>
-                                        <name>Vladimir V. Putin</name>
+                                        <persName ref="#putin">Vladimir V. Putin</persName>
                                 </respStmt>
                                 <respStmt>
                                         <resp>interviewed by</resp>
-                                        <resp>Megyn Kelly</resp>
+                                        <persName ref="#kelly">Megyn Kelly</persName>
                                 </respStmt>
                         </titleStmt>
+                        <extent>about 32Kb</extent>
                         <publicationStmt>
                                 <publisher>Kremlin</publisher>
                                 <date when="2017-06-05T03:00:00+03:00">5 июня 2017 года, 03:00</date>
@@ -26,13 +26,13 @@
                                 <biblStruct>
                                         <monogr>
                                                 <author>NBC</author>
-                                                <respStmt ref="#putin">
+                                                <respStmt>
                                                         <resp>interviewee</resp>
-                                                        <name>Vladimir V. Putin</name>
+                                                        <persName>Vladimir V. Putin</persName>
                                                 </respStmt>
-                                                <respStmt ref="#kelly">
+                                                <respStmt>
                                                         <resp>interviewed by</resp>
-                                                        <resp>Megyn Kelly</resp>
+                                                        <persName>Megyn Kelly</persName>
                                                 </respStmt>
                                                 <title>Интервью американскому телеканалу NBC</title>
                                                 <imprint>
@@ -44,8 +44,13 @@
                                 </biblStruct>
                         </sourceDesc>
                 </fileDesc>
+                <profileDesc>
+                        <langUsage default="ru">
+                                <language id="en">English</language>
+                                <language id="ru">Russian</language>
+                        </langUsage>
+                </profileDesc>
         </teiHeader>
-
         <text>
                 <body>
                         <u resp="#kelly">Господин Президент, Вы несколько раз говорили о том, что Россия никак не вовлечена во вмешательство в президентские выборы, включая пленарное заседание Петербургского экономического форума. Однако в США считают, есть такой консенсус, что вы это сделали. Есть 17 агентств в области безопасности, которые так утверждают, демократы, республиканцы, все комитеты, которые видели секретные материалы, говорят, что это так. Они что, все врут?</u>

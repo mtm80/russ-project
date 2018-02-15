@@ -24,8 +24,9 @@
   <text>
     <body>
       <div>
-        <schemaSpec ident="speech-schema" source="tei:current" start="teiCorpus">
+        <schemaSpec ident="speech-schema" source="tei:current" start="TEI">
           <moduleRef key="header"/>
+          <moduleRef key="tei"/>
           <moduleRef key="core"/>
           <moduleRef key="analysis" include="interp interpGroup span spanGroup"/>
           <moduleRef key="namesdates"
