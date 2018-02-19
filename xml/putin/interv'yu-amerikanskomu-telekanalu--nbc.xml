@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="../odd/out/speech.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../odd/out/speeches.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
         <teiHeader>
                 <fileDesc>
                         <titleStmt>
-                                <title>
-                                        Интервью американскому телеканалу NBC
-                                </title>
+                                <title>Интервью американскому телеканалу NBC</title>
                                 <author>NBC</author>
                                 <respStmt>
                                         <resp>interviewee</resp>
