@@ -6,6 +6,7 @@
     <xsl:template match="//u[@resp='#putin']">
         <xsl:value-of select="."/>
         <xsl:text>
+        
         </xsl:text>
     </xsl:template>
 </xsl:stylesheet>
