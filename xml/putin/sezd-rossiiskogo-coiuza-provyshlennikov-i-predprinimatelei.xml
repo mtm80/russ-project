@@ -3,7 +3,6 @@
                 <fileDesc>
                         <titleStmt>
                                 <title>Съезд Российского союза промышленников и предпринимателей</title>
-                                <author>NBC</author>
                                 <respStmt>
                                         <resp>speaker</resp>
                                         <persName ref="#putin">Vladimir V. Putin</persName>
@@ -12,12 +11,11 @@
                         <extent>about 32Kb</extent>
                         <publicationStmt>
                                 <publisher>Kremlin</publisher>
-                                <date when="2017-06-05T03:00:00+03:00">5 июня 2017 года, 03:00</date>
+                                <date when="2018-02-09T15:20:00+03:00">9 февраля 2018 года, 15:20</date>
                         </publicationStmt>
                         <sourceDesc>
                                 <biblStruct>
                                         <monogr>
-                                                <author>NBC</author>
                                                 <respStmt>
                                                         <resp>speaker</resp>
                                                         <persName>Vladimir V. Putin</persName>

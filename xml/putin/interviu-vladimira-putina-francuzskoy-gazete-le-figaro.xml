@@ -18,7 +18,7 @@
                         <extent>about 32Kb</extent>
                         <publicationStmt>
                                 <publisher>Kremlin</publisher>
-                                <date when="2017-06-05T03:00:00+03:00">5 июня 2017 года, 03:00</date>
+                                <date when="2017-05-31T08:00:00+02:00">31 maya 2017 года, 08:00</date>
                         </publicationStmt>
                         <sourceDesc>
                                 <biblStruct>
@@ -36,7 +36,7 @@
                                                 <imprint>
                                                         <pubPlace>Paris</pubPlace>
                                                         <publisher>Kremlin</publisher>
-                                                        <date when="2017-05-31T08:00:00+02:00">5 июня 2017 года, 03:00</date>
+                                                        <date when="2017-05-31T08:00:00+02:00">31 maya 2017 года, 08:00</date>
                                                 </imprint>
                                         </monogr>
                                 </biblStruct>
