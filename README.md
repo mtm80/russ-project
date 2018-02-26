@@ -26,5 +26,9 @@ We're marking up occurrences of the following general patterns
 - **Vagueness:** Creating uncertainty and ambiguity.
 - **Victimization:** Telling bad stories about people who do not belong to US
 
-## Scripts
-### 
+## Transformations
+All transformations and runner scripts (for on my home machine) are located in the ```/util/``` folder. Run the shell script at the UNIX command line. Requires Python 3.5 or greater.
+### util/gen-mystem-input.xslt
+This transformation takes a speech that jives with our TEI specification and outputs a plain text document that one can feed as input to [Yandex Mystem](https://tech.yandex.ru/mystem).
+### util/flatten-mystem-output.xslt
+The transformation takes Mystem output (which uses an ad-hoc XML specification for morphological data) and formats the data so it is compliant with TEI's ```<w>``` tag. This data is then manually fed back into TEI compliant XML, merging the morphological data in its original markup.
