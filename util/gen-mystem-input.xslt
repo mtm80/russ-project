@@ -7,6 +7,6 @@
     </xsl:template>
 
     <xsl:template match="w">
-        <xsl:value-of select="concat(./, '&#x0a;&#x0a;')"/>
+        <xsl:value-of select="concat(., '&#x0a;&#x0a;')"/>
     </xsl:template>
 </xsl:stylesheet>
