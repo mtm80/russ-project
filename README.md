@@ -21,10 +21,10 @@ We're marking up occurrences of the following general patterns
 - **Lexicalization:** an overall ideological strategy for negative other-representation through the semantic features of the words.
 - **National Self Glorification:** A device to create positive self representation by glorifying one’s country.
 - **Number Game:** Using numbers and statistics to appear credible.
-- **Polarization:** Categorizing people as belonging to US with good attributes and THEM with bad attributes.
+- **Polarization:** Categorizing allies as having good attributes and opponents having bad attributes.
 - **Presupposition:** The common shared knowledge between people or the ideas taken for granted in a proposition.
 - **Vagueness:** Creating uncertainty and ambiguity.
-- **Victimization:** Telling bad stories about people who do not belong to US
+- **Victimization:** Telling bad stories about people who are not allies
 
 ## Transformations
 All transformations and runner scripts (for on my home machine) are located in the ```/util/``` folder. Run the shell script at the UNIX command line. Requires Python 3.5 or greater.
