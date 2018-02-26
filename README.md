@@ -25,3 +25,6 @@ We're marking up occurrences of the following general patterns
 - **Presupposition:** The common shared knowledge between people or the ideas taken for granted in a proposition.
 - **Vagueness:** Creating uncertainty and ambiguity.
 - **Victimization:** Telling bad stories about people who do not belong to US
+
+## Scripts
+### 
