@@ -1,69 +1,273 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<TEI 
+  xmlns="http://www.tei-c.org/ns/1.0" 
+  xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TEI for Speech Representation</title>
+        <author>Laurent Romary</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>TEI Consortium</publisher>
+        <availability status="free">
+          <licence target="http://creativecommons.org/licenses/by-sa/3.0/">            Distributed under a Creative            Commons Attribution-ShareAlike 3.0 Unported License          </licence>
+          <licence target="http://www.opensource.org/licenses/BSD-2-Clause">
+            <p>Copyright 2013 TEI Consortium.</p>
+            <p>All rights reserved.</p>
+            <p>              Redistribution and use in source and binary forms, with or without modification, are              permitted provided that the following conditions are met:            </p>
+            <list>
+              <item>                Redistributions of source code must retain the above copyright notice, this list of                conditions and the following disclaimer.              </item>
+              <item>                Redistributions in binary form must reproduce the above copyright notice, this list of                conditions and the following disclaimer in the documentation and/or other materials provided                with the distribution.              </item>
+            </list>
+            <p>              This software is provided by the copyright holders and contributors "as is" and any express              or implied warranties, including, but not limited to, the implied warranties of              merchantability and fitness for a particular purpose are disclaimed. In no event shall the              copyright holder or contributors be liable for any direct, indirect, incidental, special,              exemplary, or consequential damages (including, but not limited to, procurement of substitute              goods or services; loss of use, data, or profits; or business interruption) however caused              and on any theory of liability, whether in contract, strict liability, or tort (including              negligence or otherwise) arising in any way out of the use of this software, even if advised              of the possibility of such damage.            </p>
+          </licence>
+          <p>            TEI material can be licensed differently depending on the use you intend to make of it.            Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is            generally appropriate for usages which treat TEI content as data or documentation. The BSD-2            licence is generally appropriate for usage of TEI content in a software environment. For            further information or clarification, please contact the                        
+            <ref target="mailto:info@tei-c.org">TEI Consortium</ref>            .                    
+          </p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>No source; this was originally written from scratch in digital form.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>        In addition to the required modules, this customization loads the modules for                
+        <list>
+          <item>transcriptions of speech</item>
+          <item>            linking, segmentation, and            alignment          </item>
+          <item>language corpora</item>
+        </list>        .            
+      </p>
+      <schemaSpec ident="tei_speech" start="TEI teiCorpus">
+        <!-- required modules -->
+        <moduleRef key="header" include="teiHeader fileDesc titleStmt title persName extent publicationStmt publisher sourceDesc pubPlace langUsage profileDesc language"/>
+        <moduleRef key="core" include="author biblStruct date monogr imprint respStmt resp name ptr pubPlace publisher ref title time"/>
+        <moduleRef key="tei"/>
+        <moduleRef key="textstructure" include="TEI text body front back"/>
+        <!-- optional modules -->
+        <moduleRef key="spoken" include="u vocal incident kinesic pause"/>
+        <moduleRef key="namesdates" include="persName affiliation person forename surname"/>
+        <moduleRef key="analysis"/>
 
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
- xml:lang="en">
- <teiHeader>
-  <fileDesc>
-   <titleStmt>
-    <title>TEI for Speech Representation</title>
-    <author>Laurent Romary</author>
-   </titleStmt>
-   <publicationStmt>
-    <publisher>TEI Consortium</publisher>
-    <availability status="free">
-     <licence target="http://creativecommons.org/licenses/by-sa/3.0/"> Distributed under a Creative
-      Commons Attribution-ShareAlike 3.0 Unported License </licence>
-     <licence target="http://www.opensource.org/licenses/BSD-2-Clause">
-      <p>Copyright 2013 TEI Consortium.</p>
-      <p>All rights reserved.</p>
-      <p>Redistribution and use in source and binary forms, with or without modification, are
-       permitted provided that the following conditions are met:</p>
-      <list>
-       <item>Redistributions of source code must retain the above copyright notice, this list of
-        conditions and the following disclaimer.</item>
-       <item>Redistributions in binary form must reproduce the above copyright notice, this list of
-        conditions and the following disclaimer in the documentation and/or other materials provided
-        with the distribution.</item>
-      </list>
-      <p>This software is provided by the copyright holders and contributors "as is" and any express
-       or implied warranties, including, but not limited to, the implied warranties of
-       merchantability and fitness for a particular purpose are disclaimed. In no event shall the
-       copyright holder or contributors be liable for any direct, indirect, incidental, special,
-       exemplary, or consequential damages (including, but not limited to, procurement of substitute
-       goods or services; loss of use, data, or profits; or business interruption) however caused
-       and on any theory of liability, whether in contract, strict liability, or tort (including
-       negligence or otherwise) arising in any way out of the use of this software, even if advised
-       of the possibility of such damage.</p>
-     </licence>
-     <p>TEI material can be licensed differently depending on the use you intend to make of it.
-      Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is
-      generally appropriate for usages which treat TEI content as data or documentation. The BSD-2
-      licence is generally appropriate for usage of TEI content in a software environment. For
-      further information or clarification, please contact the <ref target="mailto:info@tei-c.org"
-       >TEI Consortium</ref>. </p>
-    </availability>
-   </publicationStmt>
-   <sourceDesc>
-    <p>No source; this was originally written from scratch in digital form.</p>
-   </sourceDesc>
-  </fileDesc>
- </teiHeader>
- <text>
-  <body>
-   <p>In addition to the required modules, this customization loads the modules for
-      <list><item>transcriptions of speech</item><item>linking, segmentation, and
-      alignment</item><item>language corpora</item></list>.</p>
-   <schemaSpec ident="tei_speech" start="TEI teiCorpus">
-    <!-- required modules -->
-    <moduleRef key="header" include="teiHeader fileDesc titleStmt title persName extent publicationStmt publisher sourceDesc pubPlace langUsage profileDesc language"/>
-    <moduleRef key="core" include="author biblStruct date monogr imprint respStmt resp name ptr pubPlace publisher ref title time"/>
-    <moduleRef key="tei"/>
-    <moduleRef key="textstructure" include="TEI text body front back"/>
-    <!-- optional modules -->
-    <moduleRef key="spoken" include="u vocal incident kinesic pause"/>
-    <moduleRef key="namesdates" include="persName affiliation person forename surname"/>
-    <moduleRef key="analysis"/>
-   </schemaSpec>
-  </body>
- </text>
+        <!-- Defines new elements -->
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="actorDesc">
+          <desc>marks an instance of rhetoric marked by an actor description, that is, describing a person, or group in a positive or negative way</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+          <attList>
+            <attDef ident="sentiment" usage="opt">
+              <desc>Is the sentiment positive, negative, or neutral?</desc>
+              <datatype>
+                <dataRef key="teidata.enumerated"/>
+              </datatype>
+              <valList type="closed">
+                <valItem ident="positive">
+                  <desc>The person/group is characterized positively</desc>
+                </valItem>
+                <valItem ident="neutral">
+                  <desc>The person/group is characterized neutrally</desc>
+                </valItem>
+                <valItem ident="negative">
+                  <desc>The person/group is characterized negatively</desc>
+                </valItem>
+              </valList>
+            </attDef>
+            <attDef ident="target" usage="opt">
+              <desc>The target of the character description, whether it be a group or person.</desc>
+              <datatype>
+                <dataRef key="teidata.pointer"/>
+              </datatype>
+            </attDef>
+          </attList>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="auth">
+          <desc>Contains text that mentions authorities to support one's claims.</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+          <attList>
+            <attDef ident="authority" usage="opt">
+              <desc>A pointer to the authority cited</desc>
+              <datatype>
+                <dataRef key="teidata.pointer"/>
+              </datatype>
+            </attDef>
+          </attList>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="cat">
+          <desc>Contains text that assigns a person or people to a particular group</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+          <attList>
+            <attDef ident="group" usage="opt">
+              <desc>The group the target is purportedly a part of</desc>
+              <datatype>
+                <dataRef key="teidata.pointer"/>
+              </datatype>
+            </attDef>
+            <attDef ident="target" usage="opt">
+              <desc>The target of characterization</desc>
+              <datatype>
+                <dataRef key="teidata.pointer"/>
+              </datatype>
+            </attDef>
+          </attList>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="consensus">
+          <desc>Wraps text that creates agreement and solidarity <!--needs clarification--></desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="disclaimer">
+          <desc>Wraps text that shows something as positive only to reject it later.</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="evidence">
+          <desc>Wraps text that uses hard facts to back up an argument</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="hyperbole">
+          <desc>Wraps text that exaggerates meaning.</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="implication">
+          <desc>Wraps text that deduces or infers implicit information.</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="irony">
+          <desc>Wraps text that says something but means something else.</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="lex">
+          <desc>Wraps text that has the characteristic of lexicalization, or negative other-representation through the semantic features of words.</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="glory">
+          <desc>Wraps text that uses patriotism to indirectly glorify oneself.</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="stats">
+          <desc>Uses numbers or statistics to appear credible. These data are verified false. Otherwise, use the &lt;evidence&gt; tag.</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="polarization">
+          <desc>Shows allies in a positive light, but opponents in a negative light</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+          <!--Need some ideas on what attributes to include here -->
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="presuppose">
+          <desc>The common shared knowledge between people or the ideas taken for granted in a proposition.</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="vague">
+          <desc>Creates uncertainty and ambiguity.</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="victim">
+          <desc>Tells bad stories about people who are not allies</desc>
+          <content>
+            <textNode/>
+          </content>
+          <classes>
+            <memberOf key="tei.global"/>
+          </classes>
+          <attDef ident="target" usage="opt">
+              <desc>The target of the story, whether it be a group or person.</desc>
+              <datatype>
+                <dataRef key="teidata.pointer"/>
+              </datatype>
+            </attDef>
+        </elementSpec>
+      
+      </schemaSpec>
+    </body>
+  </text>
 </TEI>
