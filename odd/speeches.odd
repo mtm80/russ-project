@@ -65,7 +65,7 @@
         <moduleRef key="textstructure" include="TEI text body front back"/>
         <!-- optional modules -->
         <moduleRef key="spoken" include="u vocal incident kinesic pause"/>
-        <moduleRef key="namesdates" include="persName affiliation person forename surname"/>
+        <moduleRef key="namesdates" include="persName affiliation person forename surname orgName"/>
         <moduleRef key="analysis"/>
 
         <!-- Defines new elements -->
@@ -73,7 +73,7 @@
           <desc>marks an instance of rhetoric marked by an actor description, that is, describing a
             person, or group in a positive or negative way</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -82,7 +82,7 @@
             <attDef ident="sentiment" usage="opt">
               <desc>Is the sentiment positive, negative, or neutral?</desc>
               <datatype>
-                <dataRef key="teidata.enumerated"/>
+                <rng:ref name="teidata.enumerated"/>
               </datatype>
               <valList type="closed">
                 <valItem ident="positive">
@@ -99,7 +99,7 @@
             <attDef ident="target" usage="opt">
               <desc>The target of the character description, whether it be a group or person.</desc>
               <datatype>
-                <dataRef key="teidata.pointer"/>
+                <rng:ref name="teidata.pointer"/>
               </datatype>
             </attDef>
           </attList>
@@ -108,7 +108,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="auth">
           <desc>Contains text that mentions authorities to support one's claims.</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -117,7 +117,7 @@
             <attDef ident="authority" usage="opt">
               <desc>A pointer to the authority cited</desc>
               <datatype>
-                <dataRef key="teidata.pointer"/>
+                <rng:ref name="teidata.pointer"/>
               </datatype>
             </attDef>
           </attList>
@@ -126,7 +126,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="cat">
           <desc>Contains text that assigns a person or people to a particular group</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -135,13 +135,13 @@
             <attDef ident="group" usage="opt">
               <desc>The group the target is purportedly a part of</desc>
               <datatype>
-                <dataRef key="teidata.pointer"/>
+                <rng:ref name="teidata.pointer"/>
               </datatype>
             </attDef>
             <attDef ident="target" usage="opt">
               <desc>The target of characterization</desc>
               <datatype>
-                <dataRef key="teidata.pointer"/>
+                <rng:ref name="teidata.pointer"/>
               </datatype>
             </attDef>
           </attList>
@@ -150,7 +150,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="consensus">
           <desc>Wraps text that creates agreement and solidarity <!--needs clarification--></desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -160,7 +160,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="disclaimer">
           <desc>Wraps text that shows something as positive only to reject it later.</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -170,7 +170,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="evidence">
           <desc>Wraps text that uses hard facts to back up an argument</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -180,7 +180,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="hyperbole">
           <desc>Wraps text that exaggerates meaning.</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -190,7 +190,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="implication">
           <desc>Wraps text that deduces or infers implicit information.</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -200,7 +200,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="irony">
           <desc>Wraps text that says something but means something else.</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -211,7 +211,7 @@
           <desc>Wraps text that has the characteristic of lexicalization, or negative
             other-representation through the semantic features of words.</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -221,7 +221,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="glory">
           <desc>Wraps text that uses patriotism to indirectly glorify oneself.</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -232,7 +232,7 @@
           <desc>Uses numbers or statistics to appear credible. These data are verified false.
             Otherwise, use the &lt;evidence&gt; tag.</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -242,7 +242,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="polarization">
           <desc>Shows allies in a positive light, but opponents in a negative light</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -254,7 +254,7 @@
           <desc>The common shared knowledge between people or the ideas taken for granted in a
             proposition.</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -264,7 +264,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="vague">
           <desc>Creates uncertainty and ambiguity.</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -274,7 +274,7 @@
         <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="victim">
           <desc>Tells bad stories about people who are not allies</desc>
           <classes>
-            <memberOf key="tei.global"/>
+            <memberOf key="model.global.meta"/>
           </classes>
           <content>
             <textNode/>
@@ -283,7 +283,7 @@
             <attDef ident="target" usage="opt">
               <desc>The target of the story, whether it be a group or person.</desc>
               <datatype>
-                <dataRef key="teidata.pointer"/>
+                <rng:ref name="data.enumerated"/>
               </datatype>
             </attDef>
           </attList>
