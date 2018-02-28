@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:ru="http://ru-rhetoric.obdurodon.org/rr"
   xml:lang="en">
   <teiHeader>
     <fileDesc>
@@ -69,11 +71,12 @@
         <moduleRef key="analysis"/>
 
         <!-- Defines new elements -->
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="actorDesc">
+        <elementSpec  mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="actorDesc">
           <desc>marks an instance of rhetoric marked by an actor description, that is, describing a
             person, or group in a positive or negative way</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
             <textNode/>
@@ -105,7 +108,7 @@
           </attList>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="auth">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="auth">
           <desc>Contains text that mentions authorities to support one's claims.</desc>
           <classes>
             <memberOf key="model.global.meta"/>
@@ -123,7 +126,7 @@
           </attList>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="cat">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="cat">
           <desc>Contains text that assigns a person or people to a particular group</desc>
           <classes>
             <memberOf key="model.global.meta"/>
@@ -147,7 +150,7 @@
           </attList>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="consensus">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="consensus">
           <desc>Wraps text that creates agreement and solidarity <!--needs clarification--></desc>
           <classes>
             <memberOf key="model.global.meta"/>
@@ -157,7 +160,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="disclaimer">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="disclaimer">
           <desc>Wraps text that shows something as positive only to reject it later.</desc>
           <classes>
             <memberOf key="model.global.meta"/>
@@ -167,7 +170,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="evidence">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="evidence">
           <desc>Wraps text that uses hard facts to back up an argument</desc>
           <classes>
             <memberOf key="model.global.meta"/>
@@ -177,7 +180,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="hyperbole">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="hyperbole">
           <desc>Wraps text that exaggerates meaning.</desc>
           <classes>
             <memberOf key="model.global.meta"/>
@@ -187,7 +190,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="implication">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="implication">
           <desc>Wraps text that deduces or infers implicit information.</desc>
           <classes>
             <memberOf key="model.global.meta"/>
@@ -197,7 +200,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="irony">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="irony">
           <desc>Wraps text that says something but means something else.</desc>
           <classes>
             <memberOf key="model.global.meta"/>
@@ -207,7 +210,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="lex">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="lex">
           <desc>Wraps text that has the characteristic of lexicalization, or negative
             other-representation through the semantic features of words.</desc>
           <classes>
@@ -218,7 +221,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="glory">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="glory">
           <desc>Wraps text that uses patriotism to indirectly glorify oneself.</desc>
           <classes>
             <memberOf key="model.global.meta"/>
@@ -228,7 +231,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="stats">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="stats">
           <desc>Uses numbers or statistics to appear credible. These data are verified false.
             Otherwise, use the &lt;evidence&gt; tag.</desc>
           <classes>
@@ -239,7 +242,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="polarization">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="polarization">
           <desc>Shows allies in a positive light, but opponents in a negative light</desc>
           <classes>
             <memberOf key="model.global.meta"/>
@@ -250,7 +253,7 @@
           <!--Need some ideas on what attributes to include here -->
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="presuppose">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="presuppose">
           <desc>The common shared knowledge between people or the ideas taken for granted in a
             proposition.</desc>
           <classes>
@@ -261,7 +264,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="vague">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="vague">
           <desc>Creates uncertainty and ambiguity.</desc>
           <classes>
             <memberOf key="model.global.meta"/>
@@ -271,7 +274,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ns="http://ru-rhetoric.obdurodon.org/rr" ident="victim">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="victim">
           <desc>Tells bad stories about people who are not allies</desc>
           <classes>
             <memberOf key="model.global.meta"/>
