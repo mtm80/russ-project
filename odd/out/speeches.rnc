@@ -1,19 +1,20 @@
 namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
 namespace ns1 = "http://www.isocat.org/ns/dcr"
 namespace rng = "http://relaxng.org/ns/structure/1.0"
+namespace ru = "http://ru-rhetoric.obdurodon.org/rr"
 namespace sch = "http://purl.oclc.org/dsdl/schematron"
 default namespace tei = "http://www.tei-c.org/ns/1.0"
 namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2018-02-19T21:30:57Z. .
+# Schema generated from ODD source 2018-02-28T16:09:16Z. .
 # TEI Edition: Version 3.1.0. Last updated on
 #	15th December 2016, revision d3f5e70
 # TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.1.0/
 #
 
 # This material is dual-licensed.
-# [http://creativecommons.org/licenses/by-sa/3.0/] Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported License  [http://www.opensource.org/licenses/BSD-2-Clause] Copyright 2013 TEI Consortium. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. This software is provided by the copyright holders and contributors "as is" and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the copyright holder or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage. TEI material can be licensed differently depending on the use you intend to make of it. Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is generally appropriate for usages which treat TEI content as data or documentation. The BSD-2 licence is generally appropriate for usage of TEI content in a software environment. For further information or clarification, please contact the TEI Consortium.
+# [http://creativecommons.org/licenses/by-sa/3.0/] Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported License  [http://www.opensource.org/licenses/BSD-2-Clause] Copyright 2013 TEI Consortium. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.  Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.  This software is provided by the copyright holders and contributors "as is" and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the copyright holder or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.  TEI material can be licensed differently depending on the use you intend to make of it. Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is generally appropriate for usages which treat TEI content as data or documentation. The BSD-2 licence is generally appropriate for usage of TEI content in a software environment. For further information or clarification, please contact the TEI Consortium .
 macro.paraContent =
   (text
    | model.gLike
@@ -24,6 +25,8 @@ macro.paraContent =
 macro.phraseSeq = (text | model.gLike | model.phrase | model.global)*
 macro.phraseSeq.limited = (text | model.limitedPhrase | model.global)*
 macro.xtext = (text | model.gLike)*
+teidata.pointer = xsd:anyURI
+data.enumerated = xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }
 att.ascribed.attributes = att.ascribed.attribute.who
 att.ascribed.attribute.who =
   
@@ -701,12 +704,13 @@ att.timed.attribute.end =
   
   ## indicates the location within a temporal alignment at which this element ends.
   attribute end { xsd:anyURI }?
-model.nameLike.agent = name | persName
-model.nameLike.agent_alternation = name | persName
-model.nameLike.agent_sequence = name, persName
-model.nameLike.agent_sequenceOptional = name?, persName?
-model.nameLike.agent_sequenceOptionalRepeatable = name*, persName*
-model.nameLike.agent_sequenceRepeatable = name+, persName+
+model.nameLike.agent = name | orgName | persName
+model.nameLike.agent_alternation = name | orgName | persName
+model.nameLike.agent_sequence = name, orgName, persName
+model.nameLike.agent_sequenceOptional = name?, orgName?, persName?
+model.nameLike.agent_sequenceOptionalRepeatable =
+  name*, orgName*, persName*
+model.nameLike.agent_sequenceRepeatable = name+, orgName+, persName+
 model.segLike = s | cl | phr | w | m | c | pc
 model.hiLike = notAllowed
 model.hiLike_alternation = notAllowed
@@ -762,7 +766,27 @@ model.pPart.transcriptional_sequenceRepeatable = notAllowed
 model.pPart.edit = model.pPart.editorial | model.pPart.transcriptional
 model.ptrLike = ptr | ref
 model.lPart = notAllowed
-model.global.meta = span | spanGrp | interp | interpGrp
+model.global.meta =
+  span
+  | spanGrp
+  | interp
+  | interpGrp
+  | actorDesc
+  | auth
+  | cat
+  | consensus
+  | disclaimer
+  | evidence
+  | hyperbole
+  | implication
+  | irony
+  | lex
+  | glory
+  | stats
+  | polarization
+  | presuppose
+  | vague
+  | victim
 model.milestoneLike = notAllowed
 model.gLike = notAllowed
 model.oddDecl = notAllowed
@@ -1590,6 +1614,18 @@ att.datable.iso.attribute.to-iso =
     | xsd:dateTime
     | xsd:token { pattern = "[0-9.,DHMPRSTWYZ/:+\-]+" }
   }?
+orgName =
+  
+  ## (organization name) contains an organizational name. [13.2.2. Organizational Names]
+  element orgName {
+    macro.phraseSeq,
+    att.global.attributes,
+    att.datable.attributes,
+    att.editLike.attributes,
+    att.personal.attributes,
+    att.typed.attributes,
+    empty
+  }
 persName =
   
   ## (personal name) contains a proper noun or proper-noun phrase referring to a person, possibly including one or more of the person's forenames, surnames, honorifics, added names, etc. [13.2.1. Personal Names]
@@ -1895,6 +1931,111 @@ interpGrp =
     (model.descLike*, interp+),
     att.global.attributes,
     att.interpLike.attributes,
+    empty
+  }
+actorDesc =
+  
+  ## marks an instance of rhetoric marked by an actor description, that is, describing a person, or group in a positive or negative way
+  element ru:actorDesc {
+    text,
+    att.global.attributes,
+    
+    ## Is the sentiment positive, negative, or neutral?
+    attribute sentiment {
+      
+      ## The person/group is characterized positively
+      "positive"
+      | 
+        ## The person/group is characterized neutrally
+        "neutral"
+      | 
+        ## The person/group is characterized negatively
+        "negative"
+    }?,
+    
+    ## The target of the character description, whether it be a group or person.
+    attribute target { teidata.pointer }?,
+    empty
+  }
+auth =
+  
+  ## Contains text that mentions authorities to support one's claims.
+  element ru:auth {
+    text,
+    
+    ## A pointer to the authority cited
+    attribute authority { teidata.pointer }?,
+    empty
+  }
+cat =
+  
+  ## Contains text that assigns a person or people to a particular group
+  element ru:cat {
+    text,
+    
+    ## The group the target is purportedly a part of
+    attribute group { teidata.pointer }?,
+    
+    ## The target of characterization
+    attribute target { teidata.pointer }?,
+    empty
+  }
+consensus =
+  
+  ## Wraps text that creates agreement and solidarity 
+  element ru:consensus { text }
+disclaimer =
+  
+  ## Wraps text that shows something as positive only to reject it later.
+  element ru:disclaimer { text }
+evidence =
+  
+  ## Wraps text that uses hard facts to back up an argument
+  element ru:evidence { text }
+hyperbole =
+  
+  ## Wraps text that exaggerates meaning.
+  element ru:hyperbole { text }
+implication =
+  
+  ## Wraps text that deduces or infers implicit information.
+  element ru:implication { text }
+irony =
+  
+  ## Wraps text that says something but means something else.
+  element ru:irony { text }
+lex =
+  
+  ## Wraps text that has the characteristic of lexicalization, or negative other-representation through the semantic features of words.
+  element ru:lex { text }
+glory =
+  
+  ## Wraps text that uses patriotism to indirectly glorify oneself.
+  element ru:glory { text }
+stats =
+  
+  ## Uses numbers or statistics to appear credible. These data are verified false. Otherwise, use the <evidence> tag.
+  element ru:stats { text }
+polarization =
+  
+  ## Shows allies in a positive light, but opponents in a negative light
+  element ru:polarization { text }
+presuppose =
+  
+  ## The common shared knowledge between people or the ideas taken for granted in a proposition.
+  element ru:presuppose { text }
+vague =
+  
+  ## Creates uncertainty and ambiguity.
+  element ru:vague { text }
+victim =
+  
+  ## Tells bad stories about people who are not allies
+  element ru:victim {
+    text,
+    
+    ## The target of the story, whether it be a group or person.
+    attribute target { data.enumerated }?,
     empty
   }
 start = TEI
