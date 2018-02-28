@@ -1,14 +1,6 @@
-# Rhetoric in Russian Presidential Politics
+From Rashidi and Souzandehfar (2010) A CRITICAL DISCOURSE ANALYSIS OF THE DEBATES
+BETWEEN REPUBLICANS AND DEMOCRATS OVER THECONTINUATION OF WAR IN IRAQ
 
-Our project will seek to analyze the language usage of the Russian presidential candidates. Focus will be placed on campaign speeches, advertisements, slogans, etc.. We will investigate how their language corresponds to their respective parties ideologies.
-
-## Candidates
-- Владимир Путин [kremlin](http://kremlin.ru)
-- Павел Грудинин [campaign](http://grudininkprf.ru/)
-- Владимир Жириновский [LDPR leader bio](https://ldpr.ru/leader/)
-
-## Methodology
-We're marking up occurrences of the following general patterns
 - **Actor description:** The way we describe actors or members of a particular society either in a negative or positive way.
 - **Authority:** Mentioning authorities to support one's claims.
 - **Categorization:** Assigning people to different groups.
@@ -26,9 +18,4 @@ We're marking up occurrences of the following general patterns
 - **Vagueness:** Creating uncertainty and ambiguity.
 - **Victimization:** Telling bad stories about people who are not allies
 
-## Transformations
-All transformations and runner scripts (for on my home machine) are located in the ```/util/``` folder. Run the shell script at the UNIX command line. Requires Python 3.5 or greater.
-### util/gen-mystem-input.xslt
-This transformation takes a speech that jives with our TEI specification and outputs a plain text document that one can feed as input to [Yandex Mystem](https://tech.yandex.ru/mystem).
-### util/flatten-mystem-output.xslt
-The transformation takes Mystem output (which uses an ad-hoc XML specification for morphological data) and formats the data so it is compliant with TEI's ```<w>``` tag. This data is then manually fed back into TEI compliant XML, merging the morphological data in its original markup.
+This list is part of the discourse analysis theory laid out by Van Diijk 2004 POLITICS, IDEOLOGY, AND DISCOURSE.
