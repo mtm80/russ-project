@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xpath-default-namespace="http://www.tei-c.org/ns/1.0">
-    <xsl:output method="xml" omit-xml-declaration="yes" indent="no"/>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+    <!--<xsl:output method="xml" encoding="utf-8" indent="yes"/>-->
     <xsl:template match="/">
-        <xsl:apply-templates select="//w"/>
+        <text>
+            <xsl:apply-templates select="//w"/>
+        </text>
     </xsl:template>
     <xsl:template match="w">
-         <xsl:value-of select="concat('<w lemma=\"', ./ana/@lex, '\">', ./text()[1])"/>
+        <xsl:element name="w">
+            <xsl:attribute name="lemma">
+                <xsl:value-of select="./ana/@lex"/>
+            </xsl:attribute>
+            <xsl:apply-templates select="./text()"/>
+        </xsl:element>
     </xsl:template>
 </xsl:stylesheet>
