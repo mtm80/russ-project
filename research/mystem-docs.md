@@ -12,11 +12,11 @@ Mystem supports Windows, Mac, and Linux. Just download the newest version [here]
 
 <table>
         <tr>
-                <td>-n</td>
+                <td><code>-n</code></td>
                 <td>Print every word on a new line</td>
         </tr>
         <tr>
-                <td>-c</td>
+                <td><code>-c</code></td>
                 <td>
                         <p>Copy the entire input into the output. This includes not only words, but all the stuff between words.</p>
                         <p>This option is very helpful for full representation of the original text.</p>
@@ -26,55 +26,55 @@ Mystem supports Windows, Mac, and Linux. Just download the newest version [here]
                 </td>
         </tr>
         <tr>
-                <td>-w</td>
-                </td>Only print dictionary words</td>
+                <td><code>-w</code></td>
+                <td>Only print dictionary words</td>
         </tr>
         <tr>
-                <td>-l</td>
-                </td>Don't print the input words, just the lemmas and grammemes</td>
+                <td><code>-l</code></td>
+                <td>Don't print the input words, just the lemmas and grammemes</td>
         </tr>
         <tr>
-                <td>-i</td>
-                </td>Print the gramatical information, with the decoding below</td>
+                <td><code>-i</code></td>
+                <td>Print the gramatical information, with the decoding below</td>
         </tr>
         <tr>
-                <td>-g</td>
-                </td>Include word form information for one lemma</td>
+                <td><code>-g</code></td>
+                <td>Include word form information for one lemma</td>
         </tr>
         <tr>
-                <td>-c</td>
-                </td>Print an end-of-sentence marker</td>
+                <td><code>-c</code></td>
+                <td>Print an end-of-sentence marker</td>
         </tr>
         <tr>
-                <td>-e</td>
+                <td><code>-e</code></td>
                 <td>Declare the input/output encoding. Can be cp866, cp1251, koi8-r, utf-8. utf-8 is the default.</td>
         </tr>
         <tr>
-                <td>-d</td>
+                <td><code>-d</code></td>
                 <td>Use context to pick among homonyms</td>
         </tr>
         <tr>
-                <td> --eng-gr </td>
+                <td><code>--eng-gr</code></td>
                 <td>Print the english designation of the grammemes</td>
         </tr>
         <tr>
-                <td> --filter-gram </td>
+                <td><code>--filter-gram</code></td>
                 <td>Run the analysis only with known grammemes</td>
         </tr>
         <tr>
-                <td>--fixlist</td>
+                <td><code>--fixlist</code></td>
                 <td>Use an ad-hoc dictionary (format not specified)</td>
         </tr>
         <tr>
-                <td>--format [text|xml|json]</td>
+                <td><code>--format [text|xml|json]</code></td>
                 <td>Output format, text is the default.</td>
         </tr>
         <tr>
-                <td>--generate-all</td>
+                <td><code>--generate-all</code></td>
                 <td>Generate all possibilities for non-dictionary words</td>
         </tr>
         <tr>
-                <td>--weight</td>
+                <td><code>--weight</code></td>
                 <td>Print the certainty of the generated lemmas</td>
         </tr>
 </table>
