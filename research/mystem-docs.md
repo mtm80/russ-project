@@ -10,7 +10,7 @@ Mystem supports Windows, Mac, and Linux. Just download the newest version [here]
 
 ```$ mystem [options] [input-file] [output-file]```
 
-<td>
+<table>
         <tr>
                 <td>-n</td>
                 <td>Print every word on a new line</td>
@@ -77,4 +77,4 @@ Mystem supports Windows, Mac, and Linux. Just download the newest version [here]
                 <td>```--weight```</td>
                 <td>Print the certainty of the generated lemmas</td>
         </tr>
-</td>
+</table>
