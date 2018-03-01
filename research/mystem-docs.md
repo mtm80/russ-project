@@ -4,7 +4,7 @@ Mystem runs a morphological analysis on Russian text. Mystem is special because 
 
 ## Installation
 
-Mystem supports Windows, Mac, and Linux. Just download the newest version [here](https://tech.yandex.ru/mystem/), extract it from the archive, .tar.gz on Linux and Mac, .zip on Windows. On Linux and Mac, use ```chmod +x [filename]``` on the binary file to make it executable. On Windows, just run the .exe.
+Mystem supports Windows, Mac, and Linux. Just download the newest version [here](https://tech.yandex.ru/mystem/), extract it from the archive, .tar.gz on Linux and Mac, .zip on Windows. On Linux and Mac, use "chmod +x [filename]``` on the binary file to make it executable. On Windows, just run the .exe.
 
 ## Usage
 
@@ -20,61 +20,61 @@ Mystem supports Windows, Mac, and Linux. Just download the newest version [here]
                 <td>
                         <p>Copy the entire input into the output. This includes not only words, but all the stuff between words.</p>
                         <p>This option is very helpful for full representation of the original text.</p>
-                        <p>If you're using option ```-n```, whitespace will be escaped to ```\n``` or ```\r```.</p>
+                        <p>If you're using option <code>-n</code>, whitespace will be escaped to <code>\n</code> or <code>\r</code>.</p>
                         <p>Spaces are converted to underscores, for maximum visibility</p>
-                        <p>```\``` is escaped to ```\\```, and ```_``` to ```\_```</p>
+                        <p><code>\</code> is escaped to <code>\\</code>, and <code>_</code> to <code>\_</code></p>
                 </td>
         </tr>
         <tr>
-                <td>```-w```</td>
+                <td>-w</td>
                 </td>Only print dictionary words</td>
         </tr>
         <tr>
-                <td>```-l```</td>
+                <td>-l</td>
                 </td>Don't print the input words, just the lemmas and grammemes</td>
         </tr>
         <tr>
-                <td>```-i```</td>
+                <td>-i</td>
                 </td>Print the gramatical information, with the decoding below</td>
         </tr>
         <tr>
-                <td>```-g```</td>
+                <td>-g</td>
                 </td>Include word form information for one lemma</td>
         </tr>
         <tr>
-                <td>```-c```</td>
+                <td>-c</td>
                 </td>Print an end-of-sentence marker</td>
         </tr>
         <tr>
-                <td>```-e```</td>
+                <td>-e</td>
                 <td>Declare the input/output encoding. Can be cp866, cp1251, koi8-r, utf-8. utf-8 is the default.</td>
         </tr>
         <tr>
-                <td>```-d```</td>
+                <td>-d</td>
                 <td>Use context to pick among homonyms</td>
         </tr>
         <tr>
-                <td>``` --eng-gr ```</td>
+                <td> --eng-gr </td>
                 <td>Print the english designation of the grammemes</td>
         </tr>
         <tr>
-                <td>``` --filter-gram ```</td>
+                <td> --filter-gram </td>
                 <td>Run the analysis only with known grammemes</td>
         </tr>
         <tr>
-                <td>```--fixlist```</td>
+                <td>--fixlist</td>
                 <td>Use an ad-hoc dictionary (format not specified)</td>
         </tr>
         <tr>
-                <td>```--format [text|xml|json]```</td>
+                <td>--format [text|xml|json]</td>
                 <td>Output format, text is the default.</td>
         </tr>
         <tr>
-                <td>```--generate-all```</td>
+                <td>--generate-all</td>
                 <td>Generate all possibilities for non-dictionary words</td>
         </tr>
         <tr>
-                <td>```--weight```</td>
+                <td>--weight</td>
                 <td>Print the certainty of the generated lemmas</td>
         </tr>
 </td>
