@@ -1,0 +1,2 @@
+all: temp/%/%-flattened.xml
+	

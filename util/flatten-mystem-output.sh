@@ -7,8 +7,9 @@ mystemOut = ET.parse("../temp/putin/mystem-output.xml")
 xslt = ET.parse("./flatten-mystem-output.xslt")
 transform = ET.XSLT(xslt)
 flattened = transform(mystemOut)
-print(unicode(flattened))
-flattened.write("../temp/putin/flat-mystem-output.xml", )
+flattened.write("../temp/putin/flat-mystem-output.xml", encoding='UTF-8')
+
+
 
 """
 contains = mystemOut.xpath("//w/")

@@ -6,13 +6,13 @@ mystemOut = ET.parse("../temp/putin/mystem-output.xml")
 xslt = ET.parse("./flatten-mystem-output.xslt")
 transform = ET.XSLT(xslt)
 analysis = transform(mystemOut)
-analysis.text
+analysis.write("../temp/putin/flat-mystem-output.xml")
 
-"""
-contains = mystemOut.xpath("//w/")
-words = mystemOut.xpath('//w/concat(./ana[1]/@lex, "-", ./text())')
-words = [w.replace('\n', '').replace(' ', '') for w in words]
-words = list(filter(lambda x: len(x) > 0, words))
-
-lemmas = mystemOut.xpath('//w/ana[1]/@lex')
-"""
+tei = ET.parse("../xml/putin/interviu-amerikanskomu-telekanalu-nbc.xml")
+utterances = tei.xpath("//u/")
+analysis.xpath("//w")
+for u in utterances:
+        #find number of words in the utterance, fast forward 
+        #to the last word in every utterance, remove all text,
+        #then inject all the <w> tags up to that  
+        u.xpath("./text()")
