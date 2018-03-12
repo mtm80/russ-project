@@ -6,5 +6,6 @@ dom = ET.parse(argv[1])
 xslt = ET.parse("./gen-mystem-input.xslt")
 transform = ET.XSLT(xslt)
 newdom = transform(dom)
-print(ET.tostring(newdom, pretty_print=True))
-newdom.write(argv[2], encoding='UTF-8')
+
+with open(argv[2], "w") as outfile:
+        outfile.write(str(newdom))
