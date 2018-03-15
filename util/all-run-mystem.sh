@@ -3,6 +3,6 @@
 for dir in ../temp/*
         do for subdir in $dir/*;
         do
-                ./flatten-mystem-output.sh $subdir/mystem-output.xml $subdir/flat-output.xml
+                ~/mystem --format xml --weight $subdir/mystem-input.txt $subdir/mystem-output.xml
         done;
 done;
