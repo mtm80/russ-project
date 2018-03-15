@@ -12,7 +12,7 @@
     <xsl:template match="w">
         <xsl:element name="w">
             <xsl:attribute name="lex">
-                <xsl:apply-templates select="ana/@lex[1]"/>
+                <xsl:apply-templates select="ana[1]/@lex"/>
             </xsl:attribute>
             <xsl:apply-templates select="text()"/>
         </xsl:element>
