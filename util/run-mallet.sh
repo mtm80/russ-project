@@ -1,0 +1,1 @@
+~/mallet import-dir --input ../temp/*/*/mallet-input.txt --output ../temp/web.mallet --stoplist-file ../research/stop-words.txt --token-regex '[\p{L}\p{M}]+'
