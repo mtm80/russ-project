@@ -9,7 +9,9 @@
         <xsl:apply-templates select="//w"/>
     </xsl:template>
     <xsl:template match="w">
-        <xsl:value-of select="@lex"/>
-        <xsl:text> </xsl:text>
+        <xsl:if test="not(text() = 'Ъ')">
+            <xsl:value-of select="@lex"/>
+            <xsl:text> </xsl:text>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
