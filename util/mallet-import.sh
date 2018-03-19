@@ -8,4 +8,4 @@ for c in putin zhirinovskii grudinin
                 cp ${interview}/mallet-input.txt ../temp/mallet-input/${c}-${interviewName}.txt
         done
 done
-~/mallet-2.0.8/bin/mallet import-dir --keep-sequence --input ../temp/mallet-input --output ../temp/web.mallet --stoplist-file ../research/stop-words.txt --token-regex '[\p{L}\p{M}]+'
+~/mallet-2.0.8/bin/mallet import-dir --keep-sequence --input ../temp/mallet-input --output ../analysis/web.mallet --stoplist-file ../research/stop-words.txt --token-regex '[\p{L}\p{M}]+'
