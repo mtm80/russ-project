@@ -8,7 +8,7 @@
     version="1.0">
     <xsl:output method="text" encoding="utf-8" omit-xml-declaration="yes"/>
     <xsl:template match="/">
-        <xsl:apply-templates select="//tei:u[@resp = '#putin']"/>
+        <xsl:apply-templates select="//tei:u[@resp = '#zhirinovskii']"/>
     </xsl:template>
     <xsl:template match="tei:u">
         <xsl:apply-templates/>
