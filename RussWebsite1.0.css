@@ -7,6 +7,7 @@ body {
     font-weight:bold;
     margin:100px
 }
+
 h3.vp {
     text-align:center;
     height:30px;
@@ -14,12 +15,14 @@ h3.vp {
     background-color: white;
     color:black;
 }
+
 p.blurb1 { 
-text-align:center;
-height:100px;
+    text-align:center;
+    height:100px;
     width:500px;
     background-color: white;
     color:black;}
+
 h3.vz {
 text-align:center;
     height:30px;
@@ -32,7 +35,8 @@ text-align:center;
 height:100px;
     width:500px;
     background-color: blue;
-    color:white;}
+    color:white;
+}
 h3.pg {
 text-align:center;
     height:30px;
