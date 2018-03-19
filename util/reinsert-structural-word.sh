@@ -12,9 +12,9 @@ tei_filename = argv[2]
 tei = ET.parse(tei_filename)
 
 #grab all of the utterances for the given candidate
-сandidate_tag = argv[3]
+candidate_tag = argv[3]
 tei_namespaces = {"tei": "http://www.tei-c.org/ns/1.0"}
-utterances = tei.xpath("//tei:u[@resp = '%s']" % сandidate_tag, namespaces=tei_namespaces)
+utterances = tei.xpath("//tei:u[@resp = '%s']" % candidate_tag, namespaces=tei_namespaces)
 
 #remove all of each utterance's children
 for u in utterances:
@@ -25,7 +25,7 @@ for u in utterances:
 i = 0
 j = 0
 for word in words:
-        if (word.text == "Ъ"):
+        if (word.text == "?"):
                 i += 1
                 j = 0
         else:
@@ -33,4 +33,4 @@ for word in words:
                 j += 1
 
 #write output to /xml folder
-tei.write(argv[2], encoding="utf-8")
+tei.write(argv[2] + ".test", encoding="utf-8")
