@@ -33,4 +33,4 @@ for word in words:
                 j += 1
 
 #write output to /xml folder
-tei.write(argv[2] + ".test", encoding="utf-8")
+tei.write(argv[2], encoding="utf-8")
