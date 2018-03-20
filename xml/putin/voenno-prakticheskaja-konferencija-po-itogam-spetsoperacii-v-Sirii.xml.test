@@ -1,5 +1,49 @@
-<words>
-        <w lex="уважаемый">Уважаемые</w>
+<?xml-model href="../../odd/out/speeches.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ru="http://ru-rhetoric.obdurodon.org/rr">
+        <teiHeader>
+                <fileDesc>
+                        <titleStmt>
+                                <title>Военно-практическая конференция по итогам спецоперации в
+                                        Сирии</title>
+                                <respStmt>
+                                        <resp>speaker</resp>
+                                        <persName ref="#putin">Vladimir V. Putin</persName>
+                                </respStmt>
+                        </titleStmt>
+                        <extent>about 32Kb</extent>
+                        <publicationStmt>
+                                <publisher>Kremlin</publisher>
+                                <date when="2018-01-30T18:00:00+03:00">30 января 2018 года,
+                                        18:00</date>
+                        </publicationStmt>
+                        <sourceDesc>
+                                <biblStruct>
+                                        <monogr>
+                                                <respStmt>
+                                                  <resp>speaker</resp>
+                                                  <persName>Vladimir V. Putin</persName>
+                                                </respStmt>
+                                                <title>Военно-практическая конференция по итогам
+                                                  спецоперации в Сирии</title>
+                                                <imprint>
+                                                  <pubPlace>Moscow</pubPlace>
+                                                  <publisher>Kremlin</publisher>
+                                                  <date when="2018-01-30T18:00:00+03:00">30 января
+                                                  2018 года, 18:00</date>
+                                                </imprint>
+                                        </monogr>
+                                </biblStruct>
+                        </sourceDesc>
+                </fileDesc>
+                <profileDesc>
+                        <langUsage>
+                                <language ident="ru">Russian</language>
+                                <language ident="en">English</language>
+                        </langUsage>
+                </profileDesc>
+        </teiHeader>
+        <text>
+                <body>
+                        <u resp="#putin"><w lex="уважаемый">Уважаемые</w>
         <w lex="товарищ">товарищи</w>
         <w lex="коллега">коллеги</w>
         <w lex="приветствовать">Приветствую</w>
@@ -1026,4 +1070,7 @@
         <w lex="за">за</w>
         <w lex="внимание">внимание</w>
         <w lex="">Ъ</w>
-</words>
+</u>
+                </body>
+        </text>
+</TEI>
