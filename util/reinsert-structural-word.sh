@@ -26,7 +26,6 @@ i = 0
 j = 0
 for word in words:
         if (word.text == "Ъ"):
-                print("Ъ")
                 i += 1
                 j = 0
         else:

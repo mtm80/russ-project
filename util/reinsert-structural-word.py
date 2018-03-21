@@ -15,31 +15,21 @@ candidate_tag = argv[3]
 tei_namespaces = {"tei": "http://www.tei-c.org/ns/1.0"}
 utterances = tei.xpath("//tei:u[@resp = '%s']" % candidate_tag, namespaces=tei_namespaces)
 
-u_text = []
-
 #remove all of each utterance's children
 for u in utterances:
-        u_text.append(u.text)
+        children = u.getchildren()
         u.text = ""
-        
+
 #go thru list of words, inserting into appropriate utterance
-utterance_i = 0
-text_i = 0
+i = 0
+j = 0
 for word in words:
         if (word.text == "Ъ"):
-                utterances[utterance_i].text = ""
-                parsed = ET.XML("<temp>%s</temp>" % u_text[utterance_i])
-                #print(str(parsed))
-                utterances[utterance_i].insert(1, parsed)
-                utterance_i += 1
-                text_i = 0
+                i += 1
+                j = 0
         else:
-                print(word.text)
-                word_element = ET.tostring(word, encoding=str)
-                found_location = u_text[utterance_i].find(word.text, text_i)
-                u_text[utterance_i] = u_text[utterance_i][:text_i] + u_text[utterance_i][text_i:].replace(word.text, word_element, 1)
-                text_i = found_location + len(word_element)
-        
+                utterances[i].insert(j, word)
+                j += 1
 
 #write output to /xml folder
-tei.write(argv[2] + ".test", encoding="utf-8")
+tei.write(argv[2], encoding="utf-8")

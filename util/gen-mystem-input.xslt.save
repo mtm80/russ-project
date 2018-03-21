@@ -7,14 +7,12 @@
     exclude-result-prefixes="xs"
     version="1.0">
     <xsl:output method="text" encoding="utf-8" omit-xml-declaration="yes"/>
-    <xsl:param name="candidate" as="xs:string"/>
+    <xsl:
     <xsl:template match="/">
-        <xsl:apply-templates select="//tei:u"/>
+        <xsl:apply-templates select="//tei:u[@resp = '#zhirinovskii']"/>
     </xsl:template>
     <xsl:template match="tei:u">
-        <xsl:if test="@resp = $candidate">
-            <xsl:apply-templates/>
-            <xsl:text>Ъ </xsl:text>
-        </xsl:if>
+        <xsl:apply-templates/>
+        <xsl:text> Ъ </xsl:text>
     </xsl:template>
 </xsl:stylesheet>
