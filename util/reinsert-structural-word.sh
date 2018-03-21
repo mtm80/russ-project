@@ -25,7 +25,8 @@ for u in utterances:
 i = 0
 j = 0
 for word in words:
-        if (word.text == "?"):
+        if (word.text == "Ъ"):
+                print("Ъ")
                 i += 1
                 j = 0
         else:

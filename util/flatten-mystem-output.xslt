@@ -6,8 +6,11 @@
     <xsl:strip-space elements="w"  />
     <xsl:template match="/">
         <words>
-            <xsl:apply-templates select="//w"/>
+            <xsl:apply-templates select="//se"/>
         </words>
+    </xsl:template>
+    <xsl:template match="se">
+        <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="w">
         <xsl:element name="w">
