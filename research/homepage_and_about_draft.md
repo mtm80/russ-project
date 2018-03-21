@@ -53,7 +53,7 @@ https://kprf.ru/
 # Project Participants
 
 ## Richard Fulop
-Richie is a 4th-year undergraduate at the University of Pittsburgh studying Computer Science and Russian. On this project, he took the lead on the programming aspect of the website, and wrote a lot of the code that works behind the scenes to help analyse and understand the corpus. After graduation in Fall 2018, Richie plans to pursue a career using both his skills with language and technology.
+Richie is a 4th-year undergraduate at the University of Pittsburgh studying Computer Science and Russian. On this project, he took the lead on the programming aspect of the project, and wrote a lot of the code that works behind the scenes to help analyse and understand the corpus. After graduation in Fall 2018, Richie plans to pursue a career using both his skills with language and technology.
 
 ## Ian Loughney
 
