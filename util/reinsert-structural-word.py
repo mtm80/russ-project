@@ -24,20 +24,21 @@ for u in utterances:
         
 #go thru list of words, inserting into appropriate utterance
 utterance_i = 0
-word_i = 0
 text_i = 0
 for word in words:
-        if (word.text == "?"):
-                utterances[utterance_i].clear()
-                print(u_text[utterance_i])
+        if (word.text == "Ъ"):
+                utterances[utterance_i].text = ""
+                parsed = ET.XML("<temp>%s</temp>" % u_text[utterance_i])
+                #print(str(parsed))
+                utterances[utterance_i].insert(1, parsed)
                 utterance_i += 1
+                text_i = 0
         else:
-                utterances[utterance_i].insert(word_i, word)
-                word_i += 1
-        word_element = ET.tostring(word, encoding=str)
-        found_location = u_text[utterance_i].find(word.text, text_i)
-        u_text[utterance_i] = u_text[utterance_i][:text_i] + u_text[utterance_i][text_i:].replace(word.text, word_element, 1)
-        text_i = found_location + 1
+                print(word.text)
+                word_element = ET.tostring(word, encoding=str)
+                found_location = u_text[utterance_i].find(word.text, text_i)
+                u_text[utterance_i] = u_text[utterance_i][:text_i] + u_text[utterance_i][text_i:].replace(word.text, word_element, 1)
+                text_i = found_location + len(word_element)
         
 
 #write output to /xml folder
