@@ -24,6 +24,8 @@ to the limitations of the course and available manpower, only a few candidates
 can be analyzed.  Among those that were
 chosen are Vladimir Putin, Pavel Grudinin, and Vladimir Zhirinovsky.  
 
+The particular texts were selected on the basis of availability rather than the nature of their content.  The quantity of transcribed texts from interviews and speeches is actually rather limited and as such, the range of available subject matter is also narrow.  Regardless, we intend to draw whatever conclusions that we can from them in the pursuit of our analysis.  We plan to investigate recurring topics in their discourse and how their terminology reflects party ideology, popular attitudes, and how candidates relate to their audiences.   We are using topic modelling to track the subjects that the candidates most frequently cite throughout their discourse.
+
 We chose the three candidates primarily because these three were among the earliest to register as candidates and
 also that, by our estimation, they were the leading candidates at the time.  For those who may not be familiar with
 these individuals, see the brief bios below.  
@@ -32,10 +34,21 @@ Candidate Bios
 
 Vladimir Putin has had a long career spaning 16 years as a KGB agent and has since retired and entered politics where he has remained ever since.  He served 2 consecutive terms as President of Russian from 2000 to 2008,one term as prime minister from 2008 to 2012, a third term from 2012 to 2018, and has been elected in 2018 for a fourth term.  He has been a member of the Unity and United Russian parties during his political career and pursued a policy of general economic liberalism, formation of economic ties with other eurasian nations such as China, and an adversarial relationship with western governments.  According to Russian-based polls, he enjoys a large approval rate among the population with numbers over 70% often cited.  
 
-Vladimir Zhirinovsky is the leader of the LDPR party(Liberal Democratic Party of Russia) and has run for the presidency five times. He has sought to form an opposition party to the status quo though has had very limited success.  Zhirinovsky is well know for his nationalistic views, outspokenness, and anti-western opinions.  His party advocates a strong economic interventionist policy while still allowing private ownership of property.  The party claims to oppose the communism of the Soviet Union while still advocating the restoration of historical Russian borders which requires the reabsorption of former soviet states such as Belarussia and the Ukraine.  
+United Russia website
+http://er.ru/
 
-Pavel Grudinin is a politician and entrepreneur who was the Communist Party's presidential candidate in 2018.  He worked at the Lenin State Farm as a mechanic and later formed a private company called ZAO Lenin State Farm.  He has since served three terms as a deputy of the Moscow Oblast Duma.  The policy of his party is the restoration of socialism with marxism and leninism as the guiding ideologies.  
+Vladimir Zhirinovskii is the leader of the LDPR party(Liberal Democratic Party of Russia) and has run for the presidency five times. He has sought to form an opposition party to the status quo though has had very limited success.  Zhirinovsky is well know for his nationalistic views, outspokenness, and anti-western opinions.  His party advocates a strong economic interventionist policy while still allowing private ownership of property.  The party claims to oppose the communism of the Soviet Union while still advocating the restoration of historical Russian borders which requires the reabsorption of former soviet states such as Belarussia and the Ukraine.  
+
+LDPR website
+https://ldpr.ru/
+Zhirinovskii's profile
+https://ldpr.ru/leader/biography/
+
+Pavel Grudinin is a politician and entrepreneur who was the Communist Party's presidential candidate in 2018.  He worked at the Lenin State Farm as a mechanic and later formed a private company called ZAO Lenin State Farm.  He has since served three terms as a deputy of the Moscow Oblast Duma.  The policy of his party is the restoration of socialism with marxism and leninism as the guiding ideologies.  
+
+Communist Party website
+https://kprf.ru/
 
 Project Participants
 
-All three of the participants of this project are completinga requirement for their respective majors. One student is completing a linguistics major requirement and isfocusing on the speech mechanics of the candidates.  The other two are completing a Russian majorcapstone requirement and have a more general approach.  Regardless, an exploration of the linguisticaspects of the texts will be done for pattern identification and analysis.  For each candidate, three to five speechesand/or interviews were selected for analysis. 
+All three of the participants of this project are completinga requirement for their respective majors. Ian Loughney is completing a linguistics major requirement and is focusing on the speech mechanics of the candidates to determine patterns regarding content and levels of formality/speaker attitudes.  The other two, Richard and Matt, are completing a Russian majorcapstone requirement and have a more general approach.  Beyond the mechanical analysis, which is still important to the completion of the project, the content of the discourse will explore the broader context of the topics that are discussed.  The investigation includes a cultural aspect to reflect the manifestation of politics in Russian society. Regardless, an exploration of the linguisticaspects of the texts will be done for pattern identification and analysis.  For each candidate, three to five speechesand/or interviews were selected for analysis. 
