@@ -61,10 +61,8 @@ Richie is a 4th-year undergraduate at the University of Pittsburgh studying Comp
 ## Ian Loughney
 
 ## Matt Murphy
-Matt is also a 4th-year undergraduate who is pursuing a degree in Russian language and minoring in Korean language.  He suggested the topic of Russian political discourse and took the lead on writing the majority of the web content for the pages.  He plans to find a career in foreign intelligence using foreign languages.  
+Matt is also a 4th-year undergraduate who is pursuing a degree in Russian language and minoring in Korean language.  He suggested the topic of Russian political discourse and took the lead on writing the majority of the web content for the pages in English and Russian.  He plans to find a career in foreign intelligence using foreign languages.  
 
 All three of the participants of this project are completinga requirement for their respective majors. Ian Loughney is completing a linguistics major requirement and is focusing on the speech mechanics of the candidates to determine patterns regarding content and levels of formality/speaker attitudes.  The other two, Richard and Matt, are completing a Russian majorcapstone requirement and have a more general approach.  
 
-# Potentially exclude
 
-Beyond the mechanical analysis, which is still important to the completion of the project, the content of the discourse will explore the broader context of the topics that are discussed.  The investigation includes a cultural aspect to reflect the manifestation of politics in Russian society. Regardless, an exploration of the linguisticaspects of the texts will be done for pattern identification and analysis.  For each candidate, three to five speechesand/or interviews were selected for analysis. 
