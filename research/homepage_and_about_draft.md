@@ -22,7 +22,7 @@ itself is slated for the 18th of March which is well within the
 timeline of our project.  Of course, due
 to the limitations of the course and available manpower, only a few candidates
 can be analyzed.  Among those that were
-chosen are Vladimir Putin, Pavel Grudinin, and Vladimir Zhirinovsky.  
+chosen are Vladimir Putin, Pavel Grudinin, and Vladimir Zhirinovskii.  
 
 The particular texts were selected on the basis of availability rather than the nature of their content.  The quantity of transcribed texts from interviews and speeches is actually rather limited, and since the focus of our work was on honing our skills as digital humanists, we decided not to manually transcribe. Regardless, we intend to draw whatever conclusions that we can from our corpus in the pursuit of our analysis.  We plan to investigate recurring topics in their discourse and how their terminology reflects party ideology, popular attitudes, and how candidates relate to their audiences.   We are using topic modelling to track the subjects that the candidates most frequently cite throughout their discourse.
 
@@ -31,7 +31,7 @@ also that, by our estimation, they were the leading candidates of the time. They
 
 # Election Results
 
-The results were announced on the 19th of March that Putin had won an overwhelming majority of the vote totaling 76%.  He will continue as the president for 6 years until 2024.
+The results were announced on the 19th of March that Putin had won an overwhelming majority of the vote totaling 76%.  Grudinin received 11% of the vote.  Zhirinovskii received 5% of the vote.  Putin will continue as the president for 6 years until 2024.
 
 # Candidate Bios
 
@@ -40,7 +40,7 @@ Vladimir Putin has had a long career spaning 16 years as a KGB agent and has sin
 United Russia website
 http://er.ru/
 
-Vladimir Zhirinovskii is the leader of the LDPR party(Liberal Democratic Party of Russia) and has run for the presidency five times. He has sought to form an opposition party to the status quo though has had very limited success.  Zhirinovsky is well know for his nationalistic views, outspokenness, and anti-western opinions.  His party advocates a strong economic interventionist policy while still allowing private ownership of property.  The party claims to oppose the communism of the Soviet Union while still advocating the restoration of historical Russian borders which requires the reabsorption of former soviet states such as Belarussia and the Ukraine.  
+Vladimir Zhirinovskii is the leader of the LDPR party(Liberal Democratic Party of Russia) and has run for the presidency five times. He has sought to form an opposition party to the status quo though has had very limited success.  Zhirinovskii is well know for his nationalistic views, outspokenness, and anti-western opinions.  His party advocates a strong economic interventionist policy while still allowing private ownership of property.  The party claims to oppose the communism of the Soviet Union while still advocating the restoration of historical Russian borders which requires the reabsorption of former soviet states such as Belarussia and the Ukraine.  
 
 LDPR website
 https://ldpr.ru/
@@ -63,6 +63,6 @@ Richie is a 4th-year undergraduate at the University of Pittsburgh studying Comp
 ## Matt Murphy
 Matt is also a 4th-year undergraduate who is pursuing a degree in Russian language and minoring in Korean language.  He suggested the topic of Russian political discourse and took the lead on writing the majority of the web content for the pages in English and Russian.  He plans to find a career in foreign intelligence using foreign languages.  
 
-All three of the participants of this project are completinga requirement for their respective majors. Ian Loughney is completing a linguistics major requirement and is focusing on the speech mechanics of the candidates to determine patterns regarding content and levels of formality/speaker attitudes.  The other two, Richard and Matt, are completing a Russian majorcapstone requirement and have a more general approach.  
+
 
 
