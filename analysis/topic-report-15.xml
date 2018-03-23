@@ -1,0 +1,333 @@
+<?xml version='1.0' ?>
+<topicModel>
+  <topic id='0' alpha='0.3333333333333333' totalTokens='394'>
+	<word rank='1' count='25.0'>штат</word>
+	<word rank='2' count='22.0'>соединять</word>
+	<word rank='3' count='13.0'>видеть</word>
+	<word rank='4' count='11.0'>знать</word>
+	<word rank='5' count='9.0'>встречаться</word>
+	<word rank='6' count='9.0'>американский</word>
+	<word rank='7' count='9.0'>заниматься</word>
+	<word rank='8' count='8.0'>понимать</word>
+	<word rank='9' count='8.0'>просто</word>
+	<word rank='10' count='7.0'>думать</word>
+	<word rank='11' count='7.0'>господин</word>
+	<word rank='12' count='6.0'>министр</word>
+	<word rank='13' count='6.0'>вмешиваться</word>
+	<word rank='14' count='6.0'>кандидат</word>
+	<word rank='15' count='6.0'>всякий</word>
+	<word rank='16' count='6.0'>официальный</word>
+	<word rank='17' count='5.0'>счет</word>
+	<word rank='18' count='5.0'>почему</word>
+	<word rank='19' count='4.0'>докладывать</word>
+	<word rank='20' count='4.0'>хакер</word>
+  </topic>
+  <topic id='1' alpha='0.3333333333333333' totalTokens='426'>
+	<word rank='1' count='16.0'>вопрос</word>
+	<word rank='2' count='16.0'>российский</word>
+	<word rank='3' count='13.0'>работать</word>
+	<word rank='4' count='12.0'>мир</word>
+	<word rank='5' count='12.0'>ситуация</word>
+	<word rank='6' count='12.0'>время</word>
+	<word rank='7' count='11.0'>считать</word>
+	<word rank='8' count='11.0'>сторона</word>
+	<word rank='9' count='11.0'>проводить</word>
+	<word rank='10' count='10.0'>происходить</word>
+	<word rank='11' count='10.0'>дело</word>
+	<word rank='12' count='8.0'>совершенно</word>
+	<word rank='13' count='7.0'>борьба</word>
+	<word rank='14' count='7.0'>партнер</word>
+	<word rank='15' count='7.0'>французский</word>
+	<word rank='16' count='6.0'>готовый</word>
+	<word rank='17' count='6.0'>сирийский</word>
+	<word rank='18' count='6.0'>сегодняшний</word>
+	<word rank='19' count='5.0'>информация</word>
+	<word rank='20' count='5.0'>являться</word>
+  </topic>
+  <topic id='2' alpha='0.3333333333333333' totalTokens='564'>
+	<word rank='1' count='76.0'>весь</word>
+	<word rank='2' count='45.0'>сделать</word>
+	<word rank='3' count='36.0'>свой</word>
+	<word rank='4' count='25.0'>работа</word>
+	<word rank='5' count='23.0'>новый</word>
+	<word rank='6' count='15.0'>ваш</word>
+	<word rank='7' count='15.0'>политический</word>
+	<word rank='8' count='13.0'>развитие</word>
+	<word rank='9' count='11.0'>задача</word>
+	<word rank='10' count='11.0'>идти</word>
+	<word rank='11' count='11.0'>безусловно</word>
+	<word rank='12' count='10.0'>сфера</word>
+	<word rank='13' count='10.0'>целое</word>
+	<word rank='14' count='9.0'>социальный</word>
+	<word rank='15' count='9.0'>хороший</word>
+	<word rank='16' count='8.0'>встреча</word>
+	<word rank='17' count='7.0'>обеспечивать</word>
+	<word rank='18' count='6.0'>качество</word>
+	<word rank='19' count='6.0'>сильный</word>
+	<word rank='20' count='6.0'>должно</word>
+  </topic>
+  <topic id='3' alpha='0.3333333333333333' totalTokens='370'>
+	<word rank='1' count='66.0'>наш</word>
+	<word rank='2' count='14.0'>коллега</word>
+	<word rank='3' count='12.0'>вместе</word>
+	<word rank='4' count='10.0'>современный</word>
+	<word rank='5' count='8.0'>вести</word>
+	<word rank='6' count='8.0'>цель</word>
+	<word rank='7' count='8.0'>действие</word>
+	<word rank='8' count='7.0'>точно</word>
+	<word rank='9' count='7.0'>поэтому</word>
+	<word rank='10' count='6.0'>связь</word>
+	<word rank='11' count='6.0'>причем</word>
+	<word rank='12' count='6.0'>друг</word>
+	<word rank='13' count='5.0'>работать</word>
+	<word rank='14' count='4.0'>высокий</word>
+	<word rank='15' count='4.0'>двигаться</word>
+	<word rank='16' count='4.0'>устойчивый</word>
+	<word rank='17' count='4.0'>формирование</word>
+	<word rank='18' count='4.0'>сталкиваться</word>
+	<word rank='19' count='4.0'>невозможно</word>
+	<word rank='20' count='4.0'>убежденный</word>
+  </topic>
+  <topic id='4' alpha='0.3333333333333333' totalTokens='193'>
+	<word rank='1' count='13.0'>бизнес</word>
+	<word rank='2' count='7.0'>деловой</word>
+	<word rank='3' count='7.0'>число</word>
+	<word rank='4' count='5.0'>сергеевич</word>
+	<word rank='5' count='5.0'>владимир</word>
+	<word rank='6' count='5.0'>таки</word>
+	<word rank='7' count='4.0'>объединение</word>
+	<word rank='8' count='3.0'>постараться</word>
+	<word rank='9' count='3.0'>содержательный</word>
+	<word rank='10' count='3.0'>настраивать</word>
+	<word rank='11' count='3.0'>отечественный</word>
+	<word rank='12' count='3.0'>рабочий</word>
+	<word rank='13' count='3.0'>инвестиция</word>
+	<word rank='14' count='3.0'>профессиональный</word>
+	<word rank='15' count='3.0'>период</word>
+	<word rank='16' count='3.0'>прошлое</word>
+	<word rank='17' count='3.0'>вызов</word>
+	<word rank='18' count='3.0'>надеяться</word>
+	<word rank='19' count='2.0'>стабильный</word>
+	<word rank='20' count='2.0'>инвестироваться</word>
+  </topic>
+  <topic id='5' alpha='0.3333333333333333' totalTokens='243'>
+	<word rank='1' count='14.0'>вооружение</word>
+	<word rank='2' count='10.0'>армия</word>
+	<word rank='3' count='7.0'>наш</word>
+	<word rank='4' count='6.0'>образец</word>
+	<word rank='5' count='6.0'>комплекс</word>
+	<word rank='6' count='6.0'>флот</word>
+	<word rank='7' count='6.0'>операция</word>
+	<word rank='8' count='5.0'>перспективный</word>
+	<word rank='9' count='4.0'>военно</word>
+	<word rank='10' count='4.0'>авиация</word>
+	<word rank='11' count='4.0'>показывать</word>
+	<word rank='12' count='4.0'>промышленный</word>
+	<word rank='13' count='4.0'>поблагодарить</word>
+	<word rank='14' count='4.0'>военный</word>
+	<word rank='15' count='3.0'>опк</word>
+	<word rank='16' count='3.0'>оперативно</word>
+	<word rank='17' count='3.0'>данные</word>
+	<word rank='18' count='3.0'>недостаток</word>
+	<word rank='19' count='3.0'>ракета</word>
+	<word rank='20' count='3.0'>военнослужащий</word>
+  </topic>
+  <topic id='6' alpha='0.3333333333333333' totalTokens='379'>
+	<word rank='1' count='31.0'>должный</word>
+	<word rank='2' count='22.0'>развитие</word>
+	<word rank='3' count='15.0'>будущее</word>
+	<word rank='4' count='9.0'>народ</word>
+	<word rank='5' count='8.0'>решать</word>
+	<word rank='6' count='7.0'>молодой</word>
+	<word rank='7' count='7.0'>главный</word>
+	<word rank='8' count='6.0'>поддержка</word>
+	<word rank='9' count='6.0'>интерес</word>
+	<word rank='10' count='6.0'>угроза</word>
+	<word rank='11' count='6.0'>экономический</word>
+	<word rank='12' count='6.0'>ключевой</word>
+	<word rank='13' count='5.0'>необратимость</word>
+	<word rank='14' count='5.0'>отрасль</word>
+	<word rank='15' count='5.0'>ответственный</word>
+	<word rank='16' count='5.0'>отвечать</word>
+	<word rank='17' count='5.0'>продолжать</word>
+	<word rank='18' count='4.0'>хозяйство</word>
+	<word rank='19' count='4.0'>ребенок</word>
+	<word rank='20' count='4.0'>население</word>
+  </topic>
+  <topic id='7' alpha='0.3333333333333333' totalTokens='359'>
+	<word rank='1' count='29.0'>страна</word>
+	<word rank='2' count='21.0'>россия</word>
+	<word rank='3' count='17.0'>экономика</word>
+	<word rank='4' count='14.0'>гражданин</word>
+	<word rank='5' count='13.0'>каждый</word>
+	<word rank='6' count='11.0'>задача</word>
+	<word rank='7' count='9.0'>выходить</word>
+	<word rank='8' count='8.0'>общество</word>
+	<word rank='9' count='7.0'>устойчивость</word>
+	<word rank='10' count='7.0'>просто</word>
+	<word rank='11' count='6.0'>уверенный</word>
+	<word rank='12' count='6.0'>мир</word>
+	<word rank='13' count='6.0'>очень</word>
+	<word rank='14' count='5.0'>миллион</word>
+	<word rank='15' count='4.0'>законодательство</word>
+	<word rank='16' count='4.0'>стабильность</word>
+	<word rank='17' count='4.0'>ценность</word>
+	<word rank='18' count='4.0'>реализация</word>
+	<word rank='19' count='4.0'>перемена</word>
+	<word rank='20' count='4.0'>оппозиция</word>
+  </topic>
+  <topic id='8' alpha='0.3333333333333333' totalTokens='311'>
+	<word rank='1' count='20.0'>говорить</word>
+	<word rank='2' count='14.0'>оружие</word>
+	<word rank='3' count='12.0'>сирия</word>
+	<word rank='4' count='12.0'>техника</word>
+	<word rank='5' count='10.0'>ход</word>
+	<word rank='6' count='10.0'>применять</word>
+	<word rank='7' count='7.0'>некоторый</word>
+	<word rank='8' count='7.0'>шаг</word>
+	<word rank='9' count='7.0'>должный</word>
+	<word rank='10' count='6.0'>боевой</word>
+	<word rank='11' count='6.0'>применение</word>
+	<word rank='12' count='6.0'>закон</word>
+	<word rank='13' count='6.0'>вооруженный</word>
+	<word rank='14' count='5.0'>контроль</word>
+	<word rank='15' count='4.0'>присутствовать</word>
+	<word rank='16' count='4.0'>участник</word>
+	<word rank='17' count='4.0'>технический</word>
+	<word rank='18' count='4.0'>конференция</word>
+	<word rank='19' count='4.0'>вид</word>
+	<word rank='20' count='4.0'>оборона</word>
+  </topic>
+  <topic id='9' alpha='0.3333333333333333' totalTokens='354'>
+	<word rank='1' count='28.0'>президент</word>
+	<word rank='2' count='16.0'>никакой</word>
+	<word rank='3' count='10.0'>выборы</word>
+	<word rank='4' count='10.0'>зона</word>
+	<word rank='5' count='7.0'>химический</word>
+	<word rank='6' count='7.0'>власть</word>
+	<word rank='7' count='7.0'>военный</word>
+	<word rank='8' count='6.0'>меняться</word>
+	<word rank='9' count='6.0'>европа</word>
+	<word rank='10' count='6.0'>нато</word>
+	<word rank='11' count='6.0'>проигрывать</word>
+	<word rank='12' count='6.0'>взгляд</word>
+	<word rank='13' count='5.0'>избирательный</word>
+	<word rank='14' count='5.0'>приходить</word>
+	<word rank='15' count='5.0'>уходить</word>
+	<word rank='16' count='5.0'>якобы</word>
+	<word rank='17' count='5.0'>процесс</word>
+	<word rank='18' count='5.0'>ссылаться</word>
+	<word rank='19' count='5.0'>отводить</word>
+	<word rank='20' count='5.0'>образ</word>
+  </topic>
+  <topic id='10' alpha='0.3333333333333333' totalTokens='420'>
+	<word rank='1' count='30.0'>очень</word>
+	<word rank='2' count='20.0'>страна</word>
+	<word rank='3' count='19.0'>политика</word>
+	<word rank='4' count='14.0'>весь</word>
+	<word rank='5' count='11.0'>франция</word>
+	<word rank='6' count='9.0'>безопасность</word>
+	<word rank='7' count='9.0'>правительство</word>
+	<word rank='8' count='9.0'>рассчитывать</word>
+	<word rank='9' count='7.0'>деэскалация</word>
+	<word rank='10' count='7.0'>первый</word>
+	<word rank='11' count='7.0'>прежде</word>
+	<word rank='12' count='7.0'>образ</word>
+	<word rank='13' count='7.0'>отношение</word>
+	<word rank='14' count='6.0'>асад</word>
+	<word rank='15' count='6.0'>главное</word>
+	<word rank='16' count='6.0'>восток</word>
+	<word rank='17' count='6.0'>хотеться</word>
+	<word rank='18' count='6.0'>последний</word>
+	<word rank='19' count='5.0'>договариваться</word>
+	<word rank='20' count='4.0'>пройти</word>
+  </topic>
+  <topic id='11' alpha='0.3333333333333333' totalTokens='240'>
+	<word rank='1' count='10.0'>представитель</word>
+	<word rank='2' count='10.0'>день</word>
+	<word rank='3' count='9.0'>прямой</word>
+	<word rank='4' count='9.0'>многий</word>
+	<word rank='5' count='7.0'>отношение</word>
+	<word rank='6' count='6.0'>компания</word>
+	<word rank='7' count='5.0'>близкий</word>
+	<word rank='8' count='5.0'>предложение</word>
+	<word rank='9' count='4.0'>руководитель</word>
+	<word rank='10' count='4.0'>сидеть</word>
+	<word rank='11' count='4.0'>действующий</word>
+	<word rank='12' count='4.0'>постоянно</word>
+	<word rank='13' count='4.0'>думать</word>
+	<word rank='14' count='4.0'>контакт</word>
+	<word rank='15' count='3.0'>успешно</word>
+	<word rank='16' count='3.0'>бог</word>
+	<word rank='17' count='3.0'>иностранный</word>
+	<word rank='18' count='3.0'>посол</word>
+	<word rank='19' count='3.0'>примерно</word>
+	<word rank='20' count='3.0'>объем</word>
+  </topic>
+  <topic id='12' alpha='0.3333333333333333' totalTokens='370'>
+	<word rank='1' count='16.0'>решение</word>
+	<word rank='2' count='16.0'>знать</word>
+	<word rank='3' count='13.0'>система</word>
+	<word rank='4' count='12.0'>добиваться</word>
+	<word rank='5' count='9.0'>труд</word>
+	<word rank='6' count='8.0'>результат</word>
+	<word rank='7' count='7.0'>участвовать</word>
+	<word rank='8' count='7.0'>зал</word>
+	<word rank='9' count='7.0'>мировой</word>
+	<word rank='10' count='6.0'>обязательно</word>
+	<word rank='11' count='6.0'>рынок</word>
+	<word rank='12' count='6.0'>уважаемый</word>
+	<word rank='13' count='6.0'>предприятие</word>
+	<word rank='14' count='6.0'>нужный</word>
+	<word rank='15' count='6.0'>вперед</word>
+	<word rank='16' count='5.0'>ряд</word>
+	<word rank='17' count='5.0'>оборонный</word>
+	<word rank='18' count='5.0'>развивать</word>
+	<word rank='19' count='5.0'>возможность</word>
+	<word rank='20' count='5.0'>мешать</word>
+  </topic>
+  <topic id='13' alpha='0.3333333333333333' totalTokens='616'>
+	<word rank='1' count='41.0'>нужно</word>
+	<word rank='2' count='40.0'>говорить</word>
+	<word rank='3' count='38.0'>мочь</word>
+	<word rank='4' count='34.0'>россия</word>
+	<word rank='5' count='32.0'>хотеть</word>
+	<word rank='6' count='22.0'>год</word>
+	<word rank='7' count='19.0'>самый</word>
+	<word rank='8' count='18.0'>создавать</word>
+	<word rank='9' count='15.0'>важный</word>
+	<word rank='10' count='13.0'>ничто</word>
+	<word rank='11' count='13.0'>сила</word>
+	<word rank='12' count='13.0'>проблема</word>
+	<word rank='13' count='11.0'>дело</word>
+	<word rank='14' count='10.0'>обеспечивать</word>
+	<word rank='15' count='10.0'>число</word>
+	<word rank='16' count='8.0'>история</word>
+	<word rank='17' count='8.0'>внешний</word>
+	<word rank='18' count='7.0'>большой</word>
+	<word rank='19' count='7.0'>принимать</word>
+	<word rank='20' count='7.0'>конец</word>
+  </topic>
+  <topic id='14' alpha='0.3333333333333333' totalTokens='285'>
+	<word rank='1' count='15.0'>делать</word>
+	<word rank='2' count='11.0'>путь</word>
+	<word rank='3' count='10.0'>международный</word>
+	<word rank='4' count='9.0'>сложный</word>
+	<word rank='5' count='9.0'>именно</word>
+	<word rank='6' count='8.0'>значит</word>
+	<word rank='7' count='8.0'>получаться</word>
+	<word rank='8' count='8.0'>место</word>
+	<word rank='9' count='7.0'>ограничение</word>
+	<word rank='10' count='7.0'>рост</word>
+	<word rank='11' count='7.0'>крупный</word>
+	<word rank='12' count='7.0'>становиться</word>
+	<word rank='13' count='6.0'>направление</word>
+	<word rank='14' count='6.0'>образование</word>
+	<word rank='15' count='5.0'>перспектива</word>
+	<word rank='16' count='5.0'>определять</word>
+	<word rank='17' count='5.0'>условие</word>
+	<word rank='18' count='4.0'>слово</word>
+	<word rank='19' count='4.0'>объединять</word>
+	<word rank='20' count='4.0'>исходить</word>
+  </topic>
+</topicModel>
