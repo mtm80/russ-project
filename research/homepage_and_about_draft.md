@@ -31,6 +31,8 @@ also that, by our estimation, they were the leading candidates of the time. They
 
 # Election Results
 
+The results were announced on the 19th of March that Putin had won an overwhelming majority of the vote totaling 76%.  He will continue as the president for 6 years until 2024.
+
 # Candidate Bios
 
 Vladimir Putin has had a long career spaning 16 years as a KGB agent and has since retired and entered politics where he has remained ever since.  He served 2 consecutive terms as President of Russian from 2000 to 2008,one term as prime minister from 2008 to 2012, a third term from 2012 to 2018, and has been elected in 2018 for a fourth term.  He has been a member of the Unity and United Russian parties during his political career and pursued a policy of general economic liberalism, formation of economic ties with other eurasian nations such as China, and an adversarial relationship with western governments.  According to Russian-based polls, he enjoys a large approval rate among the population with numbers over 70% often cited.
