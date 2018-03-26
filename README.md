@@ -11,6 +11,7 @@ Our project will seek to analyze the language usage of the Russian presidential 
 We're marking up occurrences of the following general patterns
 - **Actor description:** ```<actorDesc>``` The way we describe actors or members of a particular society either in a negative or positive way. 
 - **Authority:** ```<ru:authority>``` Mentioning authorities to support one's claims.
+- **Anecdote:** ```<ru:anecdote>``` Telling a story to make a point
 - **Categorization:** ```<ru:cat>``` Assigning people to different groups.
 - **Consensus:** ```<ru:consensus>``` Creating agreement and solidarity
 - **Disclaimer:** ```<ru:disclaimer>``` Presenting an idea as something positive and then rejecting it by the use of terms such as 'but' in the second sentence.
