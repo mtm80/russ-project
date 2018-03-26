@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:ru="http://ru-rhetoric.obdurodon.org/rr"
-  xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
+  xmlns:ru="http://ru-rhetoric.obdurodon.org/rr" xml:lang="en">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -71,7 +71,7 @@
         <moduleRef key="analysis"/>
 
         <!-- Defines new elements -->
-        <elementSpec  mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="actorDesc">
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="actorDesc">
           <desc>marks an instance of rhetoric marked by an actor description, that is, describing a
             person, or group in a positive or negative way</desc>
           <classes>
@@ -79,28 +79,16 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
           <attList>
-            <attDef ident="sentiment" usage="opt">
-              <desc>Is the sentiment positive, negative, or neutral?</desc>
-              <datatype>
-                <rng:ref name="teidata.enumerated"/>
-              </datatype>
-              <valList type="closed">
-                <valItem ident="positive">
-                  <desc>The person/group is characterized positively</desc>
-                </valItem>
-                <valItem ident="neutral">
-                  <desc>The person/group is characterized neutrally</desc>
-                </valItem>
-                <valItem ident="negative">
-                  <desc>The person/group is characterized negatively</desc>
-                </valItem>
-              </valList>
-            </attDef>
-            <attDef ident="target" usage="opt">
-              <desc>The target of the character description, whether it be a group or person.</desc>
+            <attDef ident="authority" usage="opt">
+              <desc>A pointer to the actor cited</desc>
               <datatype>
                 <rng:ref name="teidata.pointer"/>
               </datatype>
@@ -108,13 +96,19 @@
           </attList>
         </elementSpec>
 
-        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="auth">
-          <desc>Contains text that mentions authorities to support one's claims.</desc>
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="authority">
+          <desc>appeals to an authority</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
           <attList>
             <attDef ident="authority" usage="opt">
@@ -129,10 +123,16 @@
         <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="cat">
           <desc>Contains text that assigns a person or people to a particular group</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
           <attList>
             <attDef ident="group" usage="opt">
@@ -153,60 +153,176 @@
         <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="consensus">
           <desc>Wraps text that creates agreement and solidarity <!--needs clarification--></desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
         </elementSpec>
 
         <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="disclaimer">
           <desc>Wraps text that shows something as positive only to reject it later.</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
+          </content>
+        </elementSpec>
+
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="assumption">
+          <desc>Wraps text that uses hard facts to back up an argument</desc>
+          <classes>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
+          </classes>
+          <content>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
+          </content>
+        </elementSpec>
+
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="question">
+          <desc>Rhetorical question</desc>
+          <classes>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
+          </classes>
+          <content>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
+          </content>
+        </elementSpec>
+
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="sarcasm">
+          <desc>Marks sarcasm</desc>
+          <classes>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
+          </classes>
+          <content>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
+          </content>
+        </elementSpec>
+
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="conclusion">
+          <desc>Marks the conclusion to a line of argument</desc>
+          <classes>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
+          </classes>
+          <content>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
         </elementSpec>
 
         <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="evidence">
           <desc>Wraps text that uses hard facts to back up an argument</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
+          <attList>
+            <attDef ident="truth" usage="opt">
+              <desc>Determines whether the evidence cited by the speaker is telling the truth or
+                not</desc>
+              <valList type="closed">
+                <valItem ident="true"/>
+                <valItem ident="unknown"/>
+                <valItem ident="false"/>
+              </valList>
+            </attDef>
+          </attList>
         </elementSpec>
 
         <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="hyperbole">
           <desc>Wraps text that exaggerates meaning.</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
         </elementSpec>
 
         <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="implication">
           <desc>Wraps text that deduces or infers implicit information.</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
         </elementSpec>
 
         <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="irony">
           <desc>Wraps text that says something but means something else.</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
         </elementSpec>
 
@@ -214,20 +330,34 @@
           <desc>Wraps text that has the characteristic of lexicalization, or negative
             other-representation through the semantic features of words.</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
         </elementSpec>
 
         <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="glory">
           <desc>Wraps text that uses patriotism to indirectly glorify oneself.</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
         </elementSpec>
 
@@ -235,20 +365,33 @@
           <desc>Uses numbers or statistics to appear credible. These data are verified false.
             Otherwise, use the &lt;evidence&gt; tag.</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
         </elementSpec>
 
         <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="polarization">
           <desc>Shows allies in a positive light, but opponents in a negative light</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
           <!--Need some ideas on what attributes to include here -->
         </elementSpec>
@@ -257,30 +400,50 @@
           <desc>The common shared knowledge between people or the ideas taken for granted in a
             proposition.</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
         </elementSpec>
 
         <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="vague">
           <desc>Creates uncertainty and ambiguity.</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
         </elementSpec>
 
         <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="victim">
           <desc>Tells bad stories about people who are not allies</desc>
           <classes>
-            <memberOf key="model.global.meta"/>
+
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <textNode/>
+            <rng:zeroOrMore>
+              <rng:interleave>
+                <rng:ref name="w"/>
+                <rng:text/>
+              </rng:interleave>
+            </rng:zeroOrMore>
           </content>
           <attList>
             <attDef ident="target" usage="opt">

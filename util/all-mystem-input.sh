@@ -7,6 +7,6 @@ for dir in ../xml/*
                 interviewDir="$(echo $interview | cut -d/ -f4)"
                 mkdir -p ../temp/$candidateDir
                 mkdir -p ../temp/$candidateDir/${interviewDir%.*}
-                ./gen-mystem-input.sh $interview ../temp/${candidateDir}/${interviewDir%.*}/mystem-input.txt
+                ./gen-mystem-input.sh $interview ../temp/${candidateDir}/${interviewDir%.*}/mystem-input.txt \#$candidateDir
         done;
 done;

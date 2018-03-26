@@ -7,7 +7,7 @@ default namespace tei = "http://www.tei-c.org/ns/1.0"
 namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2018-02-28T16:09:16Z. .
+# Schema generated from ODD source 2018-03-26T17:09:01Z. .
 # TEI Edition: Version 3.1.0. Last updated on
 #	15th December 2016, revision d3f5e70
 # TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.1.0/
@@ -772,10 +772,14 @@ model.global.meta =
   | interp
   | interpGrp
   | actorDesc
-  | auth
+  | authority
   | cat
   | consensus
   | disclaimer
+  | assumption
+  | question
+  | sarcasm
+  | conclusion
   | evidence
   | hyperbole
   | implication
@@ -1105,7 +1109,7 @@ monogr =
        title+,
        (model.ptrLike | respStmt)*)
       | ((title | model.ptrLike)+, (author | respStmt)*)
-      | empty)?,
+      | authority)?,
      model.noteLike*,
      (model.ptrLike | respStmt)*,
      imprint,
@@ -1937,31 +1941,19 @@ actorDesc =
   
   ## marks an instance of rhetoric marked by an actor description, that is, describing a person, or group in a positive or negative way
   element ru:actorDesc {
-    text,
+    (w & text)*,
     att.global.attributes,
     
-    ## Is the sentiment positive, negative, or neutral?
-    attribute sentiment {
-      
-      ## The person/group is characterized positively
-      "positive"
-      | 
-        ## The person/group is characterized neutrally
-        "neutral"
-      | 
-        ## The person/group is characterized negatively
-        "negative"
-    }?,
-    
-    ## The target of the character description, whether it be a group or person.
-    attribute target { teidata.pointer }?,
+    ## A pointer to the actor cited
+    attribute authority { teidata.pointer }?,
     empty
   }
-auth =
+authority =
   
-  ## Contains text that mentions authorities to support one's claims.
-  element ru:auth {
-    text,
+  ## appeals to an authority
+  element ru:authority {
+    (w & text)*,
+    att.global.attributes,
     
     ## A pointer to the authority cited
     attribute authority { teidata.pointer }?,
@@ -1971,7 +1963,8 @@ cat =
   
   ## Contains text that assigns a person or people to a particular group
   element ru:cat {
-    text,
+    (w & text)*,
+    att.global.attributes,
     
     ## The group the target is purportedly a part of
     attribute group { teidata.pointer }?,
@@ -1983,56 +1976,90 @@ cat =
 consensus =
   
   ## Wraps text that creates agreement and solidarity 
-  element ru:consensus { text }
+  element ru:consensus { (w & text)*, att.global.attributes, empty }
 disclaimer =
   
   ## Wraps text that shows something as positive only to reject it later.
-  element ru:disclaimer { text }
+  element ru:disclaimer { (w & text)*, att.global.attributes, empty }
+assumption =
+  
+  ## Wraps text that uses hard facts to back up an argument
+  element ru:assumption { (w & text)*, att.global.attributes, empty }
+question =
+  
+  ## Rhetorical question
+  element ru:question { (w & text)*, att.global.attributes, empty }
+sarcasm =
+  
+  ## Marks sarcasm
+  element ru:sarcasm { (w & text)*, att.global.attributes, empty }
+conclusion =
+  
+  ## Marks sarcasm
+  element ru:conclusion { (w & text)*, att.global.attributes, empty }
 evidence =
   
   ## Wraps text that uses hard facts to back up an argument
-  element ru:evidence { text }
+  element ru:evidence {
+    (w & text)*,
+    att.global.attributes,
+    
+    ## Determines whether the evidence cited by the speaker is telling the truth or not
+    attribute truth {
+      
+      ##
+      "true"
+      | 
+        ##
+        "unknown"
+      | 
+        ##
+        "false"
+    }?,
+    empty
+  }
 hyperbole =
   
   ## Wraps text that exaggerates meaning.
-  element ru:hyperbole { text }
+  element ru:hyperbole { (w & text)*, att.global.attributes, empty }
 implication =
   
   ## Wraps text that deduces or infers implicit information.
-  element ru:implication { text }
+  element ru:implication { (w & text)*, att.global.attributes, empty }
 irony =
   
   ## Wraps text that says something but means something else.
-  element ru:irony { text }
+  element ru:irony { (w & text)*, att.global.attributes, empty }
 lex =
   
   ## Wraps text that has the characteristic of lexicalization, or negative other-representation through the semantic features of words.
-  element ru:lex { text }
+  element ru:lex { (w & text)*, att.global.attributes, empty }
 glory =
   
   ## Wraps text that uses patriotism to indirectly glorify oneself.
-  element ru:glory { text }
+  element ru:glory { (w & text)*, att.global.attributes, empty }
 stats =
   
   ## Uses numbers or statistics to appear credible. These data are verified false. Otherwise, use the <evidence> tag.
-  element ru:stats { text }
+  element ru:stats { (w & text)*, att.global.attributes, empty }
 polarization =
   
   ## Shows allies in a positive light, but opponents in a negative light
-  element ru:polarization { text }
+  element ru:polarization { (w & text)*, att.global.attributes, empty }
 presuppose =
   
   ## The common shared knowledge between people or the ideas taken for granted in a proposition.
-  element ru:presuppose { text }
+  element ru:presuppose { (w & text)*, att.global.attributes, empty }
 vague =
   
   ## Creates uncertainty and ambiguity.
-  element ru:vague { text }
+  element ru:vague { (w & text)*, att.global.attributes, empty }
 victim =
   
   ## Tells bad stories about people who are not allies
   element ru:victim {
-    text,
+    (w & text)*,
+    att.global.attributes,
     
     ## The target of the story, whether it be a group or person.
     attribute target { data.enumerated }?,
