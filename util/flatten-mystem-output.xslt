@@ -14,7 +14,7 @@
     </xsl:template>
     <xsl:template match="w">
         <xsl:element name="w">
-            <xsl:attribute name="lex">
+            <xsl:attribute name="lemma">
                 <xsl:apply-templates select="ana[1]/@lex"/>
             </xsl:attribute>
             <xsl:apply-templates select="text()"/>
