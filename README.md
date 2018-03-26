@@ -14,7 +14,7 @@ We're marking up occurrences of the following general patterns
 - **Categorization:** Assigning people to different groups.
 - **Consensus:** Creating agreement and solidarity
 - **Disclaimer:** Presenting an idea as something positive and then rejecting it by the use of terms such as 'but' in the second sentence.
-- **Evidentiality:** Using hard facts to support one’s ideas.
+- **Evidentiality:** Using evidence, true or not, to support one’s ideas. (update schema to represent)
 - **Hyperbole:** A device for enhancing and exaggerating meaning.
 - **Implication:** Deducing or inferring implicit information.
 - **Irony:** Saying something and meaning something else.
@@ -24,7 +24,7 @@ We're marking up occurrences of the following general patterns
 - **Polarization:** Categorizing allies as having good attributes and opponents having bad attributes.
 - **Presupposition:** The common shared knowledge between people or the ideas taken for granted in a proposition.
 - **Vagueness:** Creating uncertainty and ambiguity.
-- **Victimization:** Telling bad stories about people who are not allies
+- **Victimization:** Telling bad stories about enemies
 
 ## Transformations
 All transformations and runner scripts (for on my home machine) are located in the ```/util/``` folder. Run the shell script at the UNIX command line. Requires Python 3.5 or greater.
