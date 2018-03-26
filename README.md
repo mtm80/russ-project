@@ -22,9 +22,10 @@ We're marking up occurrences of the following general patterns
 - **National Self Glorification:** ```<ru:glory>``` A device to create positive self representation by glorifying one’s country.
 - **Number Game:** ```<ru:stats>``` Using numbers and statistics to appear credible.
 - **Polarization:** ```<ru:polarization>``` Categorizing allies as having good attributes and opponents having bad attributes.
-- **Presupposition:** ```<ru:presuppose>``` The common shared knowledge between people or the ideas taken for granted in a proposition.
+- **Assumption:** ```<ru:assumption>``` Makes an explicit assumption about something
 - **Vagueness:** ```<ru:vague>``` Creating uncertainty and ambiguity.
 - **Victimization:** ```<ru:victim>``` Telling bad stories about enemies
+- **Conclusion** ```<ru:conclusion>``` Concludes something based on assumptions and evidence posited
 
 ## Transformations
 All transformations and runner scripts (for on my home machine) are located in the ```/util/``` folder. Run the shell script at the UNIX command line. Requires Python 3.5 or greater.
