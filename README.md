@@ -22,6 +22,7 @@ We're marking up occurrences of the following general patterns
 - **Lexicalization:** ```<ru:lex>```  an overall ideological strategy for negative other-representation through the semantic features of the words.
 - **National Self Glorification:** ```<ru:glory>``` A device to create positive self representation by glorifying one’s country.
 - **Number Game:** ```<ru:stats>``` Using numbers and statistics to appear credible.
+- **Promise** ```<ru:promise>``` The candidate makes a promise or says "we should"
 - **Polarization:** ```<ru:polarization>``` Categorizing allies as having good attributes and opponents having bad attributes.
 - **Assumption:** ```<ru:assumption>``` Makes an explicit assumption about something
 - **Vagueness:** ```<ru:vague>``` Creating uncertainty and ambiguity.
