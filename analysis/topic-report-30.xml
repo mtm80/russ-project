@@ -66,7 +66,7 @@
 	<word rank='19' count='4.0'>гражданский</word>
 	<word rank='20' count='4.0'>вносить</word>
   </topic>
-  <topic id='3' alpha='0.16666666666666666' totalTokens='134'>
+  <topic id='3' alpha='0.16666666666666666' totalTokens='134' name="military">
 	<word rank='1' count='14.0'>вооружение</word>
 	<word rank='2' count='13.0'>наш</word>
 	<word rank='3' count='5.0'>участник</word>
@@ -132,7 +132,7 @@
 	<word rank='19' count='3.0'>третий</word>
 	<word rank='20' count='3.0'>строительство</word>
   </topic>
-  <topic id='6' alpha='0.16666666666666666' totalTokens='162'>
+  <topic id='6' alpha='0.16666666666666666' totalTokens='162' name="economics">
 	<word rank='1' count='13.0'>бизнес</word>
 	<word rank='2' count='8.0'>ограничение</word>
 	<word rank='3' count='6.0'>экономика</word>
@@ -242,7 +242,7 @@
 	<word rank='19' count='2.0'>оценка</word>
 	<word rank='20' count='2.0'>начало</word>
   </topic>
-  <topic id='11' alpha='0.16666666666666666' totalTokens='178'>
+  <topic id='11' alpha='0.16666666666666666' totalTokens='178' name="diplomatic">
 	<word rank='1' count='25.0'>штат</word>
 	<word rank='2' count='12.0'>просто</word>
 	<word rank='3' count='7.0'>деэскалация</word>
@@ -286,7 +286,7 @@
 	<word rank='19' count='2.0'>линия</word>
 	<word rank='20' count='2.0'>сила</word>
   </topic>
-  <topic id='13' alpha='0.16666666666666666' totalTokens='142'>
+  <topic id='13' alpha='0.16666666666666666' totalTokens='142' name="military/diplomatic">
 	<word rank='1' count='24.0'>очень</word>
 	<word rank='2' count='7.0'>правительство</word>
 	<word rank='3' count='6.0'>кстати</word>
@@ -308,7 +308,7 @@
 	<word rank='19' count='2.0'>озабоченность</word>
 	<word rank='20' count='2.0'>сообщество</word>
   </topic>
-  <topic id='14' alpha='0.16666666666666666' totalTokens='239'>
+  <topic id='14' alpha='0.16666666666666666' totalTokens='239' name="economy/business">
 	<word rank='1' count='55.0'>весь</word>
 	<word rank='2' count='14.0'>система</word>
 	<word rank='3' count='11.0'>делать</word>
@@ -330,7 +330,7 @@
 	<word rank='19' count='2.0'>случай</word>
 	<word rank='20' count='2.0'>инженер</word>
   </topic>
-  <topic id='15' alpha='0.16666666666666666' totalTokens='110'>
+  <topic id='15' alpha='0.16666666666666666' totalTokens='110' name="quality of life">
 	<word rank='1' count='9.0'>выходить</word>
 	<word rank='2' count='8.0'>значит</word>
 	<word rank='3' count='4.0'>механизм</word>
@@ -352,7 +352,7 @@
 	<word rank='19' count='2.0'>устремлять</word>
 	<word rank='20' count='1.0'>публика</word>
   </topic>
-  <topic id='16' alpha='0.16666666666666666' totalTokens='253'>
+  <topic id='16' alpha='0.16666666666666666' totalTokens='253' name="interference in elections">
 	<word rank='1' count='35.0'>весь</word>
 	<word rank='2' count='23.0'>соединять</word>
 	<word rank='3' count='23.0'>президент</word>
@@ -374,7 +374,7 @@
 	<word rank='19' count='3.0'>безопасность</word>
 	<word rank='20' count='3.0'>доказательство</word>
   </topic>
-  <topic id='17' alpha='0.16666666666666666' totalTokens='373'>
+  <topic id='17' alpha='0.16666666666666666' totalTokens='373' topic="economy/business">
 	<word rank='1' count='45.0'>россия</word>
 	<word rank='2' count='38.0'>мочь</word>
 	<word rank='3' count='25.0'>страна</word>
@@ -418,7 +418,7 @@
 	<word rank='19' count='2.0'>эффективный</word>
 	<word rank='20' count='1.0'>избрание</word>
   </topic>
-  <topic id='19' alpha='0.16666666666666666' totalTokens='147'>
+  <topic id='19' alpha='0.16666666666666666' totalTokens='147' name="military">
 	<word rank='1' count='9.0'>армия</word>
 	<word rank='2' count='9.0'>техника</word>
 	<word rank='3' count='6.0'>образец</word>
@@ -462,7 +462,7 @@
 	<word rank='19' count='3.0'>целое</word>
 	<word rank='20' count='3.0'>должность</word>
   </topic>
-  <topic id='21' alpha='0.16666666666666666' totalTokens='160'>
+  <topic id='21' alpha='0.16666666666666666' totalTokens='160' name="military">
 	<word rank='1' count='9.0'>народ</word>
 	<word rank='2' count='9.0'>должный</word>
 	<word rank='3' count='8.0'>получаться</word>
@@ -484,7 +484,7 @@
 	<word rank='19' count='2.0'>преемственность</word>
 	<word rank='20' count='2.0'>уметь</word>
   </topic>
-  <topic id='22' alpha='0.16666666666666666' totalTokens='239'>
+  <topic id='22' alpha='0.16666666666666666' totalTokens='239' name="business">
 	<word rank='1' count='22.0'>новый</word>
 	<word rank='2' count='16.0'>решение</word>
 	<word rank='3' count='13.0'>задача</word>
@@ -550,7 +550,7 @@
 	<word rank='19' count='2.0'>готовность</word>
 	<word rank='20' count='2.0'>настойчиво</word>
   </topic>
-  <topic id='25' alpha='0.16666666666666666' totalTokens='115'>
+  <topic id='25' alpha='0.16666666666666666' totalTokens='115' name="quality of life">
 	<word rank='1' count='15.0'>гражданин</word>
 	<word rank='2' count='12.0'>очень</word>
 	<word rank='3' count='7.0'>давать</word>
@@ -594,7 +594,7 @@
 	<word rank='19' count='2.0'>база</word>
 	<word rank='20' count='2.0'>генеральный</word>
   </topic>
-  <topic id='27' alpha='0.16666666666666666' totalTokens='193'>
+  <topic id='27' alpha='0.16666666666666666' totalTokens='193' name="military/diplomatic">
 	<word rank='1' count='14.0'>свой</word>
 	<word rank='2' count='11.0'>образ</word>
 	<word rank='3' count='10.0'>выборы</word>
