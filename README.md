@@ -9,7 +9,7 @@ Our project will seek to analyze the language usage of the Russian presidential 
 
 ## Methodology
 We're marking up occurrences of the following general patterns
-- **Actor description:** ```<actorDesc>``` The way we describe actors or members of a particular society either in a negative or positive way. 
+- **Actor description:** ```<ru:actorDesc>``` The way we describe actors or members of a particular society either in a negative or positive way. 
 - **Authority:** ```<ru:authority>``` Mentioning authorities to support one's claims.
 - **Anecdote:** ```<ru:anecdote>``` Telling a story to make a point
 - **Categorization:** ```<ru:cat>``` Assigning people to different groups.
