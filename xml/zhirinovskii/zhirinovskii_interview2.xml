@@ -47,7 +47,7 @@
                 <w lex="ну">Ну</w>?..
             </u>
             <u resp="#naryshkin">Что это было, объясните, пожалуйста.</u>
-            <u resp="#zhirinovskii">
+            <ru:consensus><u resp="#zhirinovskii">
                 <w lex="мы">Мы</w>
                 <w lex="в">в</w>
                 <w lex="пятница">пятницу</w>
@@ -79,22 +79,22 @@
                 <w lex="плавание">Плавание</w>
                 <w lex="быть">было</w>
                 <w lex="последний">последнее</w>.
-            </u>
+            </u></ru:consensus>
             <u resp="#naryshkin">А вы-то — в каких дисциплинах?</u>
-            <u resp="#zhirinovskii">
+           <ru:promise> <u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="во">во</w>
                 <w lex="весь">всех</w>
-                <w lex="участвовать">участвовал</w>.
+                <w lex="участвовать">участвовал</w>.</ru:promise>
             </u>
             <u resp="#naryshkin">Во всех?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="да">Да</w>. 
                 <w lex="ну">Ну</w>, 
                 <w lex="понемножку">понемножку</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Хорошо. Призы были?</u>
-            <u resp="#zhirinovskii">
+            <ru:consensus><u resp="#zhirinovskii">
                 <w lex="мы">Мы</w>
                 <w lex="награда">награды</w>
                 <w lex="давать">дали</w>
@@ -134,9 +134,9 @@
                 <w lex="волейбол">волейбол</w>
                 <w lex="и">и</w>
                 <w lex="футбол">футбол</w>.
-            </u>
+            </u></ru:consensus>
             <u resp="#naryshkin">Все довольны?</u>
-            <u resp="#zhirinovskii">
+            <ru:consensus><u resp="#zhirinovskii">
                 <w lex="довольный">Довольны</w>. 
                 <w lex="потому">Потому</w>
                 <w lex="что">что</w>
@@ -170,7 +170,7 @@
                 <w lex="соревнование">соревнования</w>
                 <w lex="без">без</w>
                 <w lex="правило">правил</w>.
-            </u>
+            </u></ru:consensus>
             <u resp="#naryshkin">Давайте вопрос сразу в лоб. Вы можете обижаться, можете не обижаться. Вот эта вот фотография. Пишет журналист Антон Красовский. Знаете такого?</u>
             <u resp="#zhirinovskii">
                 <w lex="да">Да</w>-
@@ -202,7 +202,7 @@
                 <w lex="помощник">Помощники</w>.
             </u>
             <u resp="#naryshkin">А почему ни одной девушки-то нет.</u>
-            <u resp="#zhirinovskii">
+            <ru:anecdote><u resp="#zhirinovskii">
                 <w lex="ну">Ну</w>, 
                 <w lex="я">я</w>
                 <w lex="не">не</w>
@@ -281,9 +281,9 @@
                 <w lex="показывать">показывать</w>
                 <w lex="и">и</w>
                 <w lex="поддерживать">поддерживать</w>?
-            </u>
+            </u></ru:anecdote>
             <u resp="#naryshkin">Девушки разные бывают.</u>
-            <u resp="#zhirinovskii">
+            <ru:consensus><u resp="#zhirinovskii">
                 <w lex="весь">Все</w>
                 <w lex="равно">равно</w>
                 <w lex="неудобно">неудобно</w>, 
@@ -340,17 +340,17 @@
                 <w lex="у">у</w>
                 <w lex="мы">нас</w>
                 <w lex="быть">есть</w>.
-            </u>
+            </u></ru:consensus>
             <u resp="#naryshkin">Бабушки и дедушки – это ваш электорат?</u>
-            <u resp="#zhirinovskii">
+            <ru:consensus><u resp="#zhirinovskii">
                 <w lex="обязательно">Обязательно</w>. 
                 <w lex="у">У</w>
                 <w lex="мы">нас</w>
                 <w lex="весь">все</w>
                 <w lex="возрастной">возрастные</w>…
-            </u>
+            </u></ru:consensus>
             <u resp="#naryshkin">Это костяк?</u>
-            <u resp="#zhirinovskii">
+            <ru:authority><u resp="#zhirinovskii">
                 <w lex="когда-то">Когда-то</w>
                 <w lex="социолог">социологи</w>
                 <w lex="считать">считали</w>, 
@@ -363,9 +363,9 @@
                 <w lex="тот">те</w>, 
                 <w lex="кто">кто</w>
                 <w lex="работать">работают</w>.
-            </u>
+            </u></ru:authority>
             <u resp="#naryshkin">Неплохо.</u>
-            <u resp="#zhirinovskii">
+           <ru:assumption> <u resp="#zhirinovskii">
                 <w lex="как">Как</w>
                 <w lex="приблизительно">приблизительно</w>
                 <w lex="у">у</w>
@@ -378,9 +378,9 @@
                 <w lex="и">и</w>
                 <w lex="не">не</w>
                 <w lex="бомж">бомжи</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Поговорим еще про Трампа попозже.</u>
-            <u resp="#zhirinovskii">
+            <ru:consensus><u resp="#zhirinovskii">
                 <w lex="да">Да</w>. 
                 <w lex="вот">Вот</w>
                 <w lex="они">они</w>
@@ -445,13 +445,13 @@
                 <w lex="в">в</w>
                 <w lex="партия">партии</w>
                 <w lex="и">и</w>…
-            </u>
+            </u></ru:consensus>
             <u resp="#naryshkin">Есть девушки?</u>
-            <u resp="#zhirinovskii">
+            <ru:consensus><u resp="#zhirinovskii">
                 <w lex="полно">Полно</w>.
-            </u>
+            </u></ru:consensus>
             <u resp="#naryshkin">Хорошо. Зафиксировали. Скажите мне, пожалуйста, почему последнее время уделяется разными партиями, разными политическими силами столько внимания молодежи? Смотрите, даже если вспомнить выступления оппозиционные весной, в июне, вспомнить Владимира Путина, который тоже, по-моему, за лето уже несколько раз общался с молодежью, в лагерь ездил детский.</u>
-            <u resp="#zhirinovskii">
+            <ru:anecdote><u resp="#zhirinovskii">
                 <w lex="значит">Значит</w>, 
                 <w lex="напугать">напугали</w>
                 <w lex="событие">события</w>
@@ -576,9 +576,9 @@
                 <w lex="семья">семьи</w>
                 <w lex="не">не</w>
                 <w lex="иметь">имеют</w>…
-            </u>
+            </u></ru:anecdote>
             <u resp="#naryshkin">Владимир Вольфович, сейчас внимание, в том числе, Путиным, Кремлем уделяется больше молодежи, потому что власть боится «оранжевых революций»?</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="власть">Власть</w>
                 <w lex="бояться">боится</w>
                 <w lex="любой">любых</w>
@@ -617,40 +617,19 @@
                 <w lex="не">не</w>
                 <w lex="у">у</w>
                 <w lex="власть">власти</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Правда?</u>
-            <u resp="#zhirinovskii">
-                <w lex="да">Да</w>. 
-                <w lex="а">А</w>
-                <w lex="когда">когда</w>
-                <w lex="бы">бы</w>
-                <w lex="я">я</w>
-                <w lex="сейчас">сейчас</w>
-                <w lex="быть">был</w>
-                <w lex="у">у</w>
-                <w lex="власть">власти</w>, 
-                <w lex="я">я</w>
-                <w lex="бы">бы</w>
-                <w lex="следить">следил</w>: 
-                <w lex="что">чего</w>
-                <w lex="там">там</w>
-                <w lex="шуметь">шумят</w>, 
-                <w lex="там">там</w>
-                <w lex="что-то">чего-то</w>
-                <w lex="говорить">говорят</w>, 
-                <w lex="там">там</w>
-                <w lex="где-то">где-то</w>
-                <w lex="выступление">выступления</w>…
-            </u>
+            <ru:evidence>ru:promise
+            </ru:evidence>
             <u resp="#naryshkin">А Кадырова не боитесь?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="никто">Никого</w>
                 <w lex="я">я</w>
                 <w lex="не">не</w>
                 <w lex="бояться">боюсь</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">А вы, я помню, какие-то резкие заявление позволяли в свое время, где-то выступая на ток-шоу что-то про Чечню: то ли забором каким-то отгородить…</u>
-            <u resp="#zhirinovskii">
+            <ru:anecdote><u resp="#zhirinovskii">
                 <w lex="нет">Нет</w>, 
                 <w lex="это">это</w>
                 <w lex="не">не</w>
@@ -817,9 +796,9 @@
                 <w lex="ты">тебя</w>
                 <w lex="тип">типа</w>
                 <w lex="джип">джип</w>…»
-            </u>
+            </u></ru:anecdote>
             <u resp="#naryshkin">Первый раз о таком слышу…</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="ну">Ну</w>, 
                 <w lex="сегодня">сегодня</w>, 
                 <w lex="сейчас">сейчас</w> – 
@@ -860,9 +839,9 @@
                 <w lex="машина">машине</w>, 
                 <w lex="который">которая</w>
                 <w lex="впереди">впереди</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Больше занятий, видимо, нет у Госавтоинспекции в Ингушетии. Ну, хорошо.</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="иначе">Иначе</w>
                 <w lex="быть">будут</w>
                 <w lex="жертва">жертвы</w>, 
@@ -886,9 +865,9 @@
                 <w lex="что">что</w>
                 <w lex="они">их</w>
                 <w lex="привлекать">привлекает</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Что ЛДПР предлагает молодежи?</u>
-            <u resp="#zhirinovskii">
+            <ru:consensus><u resp="#zhirinovskii">
                 <w lex="больше">Больше</w>
                 <w lex="весь">всех</w>
                 <w lex="в">в</w>
@@ -896,10 +875,10 @@
                 <w lex="у">У</w>
                 <w lex="мы">нас</w>
                 <w lex="молодежный">молодежный</w>
-                <w lex="центр">центр</w>.
+                <w lex="центр">центр</w>.</ru:consensus>
             </u>
             <u resp="#naryshkin">Кроме празднования Дня физкультурника. Это я уже понял.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>
                 <w lex="смотреть">смотрите</w>, 
                 <w lex="пожалуйста">пожалуйста</w>. 
@@ -915,22 +894,22 @@
                 <w lex="круглый">круглые</w>
                 <w lex="стол">столы</w>
                 <w lex="еженедельно">еженедельно</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Это вы все организуете?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="они">Они</w>
                 <w lex="сам">сами</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Нет, а вы-то что предлагаете молодежи?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="мы">Мы</w>
                 <w lex="это">это</w>
                 <w lex="весь">всё</w>
                 <w lex="он">им</w>
                 <w lex="давать">дали</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">А, вы это дали. А где вы им дали?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="мы">Мы</w>
                 <w lex="он">им</w>
                 <w lex="давать">дали</w>
@@ -947,14 +926,14 @@
                 <w lex="дума">думе</w>: 
                 <w lex="средний">средний</w>
                 <w lex="возраст">возраст</w> – 37.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Ваш Власов был некоторое время назад в студии.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>, 22 
                 <w lex="год">года</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Толковый парень.</u>
-            <u resp="#zhirinovskii">
+           <ru:consensus> <u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>, 
                 <w lex="пожалуйста">пожалуйста</w>, 
                 <w lex="москвич">москвич</w>, 
@@ -1005,13 +984,13 @@
                 <w lex="не">не</w>
                 <w lex="останавливать">остановим</w>
                 <w lex="они">их</w>.
-            </u>
+            </u></ru:consensus>
             <u resp="#naryshkin">Слушайте, вот выборы понятное дело: осенью единый день голосования. Но правда, я когда по Москве перемещаюсь, рябит в глазах: ЛДПР на вокзале, ЛДПР на такси.</u>
             <u resp="#zhirinovskii">
                 <w lex="ну">Ну</w>?..
             </u>
             <u resp="#naryshkin">Два вопроса: Зачем столько рекламы и откуда столько денег?</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="деньги">Деньги</w>
                 <w lex="из">из</w>
                 <w lex="бюджет">бюджета</w>. 
@@ -1064,9 +1043,9 @@
                 <w lex="бы">бы</w>
                 <w lex="не">не</w>
                 <w lex="потратить">потратить</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">    ―100 миллионов в месяц – это что такое?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="это">Это</w>
                 <w lex="деньги">деньги</w>, 
                 <w lex="который">которые</w>
@@ -1082,9 +1061,9 @@
                 <w lex="деньги">деньги</w> – 
                 <w lex="из">из</w>
                 <w lex="бюджет">бюджета</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">А вам как зарплату дают – порциями или сразу?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="нет">Нет</w>, 
                 <w lex="мы">нам</w>
                 <w lex="давать">дают</w>
@@ -1095,9 +1074,9 @@
                 <w lex="год">год</w> – 
                 <w lex="вот">вот</w>
                 <w lex="миллиард">миллиард</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">То есть можно, в принципе, в январе все спустить.</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="весь">Все</w>
                 <w lex="спускать">спустить</w>. 
                 <w lex="вот">Вот</w>
@@ -1114,9 +1093,9 @@
                 <w lex="только">только</w>
                 <w lex="не">не</w>
                 <w lex="себя">себе</w>…
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">А где будет? Где и зачем?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>
                 <w lex="мы">мы</w>
                 <w lex="искать">ищем</w>
@@ -1134,9 +1113,9 @@
                 <w lex="студия">студии</w>
                 <w lex="не">не</w>
                 <w lex="вылезать">вылезать</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Это правильно.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="то">То</w>
                 <w lex="быть">есть</w>
                 <w lex="этот">эти</w>
@@ -1226,9 +1205,9 @@
                 <w lex="чем">чем</w>
                 <w lex="мы">мы</w>
                 <w lex="говорить">говорим</w>?»
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Это просто интересно про структуру расходов. 3 миллиона рублей – это что вы на эти деньги делаете с соратниками – едите?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="аппарат">Аппарат</w>. 
                 <w lex="аренда">Аренда</w>
                 <w lex="помещение">помещений</w>. 
@@ -1236,9 +1215,9 @@
                 <w lex="штаб-квартира">штаб-квартир</w>
                 <w lex="по">по</w>
                 <w lex="страна">стране</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Ну, 3 миллиона рублей по всей России.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="каждый">Каждый</w>
                 <w lex="день">день</w>
                 <w lex="по">по</w>
@@ -1262,9 +1241,9 @@
                 <w lex="поезд">поезд</w>
                 <w lex="стоять">стоит</w> 60 
                 <w lex="миллион">миллионов</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">За месяц.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>
                 <w lex="они">они</w>
                 <w lex="идти">идет</w> 2 
@@ -1277,13 +1256,13 @@
                 <w lex="у">у</w>
                 <w lex="мы">нас</w>
                 <w lex="автопоезд">автопоезд</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Еще и автопоезд?</u>
             <u resp="#zhirinovskii">
                 <w lex="да">Да</w>.
             </u>
             <u resp="#naryshkin">О господи!</u>
-            <u resp="#zhirinovskii">
+            <ru:victim><u resp="#zhirinovskii">
                 <w lex="это">Это</w>
                 <w lex="весь">все</w>
                 <w lex="деньги">деньги</w>
@@ -1297,23 +1276,23 @@
                 <w lex="партийный">партийные</w>
                 <w lex="взнос">взносы</w>
                 <w lex="собирать">собираем</w>.
-            </u>
+            </u></ru:victim>
             <u resp="#naryshkin">Я слушателям напомню: Владимир Жириновский в эфире «Эха Москвы». А чего ради это всё: агитпоезда и так далее? Сколько в думе у вас мандатов, кресел?</u>
             <u resp="#zhirinovskii"></u>
             <u resp="#naryshkin">У «Единой России» конституционное большинство.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="на">на</w> 300 
                 <w lex="больше">больше</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Вот они что хотят, то делают.</u>
-            <u resp="#zhirinovskii">
+            <ru:victim><u resp="#zhirinovskii">
                 <w lex="да">Да</w>, 
                 <w lex="и">и</w>
                 <w lex="это">это</w>
                 <w lex="плохо">плохо</w>.
-            </u>
+            </u></ru:victim>
             <u resp="#naryshkin">Ну нет конкуренции. Зачем вообще сидеть там?</u>
-            <u resp="#zhirinovskii">
+            <ru:victim><u resp="#zhirinovskii">
                 <w lex="отсутствие">Отсутствие</w>
                 <w lex="конкуренция">конкуренции</w> – 
                 <w lex="это">это</w>
@@ -1325,9 +1304,9 @@
                 <w lex="мы">нас</w>
                 <w lex="быть">было</w>
                 <w lex="больше">больше</w>.
-            </u>
+            </u></ru:victim>
             <u resp="#naryshkin">Так это ваша вина. Значит, надо не агитпоезда пускать и не автопоезда. Это не работает всё.</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="да">Да</w>
                 <w lex="благодаря">благодаря</w>
                 <w lex="тот">той</w>
@@ -1342,9 +1321,9 @@
                 <w lex="результат">результаты</w>
                 <w lex="хорошо">лучше</w>
                 <w lex="весь">всех</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">А это вам еще удалось ухватить эти. А если бы не было агитпоезда, то совсем…</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="говорить">говорю</w>, 
                 <w lex="что">что</w>
@@ -1466,14 +1445,14 @@
                 <w lex="они">они</w>
                 <w lex="быть">будут</w>
                 <w lex="прыгать">прыгать</w>?
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Молодежь – бездельники. Вы этим пользуетесь.</u>
             <u resp="#zhirinovskii">
                 <w lex="почему">Почему</w>
                 <w lex="бездельник">бездельники</w>?
             </u>
             <u resp="#naryshkin">У них много свободного времени.</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="так">Так</w>
                 <w lex="это">это</w>
                 <w lex="ж">ж</w>
@@ -1509,17 +1488,17 @@
                 <w lex="девушка">девушек</w>. 
                 <w lex="девушка">Девушки</w>
                 <w lex="быть">будут</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Обязательно. Тем более, дискотека. Я люблю потанцевать.</u>
             <u resp="#zhirinovskii">
                 <w lex="дискотека">Дискотека</w>.
             </u>
             <u resp="#naryshkin">Владимир Вольфович, сами будете на дискотеке?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="обязательно">Обязательно</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Хорошо.</u>
-            <u resp="#zhirinovskii">
+            <ru:anecdote><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>
                 <w lex="мы">мы</w>
                 <w lex="устраивать">устраивали</w>
@@ -1554,9 +1533,9 @@
                 <w lex="мы">мы</w>
                 <w lex="делать">делали</w>
                 <w lex="">НРЗБ</w>.
-            </u>
+            </u></ru:anecdote>
             <u resp="#naryshkin">Зачем прыгать?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="он">Он</w>
                 <w lex="медленно">медленно</w>
                 <w lex="останавливаться">останавливаться</w>. 
@@ -1583,9 +1562,9 @@
                 <w lex="мы">мы</w>
                 <w lex="девочка">девочку</w>
                 <w lex="поставлять">поставим</w>?
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">У вас рискованно…</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="конечно">Конечно</w>. 
                 <w lex="или">Или</w>
                 <w lex="тяжелый">тяжелые</w>
@@ -1607,9 +1586,9 @@
                 <w lex="работа">работа</w>, 
                 <w lex="специфика">специфика</w>
                 <w lex="такой">такая</w>…
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Только парни крепкие.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="к">К</w>
                 <w lex="сожаление">сожалению</w>. 
                 <w lex="там">Там</w>, 
@@ -1622,9 +1601,9 @@
                 <w lex="они">они</w>
                 <w lex="везде">везде</w>
                 <w lex="представлять">представлено</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Ну, хорошо.</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="потом">Потом</w>, 
                 <w lex="алексей">Алексей</w>, 
                 <w lex="а">а</w>
@@ -1636,15 +1615,15 @@
                 <w lex="бы">бы</w>
                 <w lex="дискриминация">дискриминация</w>
                 <w lex="мужчина">мужчин</w>?
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Где? Почему? Нет, это у вас дискриминация женщин. У вас же их мало.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="у">У</w>
                 <w lex="мы">нас</w> – 
                 <w lex="полно">полно</w>!
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">У нас на «Эхе» — паритет.</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="паритет">Паритет</w>
                 <w lex="у">у</w>
                 <w lex="вы">вас</w>? 
@@ -1652,16 +1631,16 @@
                 <w lex="они">они</w>
                 <w lex="вы">вас</w>
                 <w lex="забивать">забивают</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Это правда.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="ваш">Ваши</w>
                 <w lex="девушка">девушки</w>
                 <w lex="вы">вас</w>
                 <w lex="забивать">забивают</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Но нас поровну все-таки.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="поэтому">Поэтому</w>
                 <w lex="я">мне</w>
                 <w lex="вы">вас</w>
@@ -1679,9 +1658,9 @@
                 <w lex="я">я</w>
                 <w lex="приходить">пришел</w>
                 <w lex="сегодня">сегодня</w>?
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">С учетом того, что я сам Венедиктову предложил вас позвать в это время..</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>
                 <w lex="видеть">видите</w>, 
                 <w lex="мы">мы</w>
@@ -1694,9 +1673,9 @@
                 <w lex="захотеть">захотели</w> – 
                 <w lex="я">я</w>
                 <w lex="приходить">пришел</w>…
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">В смысле?..</u>
-            <u resp="#zhirinovskii">
+            <ru:victim><u resp="#zhirinovskii">
                 <w lex="а">А</w>
                 <w lex="почему">почему</w>
                 <w lex="вы">вы</w>
@@ -1741,9 +1720,9 @@
                 <w lex="только">Только</w>
                 <w lex="я">я</w>
                 <w lex="работать">работаю</w>.
-            </u>
+            </u></ru:victim>
             <u resp="#naryshkin">Только Навальный, Ходорковский, Удальцов и вы – могучая четверка.</u>
-            <u resp="#zhirinovskii">
+            <ru:polarization><u resp="#zhirinovskii">
                 <w lex="да">Да</w>, 
                 <w lex="четверка">четверка</w>. 
                 <w lex="пожалуйста">Пожалуйста</w>. 
@@ -1767,9 +1746,9 @@
                 <w lex="кто">Кто</w>
                 <w lex="мешать">мешает</w>
                 <w lex="другой">другому</w>?..
-            </u>
+            </u></ru:polarization>
             <u resp="#naryshkin">Ваш. Мировых цивилизаций.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="да">Да</w>. 20 
                 <w lex="год">лет</w>. 
                 <w lex="институт">Институт</w>
@@ -1800,9 +1779,9 @@
                 <w lex="сделать">сделать</w>
                 <w lex="весь">всем</w>
                 <w lex="другой">другим</w>?
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Просто какие-нибудь кабальные условия: потом они должны отрабатывать?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="абсолютно">Абсолютно</w>
                 <w lex="ничто">ничего</w>
                 <w lex="нет">нет</w>. 
@@ -1826,9 +1805,9 @@
                 <w lex="первый">Первый</w>
                 <w lex="басманный">Басманный</w>, 
                 <w lex="дом">дом</w>-3.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">У вас там конкурс, вообще, есть?</u>
-            <u resp="#zhirinovskii">
+           <ru:polarization> <u resp="#zhirinovskii">
                 <w lex="а">А</w>
                 <w lex="мы">мы</w>
                 <w lex="полностью">полностью</w>
@@ -1842,18 +1821,18 @@
                 <w lex="деньги">деньги</w>
                 <w lex="не">не</w>
                 <w lex="брать">берем</w>.
-            </u>
+            </u></ru:polarization>
             <u resp="#naryshkin">А как же на коммерческой основе?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="ну">Ну</w>, 
                 <w lex="потому">потому</w>
                 <w lex="что">что</w>
                 <w lex="вуз">вуз</w>
                 <w lex="не">не</w>
                 <w lex="государственный">государственный</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Но они ничего не платят.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="они">Они</w>
                 <w lex="не">не</w>
                 <w lex="платить">платят</w>, 
@@ -1878,9 +1857,9 @@
                 <w lex="общежитие">общежитие</w>. 
                 <w lex="вот">Вот</w>, 
                 <w lex="пожалуйста">пожалуйста</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Интересно у вас. Здорово…</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="ребята">Ребята</w>, 
                 <w lex="который">которые</w>
                 <w lex="где-то">где-то</w>
@@ -1904,14 +1883,14 @@
                 <w lex="сколько">сколько</w>
                 <w lex="там">там</w>
                 <w lex="балл">баллов</w> – 100, 80, 60…
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Слушайте, извините, получается, к вам со всей России отбросы съедутся?</u>
             <u resp="#zhirinovskii">
                 <w lex="почему">Почему</w>
                 <w lex="отброс">отбросы</w>?
             </u>
             <u resp="#naryshkin">Потому что их нигде не приняли – вот они приедут к вам, потому что у вас халявное жилье и халявное обучение. И еще кормить их будете, наверное.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="нет">Нет</w>, 
                 <w lex="алексей">Алексей</w>… 
                 <w lex="столовая">Столовая</w> – 
@@ -1926,9 +1905,9 @@
                 <w lex="и">и</w>
                 <w lex="самый">самая</w>
                 <w lex="дешевый">дешевая</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Был я помоложе — тоже, наверное, к вам пошел.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="здесь">Здесь</w>
                 <w lex="не">не</w>
                 <w lex="отброс">отбросы</w>. 
@@ -1966,9 +1945,9 @@
                 <w lex="нигде">нигде</w>
                 <w lex="не">не</w>
                 <w lex="принимать">приняли</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Послушайте, ЕГЭ же, по-моему, как раз система для того, чтобы из провинции могли поступить в московский вуз…</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="так">Так</w>
                 <w lex="если">если</w>
                 <w lex="вуз">вуз</w>
@@ -1981,9 +1960,9 @@
                 <w lex="вуз">вуз</w>
                 <w lex="должный">должен</w>
                 <w lex="принимать">принять</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">А почему вы говорите, богатые?..</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="а">А</w>
                 <w lex="вуз">вуз</w>
                 <w lex="говорить">говорит</w>: «
@@ -2000,9 +1979,9 @@
                 <w lex="нет">нет</w>. 
                 <w lex="набор">Набор</w>
                 <w lex="заканчивать">закончен</w>».
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Там коррупция, видимо. Богаты дают какие-то…</u>
-            <u resp="#zhirinovskii">
+           <ru:evidence> <u resp="#zhirinovskii">
                 <w lex="не">Не</w>, 
                 <w lex="ну">ну</w>
                 <w lex="они">они</w>
@@ -2059,9 +2038,9 @@
                 <w lex="по">по</w>
                 <w lex="весь">всей</w>
                 <w lex="страна">стране</w>…
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">И агитпоезд, я понял. Про выборы осенние. Вот Евгений Ройзман в Свердловской области споткнулся о муниципальный фильтр. Его надо отменять? Будете в думе это обсуждать?</u>
-            <u resp="#zhirinovskii">
+            <ru:polarization><u resp="#zhirinovskii">
                 <w lex="мы">Мы</w>
                 <w lex="это">это</w>
                 <w lex="постоянно">постоянно</w>
@@ -2076,9 +2055,9 @@
                 <w lex="виноватый">Виновата</w> «
                 <w lex="справедливый">Справедливая</w>
                 <w lex="россия">Россия</w>».
-            </u>
+            </u></ru:polarization>
             <u resp="#naryshkin">О! Слушайте, маленьких обижать не стыдно вам?</u>
-            <u resp="#zhirinovskii">
+            <ru:polarization><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="объяснять">объясняю</w>, 
                 <w lex="почему">почему</w>. 
@@ -2143,9 +2122,9 @@
                 <w lex="партия">партии</w>
                 <w lex="быть">были</w>
                 <w lex="освобождать">освобождены</w>.
-            </u>
+            </u></ru:polarization>
             <u resp="#naryshkin">Что же вы тогда за время этого 7-го созыва в Государственной думе – целый год у вас бы – не отменили этот фильтр. Гудкова там нет уже и Дмитриева нет.</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="пробовать">Пробуем</w>. 
                 <w lex="да">Да</w>, 
                 <w lex="пробовать">пробуем</w>. 
@@ -2188,15 +2167,15 @@
                 <w lex="ройзман">Ройзман</w>, 
                 <w lex="навальный">Навальный</w>, 
                 <w lex="гудок">Гудков</w>…
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Подождите, кто «они» не хотят?</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="власть">Власть</w>
                 <w lex="не">не</w>
                 <w lex="хотеть">хочет</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">По-моему, даже Памфилова сказала, что надо муниципальный фильтр смягчать. Было такое заявление от Кириенко.</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="быть">Будут</w>, 
                 <w lex="быть">будут</w>
                 <w lex="смягчать">смягчать</w>. 
@@ -2211,9 +2190,9 @@
                 <w lex="на">на</w>
                 <w lex="первый">первом</w>
                 <w lex="этап">этапе</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">То есть они убедились, что Ройзман никуда не проходит и теперь заговорили, что надо муниципальный фильтр отменять вообще.</u>
-            <u resp="#zhirinovskii">
+           <ru:evidence> <u resp="#zhirinovskii">
                 <w lex="нет">Нет</w>, 
                 <w lex="как">как</w>
                 <w lex="раз">раз</w>
@@ -2221,9 +2200,9 @@
                 <w lex="ройзман">Ройзмана</w>
                 <w lex="и">и</w>
                 <w lex="заваливать">завалили</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Ну да. Они поняли, что Ройзман никуда не идет, и теперь уже начинаются разговоры…</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="нет">Нет</w>, 
                 <w lex="это">это</w>
                 <w lex="на">на</w>
@@ -2248,9 +2227,9 @@
                 <w lex="не">не</w>
                 <w lex="собирать">собирая</w>
                 <w lex="подпись">подписи</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Объясните…</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="а">А</w>
                 <w lex="муниципальный">муниципальный</w>
                 <w lex="фильтр">фильтр</w>
@@ -2263,9 +2242,9 @@
                 <w lex="и">и</w>
                 <w lex="на">на</w>
                 <w lex="она">нее</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Да, понятно. Каким образом надо смягчать закон или отменять его? Ваши предложения. Предложение ЛДПР.</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="самый">Самое</w>
                 <w lex="радикальный">радикальное</w>: 
                 <w lex="убирать">убрать</w>
@@ -2279,13 +2258,13 @@
                 <w lex="в">в</w>
                 <w lex="один">одной</w>
                 <w lex="страна">стране</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">И что вы предлагаете?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="назначение">Назначение</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Серьезно?</u>
-            <u resp="#zhirinovskii">
+            <ru:polarization><u resp="#zhirinovskii">
                 <w lex="и">И</w>
                 <w lex="на">на</w>
                 <w lex="встреча">встречах</w>
@@ -2335,9 +2314,9 @@
                 <w lex="губерния">губернии</w>
                 <w lex="от">от</w>
                 <w lex="партия">партии</w>.
-            </u>
+            </u></ru:polarization>
             <u resp="#naryshkin">А как губернаторы тогда отчитываться будут? Перед народом – что там думают конкретно жители, — это никого не волнует?</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="почему">Почему</w>? 
                 <w lex="обязательно">Обязательно</w>. 
                 <w lex="чтобы">Чтобы</w>
@@ -2382,13 +2361,13 @@
                 <w lex="продолжать">продолжаете</w>
                 <w lex="они">их</w>
                 <w lex="рекламировать">рекламировать</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Я?</u>
             <u resp="#zhirinovskii">
                 <w lex="весь">Все</w>!
             </u>
             <u resp="#naryshkin">Да ну бросьте!</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="не">не</w>
                 <w lex="говорить">говорю</w>, 
@@ -2409,14 +2388,14 @@
                 <w lex="ситуация">ситуация</w>
                 <w lex="в">в</w>
                 <w lex="страна">стране</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Поднажмем все вместе.</u>
             <u resp="#zhirinovskii">
                 <w lex="весь">Все</w>
                 <w lex="вместе">вместе</w>.
             </u>
             <u resp="#naryshkin">Навалимся.</u>
-            <u resp="#zhirinovskii">
+           <ru:evidence> <u resp="#zhirinovskii">
                 <w lex="чтобы">Чтобы</w>
                 <w lex="понимать">понимали</w>, 
                 <w lex="что">что</w>
@@ -2441,7 +2420,7 @@
                 <w lex="же">же</w>
                 <w lex="не">не</w>
                 <w lex="пропустить">пропустит</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Жириновского? Подождите, если всем навалиться, Жириновский президентом станет?</u>
             <u resp="#zhirinovskii">
                 <w lex="да">Да</w>-
@@ -2462,18 +2441,18 @@
                 <w lex="вариант">вариант</w>.
             </u>
             <u resp="#naryshkin">Сколько раз вы выдвигались?</u>
-            <u resp="#zhirinovskii">
+           <ru:promise> <u resp="#zhirinovskii">
                 <w lex="раз">раз</w>. 
                 <w lex="сейчас">Сейчас</w>
                 <w lex="будет">будет</w> 6-
                 <w lex="й">й</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Будет?</u>
             <u resp="#zhirinovskii">
                 <w lex="да">Да</w>.
             </u>
             <u resp="#naryshkin">О, поздравляю вас!</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="й">й</w>
                 <w lex="раз">раз</w>. 
                 <w lex="это">Это</w>
@@ -2488,9 +2467,9 @@
                 <w lex="быть">есть</w>, 
                 <w lex="кто">кто</w> 6 
                 <w lex="раз">раз</w>…
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Слушайте, Явлинский такой же и Зюганов – тоже дофига раз выдвигаются – и ничего.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="у">У</w>
                 <w lex="они">них</w>
                 <w lex="маленький">поменьше</w>, 
@@ -2499,9 +2478,9 @@
                 <w lex="м">м</w>
                 <w lex="не">не</w>
                 <w lex="идти">шли</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Ну хорошо, а толку? Вот вы почетный кандидат – и что?</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="алексей">Алексей</w>, 
                 <w lex="ну">ну</w>
                 <w lex="это">это</w>
@@ -2514,9 +2493,9 @@
                 <w lex="не">не</w>
                 <w lex="будет">будет</w>
                 <w lex="делать">делать</w>…
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Какая?</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="а">А</w>
                 <w lex="что">чего</w>
                 <w lex="вы">вы</w>
@@ -2615,16 +2594,16 @@
                 <w lex="и">и</w>
                 <w lex="без">без</w>
                 <w lex="нервотрепки">нервотрепки</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">А с какой стати Владимир Путин будет назначать, например, представителя ЛДПР в конкретный регион? Вы же оппозиция. Зачем назначать оппозиционного кандидата?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="объяснять">Объясняю</w>, 
                 <w lex="алексей">Алексей</w>: 
                 <w lex="чтобы">чтобы</w>
                 <w lex="заваливать">завалить</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Кого?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>
                 <w lex="на">на</w>
                 <w lex="работа">работе</w>
@@ -2682,14 +2661,14 @@
                 <w lex="коммунист">коммунистам</w>, 
                 <w lex="один">одну</w> – 
                 <w lex="лдпр">ЛДПР</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Хватка ослабла.</u>
             <u resp="#zhirinovskii">
                 <w lex="у">У</w>
                 <w lex="кто">кого</w>?
             </u>
             <u resp="#naryshkin">У Путина, у Кремля.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="так">Так</w>, 
                 <w lex="наоборот">наоборот</w>, 
                 <w lex="они">они</w>
@@ -2719,9 +2698,9 @@
                 <w lex="парламентский">парламентских</w>
                 <w lex="партия">партий</w>, 
                 <w lex="обязательно">обязательно</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">У нас же президентские, совсем забыл.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="президентский">Президентские</w> – 
                 <w lex="в">в</w>
                 <w lex="март">марте</w>. 
@@ -2732,18 +2711,18 @@
                 <w lex="отставка">отставку</w>. 
                 <w lex="формироваться">Формируется</w>
                 <w lex="новый">новое</w>..
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">И вы всерьез думаете, что вы кого-то из ЛДПР – в правительство?..</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="да">Да</w>. 
                 <w lex="я">Я</w>
                 <w lex="вы">вам</w>
                 <w lex="фамилия">фамилии</w>
                 <w lex="мочь">могу</w>
                 <w lex="называть">называть</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Давайте.</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="диденко">Диденко</w> – 
                 <w lex="на">на</w>
                 <w lex="пост">пост</w>
@@ -2752,9 +2731,9 @@
                 <w lex="я">я</w>
                 <w lex="быть">буду</w>
                 <w lex="предлагать">предлагать</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Не знаю такого .</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="он">Он</w>
                 <w lex="сейчас">сейчас</w>
                 <w lex="идти">идет</w>
@@ -2780,9 +2759,9 @@
                 <w lex="вот">Вот</w>
                 <w lex="сейчас">сейчас</w>
                 <w lex="власов">Власова</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">И Власова. Нормально.</u>
-            <u resp="#zhirinovskii">
+            <ru:polarization><u resp="#zhirinovskii">
                 <w lex="сысоев">Сысоев</w> – 
                 <w lex="на">на</w>
                 <w lex="министр">министра</w>
@@ -2809,9 +2788,9 @@
                 <w lex="по">по</w>
                 <w lex="социальный">социальной</w>
                 <w lex="политика">политике</w>.
-            </u>
+            </u></ru:polarization>
             <u resp="#naryshkin">Ярослав.</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="на">На</w>
                 <w lex="министр">министра</w>
                 <w lex="труд">труда</w>. 
@@ -2830,7 +2809,7 @@
                 <w lex="давать">дадут</w> 5, 
                 <w lex="но">но</w> 2 
                 <w lex="давать">дадут</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">А премьер?</u>
             <u resp="#zhirinovskii">
                 <w lex="что">Что</w>, 
@@ -2843,7 +2822,7 @@
                 <w lex="губернатор">губернатор</w>.
             </u>
             <u resp="#naryshkin">А сами-то что?</u>
-            <u resp="#zhirinovskii">
+           <ru:promise> <u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="пойти">пойду</w>, 
                 <w lex="если">если</w>
@@ -2852,9 +2831,9 @@
                 <w lex="хорошо">лучше</w>
                 <w lex="рядовой">рядового</w>
                 <w lex="депутат">депутата</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Слушайте, но это нервная работа. Про вас Навальный фильм снимет сразу. Накопает.</u>
-            <u resp="#zhirinovskii">
+            <ru:polarization><u resp="#zhirinovskii">
                 <w lex="пускай">Пускай</w>
                 <w lex="снимать">снимает</w>. 
                 <w lex="я">Меня</w>
@@ -2866,9 +2845,9 @@
                 <w lex="что">что</w>
                 <w lex="не">не</w>
                 <w lex="взять">возьмет</w>.
-            </u>
+            </u></ru:polarization>
             <u resp="#naryshkin">Вы уверены?</u>
-            <u resp="#zhirinovskii">
+            <ru:polarization><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="никогда">никогда</w>
                 <w lex="не">не</w>
@@ -2893,7 +2872,7 @@
                 <w lex="в">в</w>
                 <w lex="детство">детстве</w>? 
                 <w lex="бить">Били</w>.
-            </u>
+            </u></ru:polarization>
             <u resp="#naryshkin">Меня били.</u>
             <u resp="#zhirinovskii">
                 <w lex="а">А</w>
@@ -2902,7 +2881,7 @@
                 <w lex="бить">били</w>?
             </u>
             <u resp="#naryshkin">Нет.</u>
-            <u resp="#zhirinovskii">
+            <ru:polarization><u resp="#zhirinovskii">
                 <w lex="и">И</w>
                 <w lex="я">я</w>
                 <w lex="не">не</w>
@@ -2910,7 +2889,7 @@
                 <w lex="никто">никого</w>. 
                 <w lex="вот">Вот</w>
                 <w lex="весь">всё</w>.
-            </u>
+            </u></ru:polarization>
             <u resp="#naryshkin">У нас много общего.</u>
             <u resp="#zhirinovskii">
                 <w lex="да">Да</w>, 
@@ -2931,7 +2910,7 @@
                 <w lex="сегодня">сегодня</w>…
             </u>
             <u resp="#naryshkin">Вы меня уже сегодня спрашивали. Вы уже забыли.</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="самый">Самое</w>
                 <w lex="радикальный">радикальное</w>: 
                 <w lex="убирать">убрать</w>
@@ -2955,7 +2934,7 @@
                 <w lex="не">не</w>
                 <w lex="технический">техническую</w>
                 <w lex="сторона">сторону</w>…
-            </u>
+            </u></ru:implication>
             <u resp="#zhirinovskii">
                 <w lex="на">На</w>
                 <w lex="выборы">выборах</w>
@@ -2963,7 +2942,7 @@
             </u>
             <u resp="#naryshkin">Я вам ответил, вы просто забыли. Владимир Вольфович, перерыв мы сейчас должны сделать на новости и рекламу. В эфире «Эха Москвы» Владимир Жириновский, лидер ЛДПР. Оставайтесь с нами.</u>
             <u resp="#naryshkin">Продолжается эфир «Эха Москвы». Меня зовут Алексей Нарышкин, и напротив меня – Владимир Жириновский, лидер ЛДПР. Про 18-й год. Кто для вас как для кандидата был бы более интересным соперником от партии Власти – Путин или кто-то еще?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="у">У</w>
                 <w lex="мы">нас</w>
                 <w lex="такой">такая</w>
@@ -3015,9 +2994,9 @@
                 <w lex="бы">бы</w>
                 <w lex="выгодный">выгоднее</w> – 
                 <w lex="лавров">Лавров</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Да.</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="бы">бы</w>
                 <w lex="показывать">показал</w>
@@ -3026,14 +3005,14 @@
                 <w lex="наш">нашей</w>
                 <w lex="внешний">внешней</w>
                 <w lex="политика">политики</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Почему?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="украина">Украина</w>, 
                 <w lex="сирия">Сирия</w>…
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Три ошибки Лаврова?</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="с">С</w>
                 <w lex="февраль">февраля</w> 14-
                 <w lex="го">го</w>. 
@@ -3074,9 +3053,9 @@
                 <w lex="это">этом</w>
                 <w lex="не">не</w>
                 <w lex="сказать">сказать</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">А Украина — с каких пор у Лаврова ошибка?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="й">й</w>. 
                 <w lex="уже">Уже</w>
                 <w lex="лавров">Лавров</w>
@@ -3116,9 +3095,9 @@
                 <w lex="это">этого</w>
                 <w lex="дубинин">Дубинин</w>
                 <w lex="быть">был</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Специально.</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="украина">Украина</w>, 
                 <w lex="ближний">Ближний</w>
                 <w lex="восток">Восток</w>: 
@@ -3130,14 +3109,14 @@
                 <w lex="">НРЗБЪ</w>
                 <w lex="да">Да</w>
                 <w lex="нет">нет</w>!
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Дальше, после Украины, какая еще ошибка Лаврова?</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="братский">Братские</w> – 
                 <w lex="невозможно">невозможно</w>…
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Опять же вроде братские народы с Турцией теперь мы стали?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="да">Да</w>, 
                 <w lex="но">но</w>
                 <w lex="это">это</w>
@@ -3150,9 +3129,9 @@
                 <w lex="быть">было</w>
                 <w lex="рано">раньше</w>
                 <w lex="делать">делать</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Ну как?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="нет">Нет</w>. 
                 <w lex="наоборот">Наоборот</w>, 
                 <w lex="это">это</w>
@@ -3167,17 +3146,17 @@
                 <w lex="с">с</w>
                 <w lex="труд">трудом</w>
                 <w lex="сделать">сделали</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Всё, «нож в спину» — уже же забыли про это, про сбитый самолет…</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="третий">Третья</w>
                 <w lex="ошибка">ошибка</w> – 
                 <w lex="вот">вот</w>
                 <w lex="по">по</w>
                 <w lex="америка">Америке</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Это победа Лаврова. Лавров же дипломат.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="то">То</w>
                 <w lex="быть">есть</w>
                 <w lex="мы">мы</w>
@@ -3193,18 +3172,18 @@
                 <w lex="день">день</w>, 
                 <w lex="понимать">понимаете</w>, 
                 <w lex="поливать">поливают</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Хорошо. Третья ошибка.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="абсолютно">Абсолютно</w>. 
                 <w lex="и">И</w>
                 <w lex="никакой">никаких</w>
                 <w lex="совещание">совещаний</w>
                 <w lex="не">не</w>
                 <w lex="быть">было</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Хотел вам подсказать. Трамп, правильно.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="ничто">Ничего</w>
                 <w lex="близко">близко</w>. 
                 <w lex="в">В</w>
@@ -3212,9 +3191,9 @@
                 <w lex="вид">виде</w>
                 <w lex="они">они</w>
                 <w lex="блефовать">блефуют</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Слушайте, вот у вас в Государственной думе секретные совещания проводятся. Россия ничего не делала для победы Трампа?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="они">Они</w>
                 <w lex="недовольный">недовольны</w>
                 <w lex="победа">победой</w>
@@ -3296,9 +3275,9 @@
                 <w lex="более">более</w>
                 <w lex="жесткий">жесткую</w>
                 <w lex="линия">линию</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Вообще ничего? А вот эти вмешательства, то, что они там пишут, всякие расследования?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="и">И</w>
                 <w lex="быть">было</w>
                 <w lex="безвластие">безвластие</w>
@@ -3309,9 +3288,9 @@
                 <w lex="весь">всю</w>
                 <w lex="украина">Украину</w>
                 <w lex="взять">взять</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">А зачем в США проводятся расследования по поводу вмешательства России в американские выборы?</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="вы">вам</w>
                 <w lex="говорить">говорю</w>. 
@@ -3323,9 +3302,9 @@
                 <w lex="быть">были</w>
                 <w lex="бы">бы</w>
                 <w lex="бесполезный">бесполезны</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Тогда еще, когда в 2014-м первые санкции?.. Ну, при Обаме еще…</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="не">Не</w>
                 <w lex="быть">было</w>
                 <w lex="бы">бы</w>
@@ -3351,34 +3330,34 @@
                 <w lex="проблема">проблемы</w> «
                 <w lex="северный">Северного</w>
                 <w lex="поток">потока</w>».
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Ну, это старая песня от вас.</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="не">Не</w>
                 <w lex="быть">было</w>
                 <w lex="бы">бы</w>
                 <w lex="проблема">проблемы</w> – 
                 <w lex="керченский">Керченский</w>
                 <w lex="мост">мост</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">А что значит, всю Украину взять?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="ситуация">Ситуация</w>
                 <w lex="изменяться">изменилась</w>. 
                 <w lex="очень">Очень</w>
                 <w lex="сложный">сложно</w>
                 <w lex="сейчас">сейчас</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Может быть, еще не поздно?</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>
                 <w lex="тогда">тогда</w>
                 <w lex="можно">можно</w>
                 <w lex="быть">было</w>
                 <w lex="делать">делать</w>…
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Владимир Вольфович, может быть, не поздно еще всю Украину присоединить?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="нет">Нет</w>, 
                 <w lex="я">я</w>
                 <w lex="бы">бы</w>
@@ -3386,13 +3365,13 @@
                 <w lex="поселять">поселил</w>
                 <w lex="в">в</w>
                 <w lex="харьков">Харькове</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Почему?</u>
             <u resp="#zhirinovskii">
                 <w lex="тогда">Тогда</w>.
             </u>
             <u resp="#naryshkin">Вы же чем предлагаете брать – Вооруженными Силами российскими?</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="сейчас">Сейчас</w>
                 <w lex="это">это</w>
                 <w lex="сложный">сложно</w>. 
@@ -3431,15 +3410,15 @@
                 <w lex="там">там</w>
                 <w lex="королевство">королевство</w>
                 <w lex="сделать">сделать</w>…
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Сейчас.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="миллион">миллионов</w>
                 <w lex="мы">мы</w>
                 <w lex="получать">получим</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Не, а сейчас что делать?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="это">Это</w>
                 <w lex="примитивный">примитивное</w>
                 <w lex="такой">такое</w>
@@ -3447,9 +3426,9 @@
                 <w lex="за">за</w>
                 <w lex="черта">чертой</w>
                 <w lex="бедность">бедности</w>».
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">И сколько будет в России миллионов людей за чертой…</u>
-            <u resp="#zhirinovskii">
+            <ru:polarization><u resp="#zhirinovskii">
                 <w lex="питаться">Питаются</w>
                 <w lex="каждый">каждый</w>
                 <w lex="день">день</w>, 
@@ -3457,7 +3436,7 @@
                 <w lex="обувать">обуты</w>, 
                 <w lex="квартира">квартиры</w>
                 <w lex="быть">есть</w>…
-            </u>
+            </u></ru:polarization>
             <u resp="#naryshkin">Нет, за чертой бедности – сколько? Если вот мы этот регион оттяпаем…</u>
             <u resp="#zhirinovskii">
                 <w lex="ну">Ну</w>
@@ -3465,7 +3444,7 @@
                 <w lex="что">что</w>?
             </u>
             <u resp="#naryshkin">Ну, какие есть…</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="да">Да</w>
                 <w lex="потому">потому</w>
                 <w lex="что">что</w>
@@ -3484,9 +3463,9 @@
                 <w lex="будет">будет</w>. 
                 <w lex="моральный">Моральный</w>
                 <w lex="аспект">аспект</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Ну, 20 миллионов – за чертой бедности у нас в России. А вы хотите еще присоединить.</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="вы">вас</w>
                 <w lex="уверять">уверяю</w>, 
@@ -3571,12 +3550,12 @@
                 <w lex="весь">всех</w>
                 <w lex="заменять">заменили</w>
                 <w lex="ельцинский">ельцинских</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">А у вас бюджет потянет это.</u>
             <u resp="#zhirinovskii">
                 <w lex="почему">Почему</w>?
             </u>
-            <u resp="#zhirinovskii">
+            <ru:polarization><u resp="#zhirinovskii">
                 <w lex="нет">Нет</w>, 
                 <w lex="с">с</w>
                 <w lex="путин">Путиным</w>
@@ -3699,9 +3678,9 @@
                 <w lex="кремль">Кремля</w>, 
                 <w lex="побеждать">победить</w>
                 <w lex="невозможно">невозможно</w>.
-            </u>
+            </u></ru:polarization>
             <u resp="#naryshkin">А почему Путин не решается тогда?</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="потому">Потому</w>
                 <w lex="что">что</w>
                 <w lex="это">это</w>
@@ -3724,13 +3703,13 @@
                 <w lex="в">в</w>
                 <w lex="мой">мою</w>
                 <w lex="сторона">сторону</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Вернусь к своему вопросу. Значит, вам Путин в качестве кандидата несимпатичен?</u>
             <u resp="#zhirinovskii">
                 <w lex="почему">Почему</w>?
             </u>
             <u resp="#naryshkin">Ну, потому что вы сказали, что вам Лавров был бы ближе.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="трудно">Трудно</w>. 
                 <w lex="я">Я</w>
                 <w lex="не">не</w>
@@ -3739,9 +3718,9 @@
                 <w lex="невозможно">невозможно</w> – 
                 <w lex="трудно">трудно</w>
                 <w lex="побеждать">победить</w>.
-            </u>
+            </u></ru:evidence>
             <pause resp="#zhirinovskii"/>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="нет">Нет</w>, 
                 <w lex="трудно">трудно</w>. 
                 <w lex="то">То</w>
@@ -3756,9 +3735,9 @@
                 <w lex="никто">никто</w>
                 <w lex="не">не</w>
                 <w lex="идти">идет</w>…
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Хорошо. И зачем вы тогда идете?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="ну">Ну</w>, 
                 <w lex="наш">нашей</w>
                 <w lex="аудитория">аудитории</w>. 
@@ -3783,26 +3762,26 @@
                 <w lex="кто">кого</w>
                 <w lex="максимальный">максимальные</w>
                 <w lex="шанс">шансы</w>?
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Сами себе противоречите.</u>
-            <u resp="#zhirinovskii">
+        <ru:assumption>    <u resp="#zhirinovskii">
                 <w lex="у">У</w>
                 <w lex="кто">кого</w>
                 <w lex="максимальный">максимальные</w>
                 <w lex="шанс">шансы</w>? 
                 <w lex="у">У</w>
                 <w lex="я">меня</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Сказали только что, если идет кандидат от партии власти…</u>
-            <u resp="#zhirinovskii">
+           <ru:stats> <u resp="#zhirinovskii">
                 <w lex="а">А</w>
                 <w lex="вциом">Вциом</w>
                 <w lex="посмотреть">посмотрите</w>. 
                 <w lex="у">У</w>
                 <w lex="я">меня</w> 13%.
-            </u>
+            </u></ru:stats>
             <u resp="#naryshkin">По-моему, вы сказали – невозможно. Ну, ладно.</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="у">У</w>
                 <w lex="зюганов">Зюганова</w> – 7%. 
                 <w lex="впереди">Впереди</w>
@@ -3880,9 +3859,9 @@
                 <w lex="жизнь">жизни</w>
                 <w lex="для">для</w>
                 <w lex="весь">всех</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Мне?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="всегда">Всегда</w>
                 <w lex="оценивать">оцениваем</w>
                 <w lex="плохо">плохо</w>
@@ -3907,9 +3886,9 @@
                 <w lex="генеральный">Генеральные</w>
                 <w lex="секретарь">секретари</w> – 
                 <w lex="по">по</w> 20-25.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Смута начнется.</u>
-            <u resp="#zhirinovskii">
+           <ru:implication> <u resp="#zhirinovskii">
                 <w lex="вы">Вы</w>, 
                 <w lex="понимать">понимаете</w>, 
                 <w lex="алексей">Алексей</w>, 
@@ -3956,9 +3935,9 @@
                 <w lex="в">в</w>
                 <w lex="первый">первом</w>
                 <w lex="класс">классе</w>?
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Кто сказал?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="ну">Ну</w>
                 <w lex="вот">вот</w>. 
                 <w lex="он">Он</w>
@@ -4001,9 +3980,9 @@
                 <w lex="на">на</w>
                 <w lex="выборы">выборах</w>
                 <w lex="президент">президента</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Посмотрю. Серьезно?</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="до">До</w> 4, 
                 <w lex="ну">ну</w>, 
                 <w lex="мочь">может</w>
@@ -4040,18 +4019,18 @@
                 <w lex="год">года</w>» — 
                 <w lex="ну">ну</w>, 8 
                 <w lex="год">лет</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">То, что Путин 18 лет во власти уже, – это как вы оцениваете?</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="в">В</w>
                 <w lex="принцип">принципе</w>
                 <w lex="да">да</w>, 
                 <w lex="это">это</w>
                 <w lex="можно">можно</w>
                 <w lex="решать">решать</w>…
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">У нас же демократия сейчас.</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="говорить">Говорил</w>
                 <w lex="не">не</w>
                 <w lex="раз">раз</w>, 
@@ -4059,9 +4038,9 @@
                 <w lex="мы">мы</w>
                 <w lex="это">это</w>
                 <w lex="быть">будем</w>…
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Я молодой был, я молчу. В детском саду был, в яслях.</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="чтобы">Чтобы</w>
                 <w lex="выборы">выборы</w>
                 <w lex="президент">президента</w>
@@ -4075,13 +4054,13 @@
                 <w lex="самый">самый</w>
                 <w lex="хороший">лучший</w>
                 <w lex="вариант">вариант</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Конституцию надо переписывать, чтобы вот эти 6 лет ограничивать хотя бы до 4?</u>
             <u resp="#zhirinovskii">
                 <w lex="обязательно">Обязательно</w>!
             </u>
             <u resp="#naryshkin">А законопроект вы можете внести такой?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>
                 <w lex="сейчас">сейчас</w>
                 <w lex="уходить">ушли</w>
@@ -4108,9 +4087,9 @@
                 <w lex="так">Так</w>
                 <w lex="же">же</w>
                 <w lex="нельзя">нельзя</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Ну, будьте добры, осенью, как пойдете на работу…</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="год">лет</w>. 
                 <w lex="он">Он</w>
                 <w lex="уже">уже</w>
@@ -4135,9 +4114,9 @@
                 <w lex="часто">часто</w> – 
                 <w lex="это">это</w>
                 <w lex="чехорда">чехорда</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Скажите еще раз, что внесете…</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="каждый">Каждый</w>
                 <w lex="созыв">созыв</w>. 
                 <w lex="вот">Вот</w>
@@ -4172,9 +4151,9 @@
                 <w lex="за">за</w>
                 <w lex="срок">срок</w>
                 <w lex="президент">президента</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Вне зависимости от того, кто в Кремле, хочется какой-то такой ротации.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="конечно">Конечно</w>. 
                 <w lex="при">При</w>
                 <w lex="ельцин">Ельцине</w>
@@ -4182,15 +4161,15 @@
                 <w lex="правительство">правительств</w> – 
                 <w lex="слишком">слишком</w>
                 <w lex="много">много</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Вам тоже?</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="тогда">Тогда</w>
                 <w lex="будет">будет</w>
                 <w lex="застой">застой</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Долго.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="под">Под</w>
                 <w lex="вид">видом</w>
                 <w lex="долгосрочный">долгосрочных</w>
@@ -4240,9 +4219,9 @@
                 <w lex="не">не</w>
                 <w lex="получаться">получилось</w>
                 <w lex="удвоение">удвоения</w>?
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Это плохо, да, это турбулентность.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="ввп">Ввп</w>    ― 
                 <w lex="внутренний">внутренний</w>
                 <w lex="валовой">валовой</w>
@@ -4270,9 +4249,9 @@
                 <w lex="в">в</w> 30-
                 <w lex="м">м</w>
                 <w lex="год">году</w>?
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Это хорошо? Нам так же надо?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="бы">бы</w>
                 <w lex="весь">всех</w>
@@ -4302,9 +4281,9 @@
                 <w lex="америка">Америке</w>
                 <w lex="два">два</w>
                 <w lex="кандидат">кандидата</w>…
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Так есть же долгосрочные программы какие-то, которые надо реализовывать в течение не только одного срока, не двух лет, не четырех – пяти и десяти…</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="согласный">согласен</w>. 
                 <w lex="я">Я</w>
@@ -4322,9 +4301,9 @@
                 <w lex="прямой">прямого</w>
                 <w lex="ограничение">ограничения</w>
                 <w lex="нету">нету</w>…
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Сейчас застой?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="не">не</w>
                 <w lex="быть">буду</w>
@@ -4413,13 +4392,13 @@
                 <w lex="побеждать">победить</w>: 
                 <w lex="он">он</w>
                 <w lex="обижать">обиженный</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Удвоение кого?</u>
             <u resp="#zhirinovskii">
                 <w lex="нет">Нет</w>…
             </u>
             <u resp="#naryshkin">Я слушателям напомню, Владимир Жириновский в эфире «Эха Москвы» Если бы вам предстояло принимать политическое решение о допуске Алексея Навального на выборы, вы бы как поступили?</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="а">А</w>
                 <w lex="потому">потому</w>
                 <w lex="что">что</w>
@@ -4457,9 +4436,9 @@
                 <w lex="он">его</w>
                 <w lex="куба">кубы</w>
                 <w lex="стоять">стоят</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Зачем вы сравниваете? Навальный, у которого есть – он готовится к выборам — у него штабы, у него сторонники – и хозяин гостиницы. Ну, это же…</u>
-            <u resp="#zhirinovskii">
+          <ru:evidence>  <u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="вы">вас</w>
                 <w lex="уверять">уверяю</w>… 
@@ -4476,7 +4455,7 @@
                 <w lex="связанный">связан</w>
                 <w lex="с">с</w>
                 <w lex="криминал">криминалом</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Только не говорите, чтобы самозванцы не пришли разные.</u>
             <u resp="#zhirinovskii">
                 <w lex="это">Это</w>
@@ -4484,13 +4463,13 @@
                 <w lex="согласный">согласен</w>.
             </u>
             <u resp="#naryshkin">Его нагибают сейчас, Навального?</u>
-            <u resp="#zhirinovskii">
+           <ru:implication> <u resp="#zhirinovskii">
                 <w lex="к">К</w>
                 <w lex="сожаление">сожалению</w>, 
                 <w lex="так">так</w>…
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">А про кого вы рассказывали сейчас тогда?</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="пожалуйста">Пожалуйста</w>. 
                 <w lex="алексей">Алексей</w>, 
                 <w lex="а">а</w>
@@ -4502,9 +4481,9 @@
                 <w lex="просить">просить</w>
                 <w lex="за">за</w>
                 <w lex="ваш">ваших</w>?
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">А вот эти два срока «Кировлес», «Ив Роше» — это не нагибают его?</u>
-            <u resp="#zhirinovskii">
+           <ru:evidence> <u resp="#zhirinovskii">
                 <w lex="помнить">Помните</w>, 
                 <w lex="я">я</w>
                 <w lex="просить">просил</w>? 
@@ -4523,20 +4502,20 @@
                 <w lex="мочь">могли</w>
                 <w lex="он">его</w>
                 <w lex="находить">найти</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">А в глаз ему плеснули непонятно чем – это не нагибают?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="выходить">Вышел</w>, 
                 <w lex="видеть">видите</w>, 
                 <w lex="мы">мы</w>
                 <w lex="сделать">сделали</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">А где расследование? Почему виновников не нашли.</u>
             <u resp="#zhirinovskii">
                 <w lex="да">Да</w>.
             </u>
             <u resp="#naryshkin">А попросите, пожалуйста…</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="мы">Мы</w>
                 <w lex="ничто">ничего</w>
                 <w lex="не">не</w>
@@ -4561,9 +4540,9 @@
                 <w lex="михеев">Михеев</w>
                 <w lex="помечать">пометит</w>
                 <w lex="себя">себе</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">А кто должен просить? Я, что ли, должен просить.</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="да">Да</w>, 
                 <w lex="ускорять">ускорить</w>
                 <w lex="расследование">расследование</w>
@@ -4574,9 +4553,9 @@
                 <w lex="плеснуть">плеснули</w>
                 <w lex="какой-то">какой-то</w>
                 <w lex="жидкость">жидкостью</w>…
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Да. Вышел.</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>
                 <w lex="смотреть">смотрите</w>, 
                 <w lex="алексей">Алексей</w>, 14 
@@ -4635,7 +4614,7 @@
                 <w lex="не">не</w>
                 <w lex="говорить">говорил</w>
                 <w lex="это">этого</w>.
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Благодаря вам?</u>
             <u resp="#zhirinovskii">
                 <w lex="да">Да</w>
@@ -4645,7 +4624,7 @@
                 <w lex="процент">процентов</w>!
             </u>
             <u resp="#naryshkin">Ну, всё, спасибо! Видите, налажен диалог, Владимир Вольфович. Что вам стоит? Слушайте, попросить найти обидчиков Навального – для вас это листок бумажки написать. Не вы будете писать, а помощники.</u> —                 
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="но">Но</w>
                 <w lex="никогда">никогда</w>
                 <w lex="не">не</w>
@@ -4673,7 +4652,7 @@
                 <w lex="будет">будет</w>
                 <w lex="президент">президентом</w>
                 <w lex="россия">России</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#zhirinovskii">
                 <w lex="и">И</w>
                 <w lex="вы">вы</w>
@@ -4682,17 +4661,17 @@
                 <w lex="сила">силы</w>.
             </u>
             <u resp="#naryshkin">Запишите, пожалуйста: провести расследование, найти виновника.</u>
-            <u resp="#zhirinovskii">
+           <ru:implication> <u resp="#zhirinovskii">
                 <w lex="потому">Потому</w>
                 <w lex="что">что</w>
                 <w lex="он">он</w>
                 <w lex="разрушитель">разрушитель</w>…
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">Другой разговор…</u>
-            <u resp="#zhirinovskii">
+            <ru:hyperbole><u resp="#zhirinovskii">
                 <w lex="он">Он</w>
                 <w lex="разрушитель">разрушитель</w>.
-            </u>
+            </u></ru:hyperbole>
             <u resp="#naryshkin">Не говорили, точно? Может быть, вы не помните?</u>
             <u resp="#zhirinovskii">
                 <w lex="государство">Государство</w>.
@@ -4702,23 +4681,23 @@
                 <w lex="наш">Наше</w>.
             </u>
             <u resp="#naryshkin">Почему?</u>
-            <u resp="#zhirinovskii">
+            <ru:cat><u resp="#zhirinovskii">
                 <w lex="разрушать">Разрушит</w>. 
                 <w lex="разрушитель">Разрушитель</w>
                 <w lex="по">по</w>
                 <w lex="натура">натуре</w>. 
                 <w lex="как">Как</w>
                 <w lex="ельцин">Ельцин</w>.
-            </u>
+            </u></ru:cat>
             <u resp="#naryshkin">Почему?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="ельцин">Ельцин</w>
                 <w lex="быть">был</w>
                 <w lex="на">на</w>
                 <w lex="ура">ура</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Я трачу сил, я не пиар-агент…</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="да">Да</w>, 
                 <w lex="и">и</w>
                 <w lex="разрушать">разрушил</w>. 
@@ -4753,17 +4732,17 @@
                 <w lex="бороться">борется</w>
                 <w lex="с">с</w>
                 <w lex="правительство">правительством</w>…
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Что он разрушил?</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="да">Да</w>. 
                 <w lex="он">Он</w>
                 <w lex="не">не</w>
                 <w lex="будет">будет</w>
                 <w lex="президент">президентом</w>…
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Какое?</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="но">Но</w>
                 <w lex="это">это</w>
                 <w lex="хорошо">лучше</w>, 
@@ -4804,7 +4783,7 @@
                 <w lex="будет">будет</w> – 
                 <w lex="как">как</w>
                 <w lex="порошенко">Порошенко</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Как он его разрушил?</u>
             <u resp="#zhirinovskii">
                 <w lex="я">Я</w>
@@ -4813,7 +4792,7 @@
                 <w lex="сейчас">сейчас</w>.
             </u>
             <u resp="#naryshkin">Но Ельцин президентом был. На чем вы основываетесь?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="на">На</w>
                 <w lex="то">том</w>, 
                 <w lex="что">что</w>
@@ -4835,9 +4814,9 @@
                 <w lex="сегодня">Сегодня</w>
                 <w lex="диверсант">диверсанта</w>
                 <w lex="захватить">захватили</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Хорошо, он его разрушил.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="ну">Ну</w>, 
                 <w lex="это">это</w>
                 <w lex="вы">вам</w>
@@ -4849,9 +4828,9 @@
                 <w lex="жить">живете</w>
                 <w lex="весь">всю</w>
                 <w lex="жизнь">жизнь</w>…
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">А Навальный разрушит путинскую Россию?</u>
-            <u resp="#zhirinovskii">
+            <ru:anecdote><u resp="#zhirinovskii">
                 <w lex="ну">Ну</w>, 
                 <w lex="вы">вы</w>
                 <w lex="бы">бы</w>
@@ -4899,9 +4878,9 @@
                 <w lex="навальный">Навальный</w>
                 <w lex="очень">очень</w>
                 <w lex="опасный">опасны</w>.
-            </u>
+            </u></ru:anecdote>
             <u resp="#naryshkin">Вы же сами говорите, что путинская Россия – это нехорошо, потому что нет ротации.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="значит">Значит</w>, 
                 <w lex="внутренний">внутренняя</w>
                 <w lex="политика">политика</w>. 
@@ -5018,7 +4997,7 @@
                 <w lex="мешать">мешайте</w>
                 <w lex="работать">работать</w>». 
                 <w lex="мешать">Мешают</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">А это вам Ванга подсказала?</u>
             <u resp="#zhirinovskii">
                 <w lex="ну">Ну</w>?..
@@ -5028,7 +5007,7 @@
                 <w lex="оба">Оба</w>.
             </u>
             <u resp="#naryshkin">Это долгий разговор, кто там расстреливает кого.</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>
                 <w lex="россия">Россия</w>
                 <w lex="бы">бы</w>
@@ -5050,18 +5029,18 @@
                 <w lex="без">без</w>
                 <w lex="ядерный">ядерной</w>
                 <w lex="война">войны</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Да это правда.</u>
-            <u resp="#zhirinovskii">
+            <ru:hyperbole><u resp="#zhirinovskii">
                 <w lex="это">Это</w>
                 <w lex="нельзя">нельзя</w>
                 <w lex="говорить">говорить</w>
                 <w lex="на">на</w>
                 <w lex="весь">весь</w>
                 <w lex="мир">мир</w>.
-            </u>
+            </u></ru:hyperbole>
             <u resp="#naryshkin">Тезисно. Владимир Вольфович, с вами время быстро летит. Три промаха у Владимира Путина за его последний третий президент срок?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="нет">Нет</w>, 
                 <w lex="хорошо">хорошо</w>, 
                 <w lex="но">но</w>
@@ -5074,9 +5053,9 @@
                 <w lex="да">да</w>
                 <w lex="и">и</w>
                 <w lex="южнокореец">южнокорейцы</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Отличный лозунг. Про ядерные бомбы, о которых говорил Навальный…</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="в">В</w>
                 <w lex="любой">любом</w>
                 <w lex="случай">случае</w>
@@ -5092,9 +5071,9 @@
                 <w lex="в">в</w>
                 <w lex="один">одно</w>
                 <w lex="государство">государство</w>.
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Кто хуже, кто более непредсказуемый: Трамп или Ким Чен Ын?</u>
-            <u resp="#zhirinovskii">
+           <ru:assumption> <u resp="#zhirinovskii">
                 <w lex="северный">Северную</w>
                 <w lex="и">и</w>
                 <w lex="южный">Южную</w>. 
@@ -5107,9 +5086,9 @@
                 <w lex="дуло">дулом</w>
                 <w lex="у">у</w>
                 <w lex="трамп">Трампа</w>».
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">А что делать с этим?</u>
-            <u resp="#zhirinovskii">
+            <ru:anecdote><u resp="#zhirinovskii">
                 <w lex="это">Это</w>
                 <w lex="элементарно">элементарно</w>. 
                 <w lex="переговоры">Переговоры</w>. 
@@ -5136,9 +5115,9 @@
                 <w lex="у">у</w>
                 <w lex="себя">себя</w>
                 <w lex="оставаться">остается</w>…
-            </u>
+            </u></ru:anecdote>
             <u resp="#naryshkin">Это как это?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="и">И</w>
                 <w lex="через">через</w>
                 <w lex="год">год</w>
@@ -5148,9 +5127,9 @@
                 <w lex="сделать">сделайте</w>
                 <w lex="смешанный">смешанную</w>
                 <w lex="администрация">администрацию</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Как это? Ну, расскажите, что вам стоит! Вы все равно под санкциями разными…</u>
-            <u resp="#zhirinovskii">
+          <ru:assumption>  <u resp="#zhirinovskii">
                 <w lex="он">Он</w>
                 <w lex="оставаться">остается</w>
                 <w lex="живой">жив</w>, 
@@ -5165,9 +5144,9 @@
                 <w lex="на">на</w>
                 <w lex="он">его</w>
                 <w lex="глаз">глазах</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Простят.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="в">В</w>
                 <w lex="принцип">принципе</w>, 
                 <w lex="конечно">конечно</w>. 
@@ -5196,9 +5175,9 @@
                 <w lex="корея">Корея</w>
                 <w lex="и">и</w>
                 <w lex="северный">Северная</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Северную и Южную?</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="а">А</w>
                 <w lex="сейчас">сейчас</w>
                 <w lex="быть">есть</w>
@@ -5213,9 +5192,9 @@
                 <w lex="и">и</w>
                 <w lex="так">так</w>
                 <w lex="далее">далее</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Нет, слушайте, это фантазии или как?</u>
-            <u resp="#zhirinovskii">
+            <ru:anecdote><u resp="#zhirinovskii">
                 <w lex="вот">Вот</w>
                 <w lex="по">по</w>
                 <w lex="саддам">Саддаму</w>
@@ -5255,9 +5234,9 @@
                 <w lex="сегодня">Сегодня</w>
                 <w lex="это">это</w>
                 <w lex="легко">легко</w>.
-            </u>
+            </u></ru:anecdote>
             <u resp="#naryshkin">Губернатор будет.</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="не">Не</w>
                 <w lex="надо">надо</w>
                 <w lex="американец">американцев</w>
@@ -5302,9 +5281,9 @@
                 <w lex="че">Че</w>
                 <w lex="ир">Ир</w>
                 <w lex="приезжать">приезжал</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Ким Чен Ыну выгода какая от этого?</u>
-            <u resp="#zhirinovskii">
+            <ru:implication><u resp="#zhirinovskii">
                 <w lex="сделать">Сделали</w>
                 <w lex="бы">бы</w>
                 <w lex="мягко">мягко</w>: 
@@ -5323,9 +5302,9 @@
                 <w lex="спокойно">спокойно</w>
                 <w lex="нормально">нормально</w>
                 <w lex="жить">жить</w>…».
-            </u>
+            </u></ru:implication>
             <u resp="#naryshkin">А вы считаете, что его волнует жизнь простого народа?</u>
-            <u resp="#zhirinovskii">
+            <actorDesc><u resp="#zhirinovskii">
                 <w lex="мы">Мы</w> – 
                 <w lex="пряник">пряник</w>, 
                 <w lex="а">а</w>
@@ -5409,9 +5388,9 @@
                 <w lex="и">и</w> 40 — 
                 <w lex="на">на</w>
                 <w lex="юг">юге</w>.
-            </u>
+            </u></actorDesc>
             <u resp="#naryshkin">А вы говорите, он жив останется в этом случае. А сейчас есть риск того, что…</u>
-            <u resp="#zhirinovskii">
+           <ru:promise> <u resp="#zhirinovskii">
                 <w lex="если">Если</w>
                 <w lex="бы">бы</w>
                 <w lex="я">я</w>
@@ -5438,15 +5417,15 @@
                 <w lex="спорт">спорт</w>, 
                 <w lex="в">в</w>
                 <w lex="искусство">искусство</w>…
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">США войска введут?</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="от">От</w>
                 <w lex="весь">всех</w>
                 <w lex="отставать">отстаньте</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Такое будет насаждение демократии, видимо, по американскому образцу.</u>
-            <u resp="#zhirinovskii">
+            <ru:promise><u resp="#zhirinovskii">
                 <w lex="ведь">Ведь</w>, 
                 <w lex="понимать">понимаете</w>, 
                 <w lex="если">если</w>
@@ -5599,9 +5578,9 @@
                 <w lex="вариант">вариант</w>. 
                 <w lex="что">Что</w>
                 <w lex="делать">делать</w>?
-            </u>
+            </u></ru:promise>
             <u resp="#naryshkin">Да-да-да. Но мы бы сделали дипломатически.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="никак">никак</w>
                 <w lex="с">с</w>
@@ -5614,9 +5593,9 @@
                 <w lex="быть">быть</w>
                 <w lex="такой">такой</w>
                 <w lex="вариант">вариант</w>…
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Кнут и пряник.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="а">А</w>
                 <w lex="мы">мы</w>
                 <w lex="ж">ж</w>
@@ -5655,8 +5634,8 @@
                 <w lex="особенно">особенно</w>
                 <w lex="не">не</w>
                 <w lex="видеться">вижусь</w>.
-            </u> —                 
-            <u resp="#zhirinovskii">
+            </u> —</ru:evidence>                 
+            <ru:anecdote><u resp="#zhirinovskii">
                 <w lex="конечно">Конечно</w>, 
                 <w lex="мы">нам</w>
                 <w lex="невыгодно">невыгодно</w>, 
@@ -5810,9 +5789,9 @@
                 <w lex="и">и</w>
                 <w lex="так">так</w>
                 <w lex="далее">далее</w>.
-            </u>
+            </u></ru:anecdote>
             <u resp="#naryshkin">Коротко, пожалуйста. Вы с Поклонской или с Учителем? В этой ситуации вы на чьей стороне?</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="я">Я</w>
                 <w lex="не">не</w>
                 <w lex="знать">знаю</w>, 
@@ -5855,9 +5834,9 @@
                 <w lex="он">его</w>
                 <w lex="интервью">интервью</w>
                 <w lex="последний">последнее</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Отстаньте от Учителя!</u>
-            <u resp="#zhirinovskii">
+            <ru:vague><u resp="#zhirinovskii">
                 <w lex="ну">Ну</w>, 
                 <w lex="кто">кто</w>
                 <w lex="угодно">угодно</w>
@@ -5866,9 +5845,9 @@
                 <w lex="мочь">может</w>
                 <w lex="кто-то">кто-то</w>
                 <w lex="знать">знать</w>?
-            </u>
+            </u></ru:vague>
             <u resp="#naryshkin">Снимать можно про что угодно.</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="в">В</w>
                 <w lex="любой">любом</w>
                 <w lex="случай">случае</w>, 
@@ -5880,9 +5859,9 @@
                 <w lex="а">А</w>
                 <w lex="какой">какая</w>
                 <w lex="разница">разница</w>?
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Вам как кажется, она такой прикидывается или, на самом деле, может быть?..</u>
-            <u resp="#zhirinovskii">
+            <ru:assumption><u resp="#zhirinovskii">
                 <w lex="понимать">Понимаете</w>, 
                 <w lex="что">что</w>
                 <w lex="это">это</w>
@@ -5935,9 +5914,9 @@
                 <w lex="расследование">расследования</w>, 
                 <w lex="к">к</w>
                 <w lex="сожаление">сожалению</w>.
-            </u>
+            </u></ru:assumption>
             <u resp="#naryshkin">Год проработали с ней…</u>
-            <u resp="#zhirinovskii">
+            <ru:evidence><u resp="#zhirinovskii">
                 <w lex="весь">Все</w>
                 <w lex="пойти">пойдем</w>
                 <w lex="во">во</w>
@@ -5948,7 +5927,7 @@
                 <w lex="ворота">ворота</w>», 
                 <w lex="лермонтовский">Лермонтовский</w>
                 <w lex="сквер">сквер</w>.
-            </u>
+            </u></ru:evidence>
             <u resp="#naryshkin">Владимир Вольфович, полторы минуты. Время у нас уже поджимает. 900 дней со дня убийства Бориса Немцова. Сегодня не хватает вам его?</u>
             <u resp="#zhirinovskii">
                 <w lex="пожалуйста">Пожалуйста</w>.
