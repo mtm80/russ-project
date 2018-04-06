@@ -8,6 +8,7 @@
         version="3.0" 
         xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="tei mf">
         <xsl:output method="xml" indent="yes" encoding="UTF-8" doctype-system="about:legacy-compat"/>
+        <xsl:include href="reading-view-helper/topic-matcher.xslt" />
         <xsl:template match="/">
                 <html 
                         xmlns="http://www.w3.org/1999/xhtml">
