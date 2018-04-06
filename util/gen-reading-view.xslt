@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet 
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
         xmlns:tei="http://www.tei-c.org/ns/1.0"
         xmlns:ru="http://ru-rhetoric.obdurodon.org/rr"
         xmlns:mf="http://ru-rhetoric.obdurodon.org/mf"
         version="3.0" 
-        xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="tei">
+        xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="tei mf">
         <xsl:output method="xml" indent="yes" encoding="UTF-8" doctype-system="about:legacy-compat"/>
-        <xsl:function name="rhetorical-button">
-                <xsl:param name="device-name" as="xs:string"/>
-                <input id="{local-name(.)}-selector" type="radio" name="device" value="{local-name(.)}"/>
-                <label for="{local-name(.)}-selector">
-                        <xsl:value-of select="local-name(.)"/>
-                </label>
-                <br/>
-        </xsl:function>
         <xsl:template match="/">
                 <html 
                         xmlns="http://www.w3.org/1999/xhtml">
@@ -23,6 +16,7 @@
                                 <title>
                                         <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
                                 </title>
+                                <script src="../obdurodon/js/reading.js"></script>
                         </head>
                         <body>
                                 <div id="speech-text">
@@ -36,11 +30,11 @@
                                                 Rhetorical devices:
                                         </h2>
                                         <form>
-                                                <!--Matches all of the rhetorical device tags, creating a form for all of them-->
-                                                <!--
-                                                <xsl:for-each select="distinct-values(//*[self::ru:*]/local-name())">
-                                                        <xsl:apply-templates select="mf:rhetorical-button(.)"/>
-                                                </xsl:for-each>-->
+                                        <xsl:for-each select="distinct-values(//*[self::ru:*]/local-name())">
+                                                <xsl:call-template name="rhetorical-button">
+                                                        <xsl:with-param name="device-name" select="."/>
+                                                </xsl:call-template>
+                                        </xsl:for-each>-->
                                         </form>
                                         <h2>
                                                 Topics:
@@ -52,7 +46,7 @@
         </xsl:template>
         <xsl:template match="tei:u">
                 <h2>
-                        <xsl:variable as="string" name="resp" select="@resp"/>
+                        <xsl:variable as="xs:string" name="resp" select="@resp"/>
                         <xsl:apply-templates select="//tei:titleStmt/tei:respStmt/tei:persName[@ref = $resp]"/>
                         <xsl:text>: </xsl:text>
                 </h2>
@@ -69,5 +63,13 @@
                 <span class="rhetoric__{local-name(.)}">
                         <xsl:apply-templates/>
                 </span>
+        </xsl:template>
+        <xsl:template name="rhetorical-button">
+                <xsl:param name="device-name" as="xs:string"/>
+                <input id="{$device-name}-selector" type="radio" name="device" value="{$device-name}"/>
+                <label for="{$device-name}-selector">
+                        <xsl:value-of select="$device-name"/>
+                </label>
+                <br/>
         </xsl:template>
 </xsl:stylesheet>

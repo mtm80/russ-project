@@ -132,7 +132,7 @@
 	<word rank='19' count='3.0'>третий</word>
 	<word rank='20' count='3.0'>строительство</word>
   </topic>
-  <topic id='6' alpha='0.16666666666666666' totalTokens='162' name="economics">
+  <topic id='6' alpha='0.16666666666666666' totalTokens='162' name="economy">
 	<word rank='1' count='13.0'>бизнес</word>
 	<word rank='2' count='8.0'>ограничение</word>
 	<word rank='3' count='6.0'>экономика</word>
@@ -242,7 +242,7 @@
 	<word rank='19' count='2.0'>оценка</word>
 	<word rank='20' count='2.0'>начало</word>
   </topic>
-  <topic id='11' alpha='0.16666666666666666' totalTokens='178' name="diplomatic">
+  <topic id='11' alpha='0.16666666666666666' totalTokens='178' name="diplomacy">
 	<word rank='1' count='25.0'>штат</word>
 	<word rank='2' count='12.0'>просто</word>
 	<word rank='3' count='7.0'>деэскалация</word>
@@ -286,7 +286,7 @@
 	<word rank='19' count='2.0'>линия</word>
 	<word rank='20' count='2.0'>сила</word>
   </topic>
-  <topic id='13' alpha='0.16666666666666666' totalTokens='142' name="military/diplomatic">
+  <topic id='13' alpha='0.16666666666666666' totalTokens='142' name="military">
 	<word rank='1' count='24.0'>очень</word>
 	<word rank='2' count='7.0'>правительство</word>
 	<word rank='3' count='6.0'>кстати</word>
@@ -308,7 +308,7 @@
 	<word rank='19' count='2.0'>озабоченность</word>
 	<word rank='20' count='2.0'>сообщество</word>
   </topic>
-  <topic id='14' alpha='0.16666666666666666' totalTokens='239' name="economy/business">
+  <topic id='14' alpha='0.16666666666666666' totalTokens='239' name="economy">
 	<word rank='1' count='55.0'>весь</word>
 	<word rank='2' count='14.0'>система</word>
 	<word rank='3' count='11.0'>делать</word>
@@ -330,7 +330,7 @@
 	<word rank='19' count='2.0'>случай</word>
 	<word rank='20' count='2.0'>инженер</word>
   </topic>
-  <topic id='15' alpha='0.16666666666666666' totalTokens='110' name="quality of life">
+  <topic id='15' alpha='0.16666666666666666' totalTokens='110' name="quality">
 	<word rank='1' count='9.0'>выходить</word>
 	<word rank='2' count='8.0'>значит</word>
 	<word rank='3' count='4.0'>механизм</word>
@@ -352,7 +352,7 @@
 	<word rank='19' count='2.0'>устремлять</word>
 	<word rank='20' count='1.0'>публика</word>
   </topic>
-  <topic id='16' alpha='0.16666666666666666' totalTokens='253' name="interference in elections">
+  <topic id='16' alpha='0.16666666666666666' totalTokens='253' name="interference">
 	<word rank='1' count='35.0'>весь</word>
 	<word rank='2' count='23.0'>соединять</word>
 	<word rank='3' count='23.0'>президент</word>
@@ -374,7 +374,7 @@
 	<word rank='19' count='3.0'>безопасность</word>
 	<word rank='20' count='3.0'>доказательство</word>
   </topic>
-  <topic id='17' alpha='0.16666666666666666' totalTokens='373' topic="economy/business">
+  <topic id='17' alpha='0.16666666666666666' totalTokens='373' topic="economy">
 	<word rank='1' count='45.0'>россия</word>
 	<word rank='2' count='38.0'>мочь</word>
 	<word rank='3' count='25.0'>страна</word>
