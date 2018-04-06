@@ -594,7 +594,7 @@
 	<word rank='19' count='2.0'>база</word>
 	<word rank='20' count='2.0'>генеральный</word>
   </topic>
-  <topic id='27' alpha='0.16666666666666666' totalTokens='193' name="military/diplomatic">
+  <topic id='27' alpha='0.16666666666666666' totalTokens='193' name="military">
 	<word rank='1' count='14.0'>свой</word>
 	<word rank='2' count='11.0'>образ</word>
 	<word rank='3' count='10.0'>выборы</word>
