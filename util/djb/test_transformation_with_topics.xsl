@@ -37,9 +37,15 @@
     </xsl:template>
     <xsl:template match="tei:w">
         <xsl:choose>
-            <!-- create <span> if there's a topic to be reported -->
+            <!-- 
+                create <span> if there's a topic to be reported
+                replace spaces in @name values with underscores, so that they can be used as @class values
+                remove duplicates, since multiple topics share the same @name value
+            -->
             <xsl:when test="count(key('topicByWord', @lemma, $mallet)) gt 0">
-                <span class="{string-join(key('topicByWord', @lemma, $mallet)/@name, ' ')}">
+                <span class="{key('topicByWord', @lemma, $mallet)/translate(@name, ' ', '_')
+                    => distinct-values()
+                    => string-join(' ')}">
                     <xsl:apply-templates/>
                 </span>
             </xsl:when>
