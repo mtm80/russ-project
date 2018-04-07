@@ -35,16 +35,16 @@
             <xsl:apply-templates/>
         </p>
     </xsl:template>
-    <xsl:template match="tei:w" priority="1">
+    <xsl:template match="tei:w">
         <xsl:choose>
             <!-- create <span> if there's a topic to be reported -->
             <xsl:when test="count(key('topicByWord', @lemma, $mallet)) gt 0">
                 <span class="{string-join(key('topicByWord', @lemma, $mallet)/@name, ' ')}">
-                    <xsl:next-match/>
+                    <xsl:apply-templates/>
                 </span>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:next-match/>
+                <xsl:apply-templates/>
             </xsl:otherwise>
         </xsl:choose>
         <!-- 
@@ -58,8 +58,5 @@
             test="following-sibling::node()[1][self::tei:w or self::text()[matches(., '\p{L}')]]">
             <xsl:text> </xsl:text>
         </xsl:if>
-    </xsl:template>
-    <xsl:template match="tei:w">
-        <xsl:value-of select="."/>
     </xsl:template>
 </xsl:stylesheet>
