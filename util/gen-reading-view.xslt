@@ -8,7 +8,7 @@
         xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="tei">
         <xsl:output method="xml" indent="yes" encoding="UTF-8" doctype-system="about:legacy-compat"/>
         <xsl:variable name="mallet" as="document-node(element(topicModel))"
-                select="doc('topic-report-30.xml')"/>
+                select="doc('../analysis/topic-report-30.xml')"/>
         <!-- Match only topics that have a @name attribute value -->
         <xsl:key name="topicByWord" match="topic[@name]" use="word"/>
         <xsl:key name="nameByRef" match="tei:respStmt/tei:persName | tei:respStmt/tei:name" use="@ref"/>
@@ -20,7 +20,8 @@
                                 <title>
                                         <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
                                 </title>
-                                <script src="../obdurodon/js/reading.js"></script>
+                                <script src="../../js/reading.js"></script>
+                                <link rel="stylesheet" type="text/css" href="../../css/reading.css"/>
                         </head>
                         <body>
                                 <div id="speech-text">
@@ -38,12 +39,18 @@
                                                 <xsl:call-template name="rhetorical-button">
                                                         <xsl:with-param name="device-name" select="."/>
                                                 </xsl:call-template>
-                                        </xsl:for-each>-->
+                                        </xsl:for-each>
                                         </form>
                                         <h2>
                                                 Topics:
-                                                <!--here we might want to use some sort of import feature to get the topics + lemmas as a function-->
                                         </h2>
+                                        <form>
+                                                <xsl:for-each select="distinct-values($mallet//topic/@name)">
+                                                        <xsl:call-template name="topic-button">
+                                                                <xsl:with-param name="topic-name" select="."/>
+                                                        </xsl:call-template>
+                                                </xsl:for-each>
+                                        </form>
                                 </div>
                         </body>
                 </html>
@@ -67,7 +74,7 @@
             -->
                         <xsl:when test="count($word_topics) gt 0">
                                 <span
-                                        class="{$word_topics/translate(@name, ' ', '_')
+                                        class="topic-word topic-word-{$word_topics/translate(@name, ' ', '_')
                                         => distinct-values()
                                         => string-join(' ')}">
                                         <xsl:apply-templates/>
@@ -90,15 +97,24 @@
                 </xsl:if>
         </xsl:template>
         <xsl:template match="ru:*">
-                <span class="rhetoric__{local-name(.)}">
+                <span class="device-{local-name(.)}">
                         <xsl:apply-templates/>
                 </span>
         </xsl:template>
         <xsl:template name="rhetorical-button">
                 <xsl:param name="device-name" as="xs:string"/>
-                <input id="{$device-name}-selector" type="radio" name="device" value="{$device-name}"/>
+                <input id="{$device-name}-selector" class="device-selector" type="radio" name="device" value="{$device-name}"/>
                 <label for="{$device-name}-selector">
                         <xsl:value-of select="$device-name"/>
+                </label>
+                <br/>
+        </xsl:template>
+        <xsl:template name="topic-button">
+                <xsl:param name="topic-name" as="xs:string"/>
+                <xsl:variable name="topic-id" as="xs:string" select="translate($topic-name, ' ', '_')"/>
+                <input id="{$topic-id}-topic-selector" class="topic-selector" type="radio" name="device" value="{$topic-id}"/>
+                <label for="{$topic-id}-topic-selector">
+                        <xsl:value-of select="$topic-name"/>
                 </label>
                 <br/>
         </xsl:template>

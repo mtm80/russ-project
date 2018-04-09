@@ -1,0 +1,10 @@
+var highlightTopicWords = function highlightTopicWords(e){
+    console.log(e);
+};
+
+window.onload = function(){
+    var topic_buttons = document.getElementsByClassName("topic-selector");
+    for (var button in topic_buttons){
+		document.addEventListener('onclick', highlightTopicWords);
+    }
+}
