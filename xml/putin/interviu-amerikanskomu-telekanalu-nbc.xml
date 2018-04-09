@@ -1396,7 +1396,7 @@
                                 <w lemma="коллега">коллегами</w>
                                 <w lemma="из">из</w>
                                 <w lemma="европа">Европы</w>.                                 
-                                <ru:polarization target="#west">
+                                <ru:polarization>
                                         <w lemma="наш">Наша</w>
                                         <w lemma="полиция">полиция</w>,                                 
                                         <w lemma="слава">слава</w>

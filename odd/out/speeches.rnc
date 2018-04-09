@@ -7,7 +7,7 @@ default namespace tei = "http://www.tei-c.org/ns/1.0"
 namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2018-03-26T17:09:01Z. .
+# Schema generated from ODD source 2018-04-09T01:18:12Z. .
 # TEI Edition: Version 3.1.0. Last updated on
 #	15th December 2016, revision d3f5e70
 # TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.1.0/
@@ -776,6 +776,7 @@ model.global.meta =
   | cat
   | consensus
   | disclaimer
+  | anecdote
   | assumption
   | question
   | sarcasm
@@ -791,6 +792,7 @@ model.global.meta =
   | presuppose
   | vague
   | victim
+  | promise
 model.milestoneLike = notAllowed
 model.gLike = notAllowed
 model.oddDecl = notAllowed
@@ -1941,18 +1943,31 @@ actorDesc =
   
   ## marks an instance of rhetoric marked by an actor description, that is, describing a person, or group in a positive or negative way
   element ru:actorDesc {
-    (w & text)*,
+    (text | macro.paraContent | model.global.meta)*,
     att.global.attributes,
     
-    ## A pointer to the actor cited
-    attribute authority { teidata.pointer }?,
+    ## A pointer to the target of the actor description
+    attribute target { teidata.pointer }?,
+    
+    ## Sentiment of the actor description
+    attribute type {
+      
+      ##
+      "positive"
+      | 
+        ##
+        "negative"
+      | 
+        ##
+        "neutral"
+    }?,
     empty
   }
 authority =
   
   ## appeals to an authority
   element ru:authority {
-    (w & text)*,
+    (text | macro.paraContent | model.global.meta)*,
     att.global.attributes,
     
     ## A pointer to the authority cited
@@ -1963,7 +1978,7 @@ cat =
   
   ## Contains text that assigns a person or people to a particular group
   element ru:cat {
-    (w & text)*,
+    (text | macro.paraContent | model.global.meta)*,
     att.global.attributes,
     
     ## The group the target is purportedly a part of
@@ -1976,32 +1991,64 @@ cat =
 consensus =
   
   ## Wraps text that creates agreement and solidarity 
-  element ru:consensus { (w & text)*, att.global.attributes, empty }
+  element ru:consensus {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 disclaimer =
   
   ## Wraps text that shows something as positive only to reject it later.
-  element ru:disclaimer { (w & text)*, att.global.attributes, empty }
+  element ru:disclaimer {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
+anecdote =
+  
+  ## Wraps an anecdote told by the speaker
+  element ru:anecdote {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 assumption =
   
   ## Wraps text that uses hard facts to back up an argument
-  element ru:assumption { (w & text)*, att.global.attributes, empty }
+  element ru:assumption {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 question =
   
   ## Rhetorical question
-  element ru:question { (w & text)*, att.global.attributes, empty }
+  element ru:question {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 sarcasm =
   
   ## Marks sarcasm
-  element ru:sarcasm { (w & text)*, att.global.attributes, empty }
+  element ru:sarcasm {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 conclusion =
   
-  ## Marks sarcasm
-  element ru:conclusion { (w & text)*, att.global.attributes, empty }
+  ## Marks the conclusion to a line of argument
+  element ru:conclusion {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 evidence =
   
   ## Wraps text that uses hard facts to back up an argument
   element ru:evidence {
-    (w & text)*,
+    (text | macro.paraContent | model.global.meta)*,
     att.global.attributes,
     
     ## Determines whether the evidence cited by the speaker is telling the truth or not
@@ -2021,48 +2068,92 @@ evidence =
 hyperbole =
   
   ## Wraps text that exaggerates meaning.
-  element ru:hyperbole { (w & text)*, att.global.attributes, empty }
+  element ru:hyperbole {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 implication =
   
   ## Wraps text that deduces or infers implicit information.
-  element ru:implication { (w & text)*, att.global.attributes, empty }
+  element ru:implication {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 irony =
   
   ## Wraps text that says something but means something else.
-  element ru:irony { (w & text)*, att.global.attributes, empty }
+  element ru:irony {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 lex =
   
   ## Wraps text that has the characteristic of lexicalization, or negative other-representation through the semantic features of words.
-  element ru:lex { (w & text)*, att.global.attributes, empty }
+  element ru:lex {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 glory =
   
   ## Wraps text that uses patriotism to indirectly glorify oneself.
-  element ru:glory { (w & text)*, att.global.attributes, empty }
+  element ru:glory {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 stats =
   
   ## Uses numbers or statistics to appear credible. These data are verified false. Otherwise, use the <evidence> tag.
-  element ru:stats { (w & text)*, att.global.attributes, empty }
+  element ru:stats {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 polarization =
   
   ## Shows allies in a positive light, but opponents in a negative light
-  element ru:polarization { (w & text)*, att.global.attributes, empty }
+  element ru:polarization {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 presuppose =
   
   ## The common shared knowledge between people or the ideas taken for granted in a proposition.
-  element ru:presuppose { (w & text)*, att.global.attributes, empty }
+  element ru:presuppose {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 vague =
   
   ## Creates uncertainty and ambiguity.
-  element ru:vague { (w & text)*, att.global.attributes, empty }
+  element ru:vague {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
+    empty
+  }
 victim =
   
   ## Tells bad stories about people who are not allies
   element ru:victim {
-    (w & text)*,
+    (text | macro.paraContent | model.global.meta)*,
     att.global.attributes,
     
     ## The target of the story, whether it be a group or person.
     attribute target { data.enumerated }?,
+    empty
+  }
+promise =
+  
+  ## Wraps a promise made by the speaker
+  element ru:promise {
+    (text | macro.paraContent | model.global.meta)*,
+    att.global.attributes,
     empty
   }
 start = TEI

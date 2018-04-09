@@ -79,19 +79,26 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
           <attList>
-            <attDef ident="authority" usage="opt">
-              <desc>A pointer to the actor cited</desc>
+            <attDef ident="target" usage="opt">
+              <desc>A pointer to the target of the actor description</desc>
               <datatype>
                 <rng:ref name="teidata.pointer"/>
               </datatype>
+            </attDef>
+            <attDef ident="type" usage="opt">
+              <desc>Sentiment of the actor description</desc>
+              <valList type="closed">
+                <valItem ident="positive"/>
+                <valItem ident="negative"/>
+                <valItem ident="neutral"/>
+              </valList>
             </attDef>
           </attList>
         </elementSpec>
@@ -103,12 +110,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
           <attList>
             <attDef ident="authority" usage="opt">
@@ -127,12 +133,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
           <attList>
             <attDef ident="group" usage="opt">
@@ -158,12 +163,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -175,12 +179,26 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
+          </content>
+        </elementSpec>
+
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="anecdote">
+          <desc>Wraps an anecdote told by the speaker</desc>
+          <classes>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
+          </classes>
+          <content>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -191,12 +209,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -207,12 +224,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -223,12 +239,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -239,12 +254,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -255,12 +269,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
           <attList>
             <attDef ident="truth" usage="opt">
@@ -283,12 +296,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -300,12 +312,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -317,12 +328,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -335,12 +345,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -352,12 +361,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -370,12 +378,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -386,12 +393,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
           <!--Need some ideas on what attributes to include here -->
         </elementSpec>
@@ -405,12 +411,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -421,12 +426,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
         </elementSpec>
 
@@ -438,12 +442,11 @@
             <memberOf key="att.global" mode="add"/>
           </classes>
           <content>
-            <rng:zeroOrMore>
-              <rng:interleave>
-                <rng:ref name="w"/>
-                <rng:text/>
-              </rng:interleave>
-            </rng:zeroOrMore>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
           </content>
           <attList>
             <attDef ident="target" usage="opt">
@@ -453,6 +456,21 @@
               </datatype>
             </attDef>
           </attList>
+        </elementSpec>
+        
+        <elementSpec mode="add" ns="http://ru-rhetoric.obdurodon.org/rr" ident="promise">
+          <desc>Wraps a promise made by the speaker</desc>
+          <classes>
+            <memberOf key="model.global.meta" mode="add"/>
+            <memberOf key="att.global" mode="add"/>
+          </classes>
+          <content>
+            <alternate minOccurs="0" maxOccurs="unbounded">
+              <textNode/>
+              <macroRef key="macro.paraContent"/>
+              <classRef key="model.global.meta"/>
+            </alternate>
+          </content>
         </elementSpec>
 
       </schemaSpec>
