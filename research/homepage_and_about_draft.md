@@ -59,9 +59,8 @@ https://kprf.ru/
 
 ## Richard Fulop
 Richie is a 4th-year undergraduate at the University of Pittsburgh studying Computer Science and Russian. On this project, he took the lead on the programming aspect of the project, and wrote a lot of the code that works behind the scenes to help analyse and understand the corpus. After graduation in Fall 2018, Richie plans to pursue a career using both his skills with language and technology.
-
 ## Ian Loughney
-
+Ian is a 4th-year undergraduate at the University od Pittsburgh studying Linguistics and persuing a certificate in Russian and Eastern European studies. He took on the design of the website on this project as well as working with Richie on the design of the critical discourse analysis. Upon graduation Ian plans to persue a career in applied linguistics.
 ## Matt Murphy
 Matt is also a 4th-year undergraduate who is pursuing a degree in Russian language and minoring in Korean language.  He suggested the topic of Russian political discourse and took the lead on writing the majority of the web content for the pages in English and Russian.  He plans to find a career in foreign intelligence using foreign languages.  
 
