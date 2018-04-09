@@ -1,7 +1,40 @@
+h1, h2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 20px;
+}
+
 .topic-word-highlighted{
 	font-weight: bold;
 }
 
 .device-highlighted{
 	color:red;
+}
+
+#page{
+    display:flex;
+    flex-direction: row;
+}
+
+#speech-text{
+    flex: 1 1 auto;
+    padding: 2%;
+}
+
+#sidebar{
+    flex: 0 0 auto;
+    padding: 0 1%;
+    border-left: black solid 1px;
 }

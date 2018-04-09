@@ -21,9 +21,11 @@
                                         <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
                                 </title>
                                 <script src="../../js/reading.js"></script>
+                                <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro" rel="stylesheet"/> 
                                 <link rel="stylesheet" type="text/css" href="../../css/reading.css"/>
                         </head>
                         <body>
+                                <div id="page">
                                 <div id="speech-text">
                                         <h1>
                                                 <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
@@ -51,6 +53,7 @@
                                                         </xsl:call-template>
                                                 </xsl:for-each>
                                         </form>
+                                </div>
                                 </div>
                         </body>
                 </html>
