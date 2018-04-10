@@ -11,17 +11,20 @@
                         </head>
                         <body>
                                 <h1>Topics</h1>
-                                <xsl:apply-templates select="//topic[@name]"/>
+                                <xsl:call-template name="topic">
+                                        <xsl:with-param name="topic-name" select="distinct-values(//topic/@name)"/>
+                                </xsl:call-template>
                         </body>
                 </html>
         </xsl:template>
-        <xsl:template match="topic">
+        <xsl:template name="topic">
+                <xsl:param name="topic-name" as="xs:string"/>
                 <h2>
-                        <xsl:apply-templates select="@name"/>
+                        <xsl:value-of select="$topic-name"/>
                 </h2>
                 <p>
                         <ul>
-                                <xsl:apply-templates select="word">
+                                <xsl:apply-templates select="//topic[@name = '$topic-name']/word">
                                         <xsl:sort data-type="number" select="@rank"/>
                                 </xsl:apply-templates>
                         </ul>
@@ -29,11 +32,12 @@
         </xsl:template>
         <xsl:template match="word">
                 <li>
-                        <span class="word__count">
-                                <xsl:apply-templates select="@count"/>
-                        </span>
-                        <xsl:text>: </xsl:text>
                         <xsl:apply-templates/>
+                        <span class="word__count">
+                                <xsl:text> occurs </xsl:text>
+                                <xsl:apply-templates select="@count"/>
+                                <xsl:text> times</xsl:text>
+                        </span>
                 </li>
         </xsl:template>
 </xsl:stylesheet>
