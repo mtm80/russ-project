@@ -1,59 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet 
-        xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-        xmlns:xs="http://www.w3.org/2001/XMLSchema"
-        xmlns:tei="http://www.tei-c.org/ns/1.0"
-        xmlns:ru="http://ru-rhetoric.obdurodon.org/rr"
-        version="3.0" 
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
+        xmlns:ru="http://ru-rhetoric.obdurodon.org/rr" version="3.0"
         xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="tei">
         <xsl:output method="xml" indent="yes" encoding="UTF-8" doctype-system="about:legacy-compat"/>
         <xsl:variable name="mallet" as="document-node(element(topicModel))"
                 select="doc('../analysis/topic-report-30.xml')"/>
         <!-- Match only topics that have a @name attribute value -->
         <xsl:key name="topicByWord" match="topic[@name]" use="word"/>
-        <xsl:key name="nameByRef" match="tei:respStmt/tei:persName | tei:respStmt/tei:name" use="@ref"/>
+        <xsl:key name="nameByRef" match="tei:respStmt/tei:persName | tei:respStmt/tei:name"
+                use="@ref"/>
         <xsl:template match="/">
-                <html 
-                        xmlns="http://www.w3.org/1999/xhtml">
+                <html xmlns="http://www.w3.org/1999/xhtml">
                         <head>
                                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                                 <title>
                                         <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
                                 </title>
-                                <script src="../../js/reading.js"></script>
-                                <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro" rel="stylesheet"/> 
-                                <link rel="stylesheet" type="text/css" href="../../css/reading.css"/>
+                                <script src="../../js/reading.js"/>
+                                <link
+                                        href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro"
+                                        rel="stylesheet"/>
+                                <link rel="stylesheet" type="text/css" href="../../css/reading.css"
+                                />
                         </head>
                         <body>
                                 <div id="page">
-                                <div id="speech-text">
-                                        <h1>
-                                                <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
-                                        </h1>
-                                        <xsl:apply-templates select="//tei:u"/>
-                                </div>
-                                <div id="sidebar">
-                                        <h2>
-                                                Rhetorical devices:
-                                        </h2>
-                                        <form>
-                                        <xsl:for-each select="distinct-values(//*[self::ru:*]/local-name())">
-                                                <xsl:call-template name="rhetorical-button">
-                                                        <xsl:with-param name="device-name" select="."/>
-                                                </xsl:call-template>
-                                        </xsl:for-each>
-                                        </form>
-                                        <h2>
-                                                Topics:
-                                        </h2>
-                                        <form>
-                                                <xsl:for-each select="distinct-values($mallet//topic/@name)">
-                                                        <xsl:call-template name="topic-button">
-                                                                <xsl:with-param name="topic-name" select="."/>
-                                                        </xsl:call-template>
-                                                </xsl:for-each>
-                                        </form>
-                                </div>
+                                        <div id="speech-text">
+                                                <h1>
+                                                  <xsl:apply-templates
+                                                  select="//tei:titleStmt/tei:title"/>
+                                                </h1>
+                                                <xsl:apply-templates select="//tei:u"/>
+                                        </div>
+                                        <div id="sidebar">
+                                                <div id="sidebar__menu">
+                                                  <h2> Rhetorical devices: </h2>
+                                                  <form>
+                                                  <xsl:for-each
+                                                  select="distinct-values(//*[self::ru:*]/local-name())">
+                                                  <xsl:call-template name="rhetorical-button">
+                                                  <xsl:with-param name="device-name" select="."/>
+                                                  </xsl:call-template>
+                                                  </xsl:for-each>
+                                                  </form>
+                                                  <h2> Topics: </h2>
+                                                  <form>
+                                                  <xsl:for-each
+                                                  select="distinct-values($mallet//topic/@name)">
+                                                  <xsl:call-template name="topic-button">
+                                                  <xsl:with-param name="topic-name" select="."/>
+                                                  </xsl:call-template>
+                                                  </xsl:for-each>
+                                                  </form>
+                                                </div>
+                                        </div>
                                 </div>
                         </body>
                 </html>
@@ -106,7 +107,8 @@
         </xsl:template>
         <xsl:template name="rhetorical-button">
                 <xsl:param name="device-name" as="xs:string"/>
-                <input id="{$device-name}-selector" class="device-selector" type="radio" name="device" value="{$device-name}"/>
+                <input id="{$device-name}-selector" class="device-selector" type="radio"
+                        name="device" value="{$device-name}"/>
                 <label for="{$device-name}-selector">
                         <xsl:value-of select="$device-name"/>
                 </label>
@@ -114,8 +116,10 @@
         </xsl:template>
         <xsl:template name="topic-button">
                 <xsl:param name="topic-name" as="xs:string"/>
-                <xsl:variable name="topic-id" as="xs:string" select="translate($topic-name, ' ', '_')"/>
-                <input id="{$topic-id}-topic-selector" class="topic-selector" type="radio" name="device" value="{$topic-id}"/>
+                <xsl:variable name="topic-id" as="xs:string"
+                        select="translate($topic-name, ' ', '_')"/>
+                <input id="{$topic-id}-topic-selector" class="topic-selector" type="radio"
+                        name="device" value="{$topic-id}"/>
                 <label for="{$topic-id}-topic-selector">
                         <xsl:value-of select="$topic-name"/>
                 </label>

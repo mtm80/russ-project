@@ -30,7 +30,15 @@ var highlightDevices = function highlightDevices(e){
 	for (var i = 0; i < to_highlight.length; i++){
 		to_highlight[i].classList.add('device-highlighted');
 	}
-}
+};
+
+var handleScroll = function handleScroll(e){
+     let menu = document.getElementById("sidebar__menu");
+     let menuTop = menu.getBoundingClientRect().top;
+     let doc = document.documentElement;
+     let scrollTop = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+     menu.style.top = scrollTop + "px"
+};
 
 window.onload = function(){
     var topic_buttons = document.getElementsByClassName('topic-selector');
@@ -44,4 +52,6 @@ window.onload = function(){
 		let button = device_buttons[i];
 		button.onclick = (e) => { return highlightDevices(e); };
 	}
+	
+	window.onscroll = (e) => {return handleScroll(e); };
 }

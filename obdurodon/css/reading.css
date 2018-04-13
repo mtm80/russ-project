@@ -38,3 +38,7 @@ p{
     padding: 0 1%;
     border-left: black solid 1px;
 }
+
+#sidebar__menu{
+    position: relative;
+}
