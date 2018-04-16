@@ -15,12 +15,19 @@ are included for analysis. 
  
 
 # About
+*new
 
-The Russian 2018 presidential elections are a being held at
+Topic 
+
+The motivation behind the selection of this topic is three-fold.  First, we sought a topic that would be more unusual than another survey of literary questions and political discourse is among the less explored realms of the digital humanities.  Second, although all three of us are specializing in Russian language, Russian politics are still relatively unfamiliar to us so there is a genuine opportunity to gain insight into the inner workings of Russian government.  Finally, after all of the excitement of the American presidential election and allegations of Russian involvement in 2016, we were curious to uncover any possible impacts on Russian politics.  
+
+Given our relative lack of familiarity with Russian government, we are taking an general approach to our investigation.  We selected three leading candidates to form the basis of our research and we analyze their discourse.  We intend to investigate which topics are of greatest concern to the Russian public, how the candidates address those topics, and how they propose to resolve those concerns.  
+
+The Russian 2018 presidential elections were being held at
 an opportune time for this project.  The election
-itself is slated for the 18th of March which is well within the
+itself was slated for the 18th of March which is well within the
 timeline of our project.  Of course, due
-to the limitations of the course and available manpower, only a few candidates
+to the limitations of the course and available manpower, only three candidates
 can be analyzed.  Among those that were
 chosen are Vladimir Putin, Pavel Grudinin, and Vladimir Zhirinovskii.  
 
