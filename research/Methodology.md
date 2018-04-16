@@ -1,8 +1,8 @@
 Methodology
 
-To build our analysis, we are applying an assortment of rhetorical tags to the discourse files of the candidates.  These tags account for the 
-rhetorical techniques that the candidates use during their interviews and and speeches.  The following is a list of the specific tags
-that we are tracking.
+To build our analysis, we are applying an assortment of rhetorical tags to the discourse files of the candidates.  These tags account for the rhetorical techniques that the candidates use during their interviews and and speeches.  Taking into account the topics that the candidates address, these rhetorical techniques shed light on how the candidates appeal to their respective voter base and attempt to attract those who might not normally favor their party.  Where foreign countries are concerned, we can learn how particular parties profess to approach foreign relations.  This is of particular interest given the tense relationship that Russian currently has with the United States and many European countries.  
+
+The following is a list of the specific tags that we are tracking.
 
 Actor description: <actorDesc> The way we describe actors or members of a particular society either in a negative or positive way.
 Authority: <ru:authority> Mentioning authorities to support one's claims.
