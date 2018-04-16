@@ -21,10 +21,11 @@ Topic
 
 The motivation behind the selection of this topic is three-fold.  First, we sought a topic that would be more unusual than another survey of literary questions and political discourse is among the less explored realms of the digital humanities.  Second, although all three of us are specializing in Russian language, Russian politics are still relatively unfamiliar to us so there is a genuine opportunity to gain insight into the inner workings of Russian government.  Finally, after all of the excitement of the American presidential election and allegations of Russian involvement in 2016, we were curious to uncover any possible impacts on Russian politics.  
 
-Given our relative lack of familiarity with Russian government, we are taking an general approach to our investigation.  We selected three leading candidates to form the basis of our research and we analyze their discourse.  We intend to investigate which topics are of greatest concern to the Russian public, how the candidates address those topics, and how they propose to resolve those concerns.  
+Given our relative lack of familiarity with Russian government, we are taking an general approach to our investigation.  We selected three leading candidates to form the basis of our research and we analyze their discourse.  We intend to investigate which topics are of greatest concern to the Russian public, how the candidates address those topics, and how they propose to resolve those concerns.  We are not attempting to prove a hypothesis.  Instead, we are conducting purely exploratory research and plan to report any findings of particular interest.  
 *new
 
 *couple of typos fixed
+
 The Russian 2018 presidential elections were being held at
 an opportune time for this project.  The election
 itself was slated for the 18th of March which is well within the
@@ -32,6 +33,7 @@ timeline of our project.  Of course, due
 to the limitations of the course and available manpower, only three candidates
 can be analyzed.  Among those that were
 chosen are Vladimir Putin, Pavel Grudinin, and Vladimir Zhirinovskii.  
+*
 
 The particular texts were selected on the basis of availability rather than the nature of their content.  The quantity of transcribed texts from interviews and speeches is actually rather limited, and since the focus of our work was on honing our skills as digital humanists, we decided not to manually transcribe. Regardless, we intend to draw whatever conclusions that we can from our corpus in the pursuit of our analysis.  We plan to investigate recurring topics in their discourse and how their terminology reflects party ideology, popular attitudes, and how candidates relate to their audiences.   We are using topic modelling to track the subjects that the candidates most frequently cite throughout their discourse.
 
