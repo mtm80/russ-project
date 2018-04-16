@@ -117,7 +117,7 @@
             </alternate>
           </content>
           <attList>
-            <attDef ident="authority" usage="opt">
+            <attDef ident="name" usage="opt">
               <desc>A pointer to the authority cited</desc>
               <datatype>
                 <rng:ref name="teidata.pointer"/>

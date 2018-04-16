@@ -1,67 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deviceMap>
     <device tag="authority">
+        <name>Authority</name>
         <short>Reference to authority</short>
-        <desc></desc>
+        <long>The &lt;authority&gt; tag marks when the speaker references an authority. We also annotated what sources the politicians referenced.</long>
     </device>
     <device tag="evidence">
+        <name>Evidence</name>
         <short>Use of evidence to prove a point</short>
-        <desc></desc>
+        <long>The &lt;evidence&gt; tag marks when the speaker uses supposed evidence to prove a point. We marked whether the evidence was true, false, or unknown.</long>
     </device>
-    <device tag="victim">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="actorDesc">
+        <name>Actor Description</name>
+        <short>The way we describe actors or members of a particular society either in a negative, neutral, or positive way.</short>
+        <long>The &lt;evidence&gt; tag marks when the speaker describes an individual or group. We marked whether the sentiment was positive, negative, or neutral.</long>
     </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="anecdote">
+        <name>Anecdote</name>
+        <short>Using a story to make a point</short>
+        <long>The &lt;anecdote&gt; tag marks when the speaker uses a story as part of their argument.</long>
     </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="cat">
+        <name>Categorization</name>
+        <short>Assigning people to different groups</short>
+        <long>The &lt;cat&gt; tag marks when the speaker assigns an individual to a group. We identified both the target of categorization, and the group to which they were assigned.</long>
     </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="consensus">
+        <name>Consensus Building</name>
+        <short>Constructing a sense of agreement and solidarity between the speaker and others.</short>
+        <long>The &lt;consensus&gt; tag marks when the speaker identifies with a group, usually to curry political favor. </long>
     </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="disclaimer">
+        <name>Disclaimer</name>
+        <short>Presenting an idea as positive, only to reject it later</short>
+        <long>The &lt;disclaimer&gt; tag marks when the speaker presents an idea as positive, only to reject it later.</long>
     </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="hyperbole">
+        <name>Hyperbole</name>
+        <short>Exaggerating, or "enhancing" meaning</short>
+        <long>The &lt;hyperbole&gt; tag marks when the speaker exaggerates meaning by making questionable or absurd assumptions.</long>
     </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="implication">
+        <name>Implication</name>
+        <short>Deducing or inferring implicit information</short>
+        <long>The &lt;implication&gt; tag marks when the speaker infers implicit information in making his/her argument.</long>
     </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="irony">
+        <name>Irony</name>
+        <short>Saying something and meaning something else</short>
+        <long>The &lt;irony&gt; tag marks when the speaker says one thing but means something else, usually using sarcasm.</long>
     </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="glory">
+        <name>National Self-Glorification</name>
+        <short>Using patriotism to represent oneself in a positive light</short>
+        <long>The &lt;glory&gt; tag marks when the speaker tries to represent him/herself in a positive light by glorifying Russia.</long>
     </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="stats">
+        <name>Statistics</name>
+        <short>Using hard numbers to support an argument</short>
+        <long>The &lt;stats&gt; tag marks when the speaker uses numbers to boost credibility. These figures may be either true or false.</long>
     </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="assumption">
+        <name>Assumption</name>
+        <short>Making an explicit assumption about something</short>
+        <long>The &lt;assumption&gt; tag marks when the speaker explicitly makes an assumption in their argument.</long>
     </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
-    </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
-    </device>
-    <device tag="authority">
-        <short>Reference to authority</short>
-        <desc></desc>
+    <device tag="vague">
+        <name>Vagueness</name>
+        <short>Creating uncertainty and ambiguity</short>
+        <long>The &lt;vague&gt; tag marks when the speaker blurs the lines between fact and fiction.</long>
     </device>
 </deviceMap>
