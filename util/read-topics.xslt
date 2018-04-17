@@ -24,6 +24,12 @@
                         <xsl:value-of select="@name"/>
                 </h2>
                 <table>
+                        <tr>
+                                <th>Lemma</th>
+                                <th>Overall count</th>
+                                <th>Relevance to Putin</th>
+                                <th>Relevance to Zhirnovskii</th>
+                        </tr>
                         <xsl:apply-templates select="word">
                                 <xsl:sort data-type="number" select="@rank"/>
                                 <xsl:with-param name="topic-number" select="@id"/>
