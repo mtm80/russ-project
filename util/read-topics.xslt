@@ -15,42 +15,45 @@
                         </head>
                         <body>
                                 <h1>Topics</h1>
-                                <xsl:apply-templates select="//topic[@name]" mode="main"/>
+                                <xsl:variable select="$doc-report//doc[candidate='putin']" name="putin-docs"/>
+                                <xsl:variable select="$doc-report//doc[candidate='zhirinovskii']" name="zhirinovskii-docs"/>
+                                <xsl:variable select="//topic[@name]/@id" name="named-topic-ids"/>
+                                <xsl:variable select="1.0 div sum($putin-docs//topic[@num = $named-topic-ids])" name="putin-norm"/>
+                                <xsl:variable select="1.0 div sum($zhirinovskii-docs//topic[@num = $named-topic-ids])" name="zhirinovskii-norm"/>
+                                <xsl:for-each-group select="//topic[@name]" group-by="@name">
+                                        
+                                        <h2>
+                                                <xsl:value-of select="@name"/>
+                                        </h2>
+                                        <table>
+                                                <tr>
+                                                        <th>Relevance to Putin</th>
+                                                        <td><xsl:apply-templates select="$putin-norm * sum($putin-docs//topic[@num = current-group()/@id])"/></td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Relevance to Zhirinovskii</th>
+                                                        <td><xsl:apply-templates select="$zhirinovskii-norm * sum($zhirinovskii-docs//topic[@num = current-group()/@id])"/></td>
+                                                </tr>
+                                                <tr>
+                                                        <th>Lemma</th>
+                                                        <th>Overall count</th>
+                                                </tr>
+                                                <xsl:apply-templates select="current-group()/word">
+                                                        <xsl:sort data-type="number" select="@count"/>
+                                                </xsl:apply-templates>
+                                                
+                                        </table>
+                                </xsl:for-each-group>
                         </body>
                 </html>
         </xsl:template>
-        <xsl:template match="topic" mode="main">
-                <h2>
-                        <xsl:value-of select="@name"/>
-                </h2>
-                <table>
-                        <tr>
-                                <th>Lemma</th>
-                                <th>Overall count</th>
-                                <th>Relevance to Putin</th>
-                                <th>Relevance to Zhirnovskii</th>
-                        </tr>
-                        <xsl:apply-templates select="word">
-                                <xsl:sort data-type="number" select="@rank"/>
-                                <xsl:with-param name="topic-number" select="@id"/>
-                        </xsl:apply-templates>
-                </table>
-        </xsl:template>
         <xsl:template match="word">
-                <xsl:param name="topic-number" as="xs:int"/>
-                <xsl:variable as="xs:string" name="topic-word" select="."/>
                 <tr>
                         <td>
-                                <xsl:apply-templates select='$topic-word'/>
+                                <xsl:apply-templates/>
                         </td>
                         <td>
                                 <xsl:apply-templates select="substring-before(@count, '.')"/>
-                        </td>
-                        <td>
-                                <xsl:apply-templates select="sum($doc-report//doc[candidate='putin']//topic[@num = $topic-number])"/>
-                        </td>
-                        <td>
-                                <xsl:apply-templates select="sum($doc-report//doc[candidate='zhirinovskii']//topic[@num = $topic-number])"/>
                         </td>
                 </tr>
         </xsl:template>

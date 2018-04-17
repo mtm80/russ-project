@@ -550,7 +550,7 @@
 	<word rank='19' count='2.0'>готовность</word>
 	<word rank='20' count='2.0'>настойчиво</word>
   </topic>
-  <topic id='25' alpha='0.16666666666666666' totalTokens='115' name="quality of life">
+  <topic id='25' alpha='0.16666666666666666' totalTokens='115' name="quality">
 	<word rank='1' count='15.0'>гражданин</word>
 	<word rank='2' count='12.0'>очень</word>
 	<word rank='3' count='7.0'>давать</word>
