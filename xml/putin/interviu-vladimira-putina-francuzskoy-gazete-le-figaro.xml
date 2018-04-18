@@ -402,7 +402,7 @@
                                         <w lemma="двусторонний">двусторонних</w>
                                         <w lemma="отношение">отношений</w>.                                                                                                                                                                                                 
                                 </ru:assumption>
-                                <ru:assumption type="obvious">
+                                <ru:assumption>
                                         <w lemma="конечно">Конечно</w>,                                                                                                                                                                                                                                                         
                                         <w lemma="у">у</w>
                                         <w lemma="вновь">вновь</w>
@@ -2392,7 +2392,7 @@
                                 <w lemma="что-то">что-то</w>
                                 <w lemma="такой">такое</w>. 
                                 </ru:anecdote> 
-                                <ru:evidence type="unknown">                                                                                                                                                                                                                               
+                                <ru:evidence truth="unknown">                                                                                                                                                                                                                               
                                 <w lemma="ведь">Ведь</w>
                                 <w lemma="весь">всё</w>
                                 <w lemma="что">что</w>

@@ -1,4 +1,5 @@
 <?xml-model href="../../odd/out/speeches.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../people.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI 
         xmlns="http://www.tei-c.org/ns/1.0" 
         xmlns:ru="http://ru-rhetoric.obdurodon.org/rr">
@@ -9,7 +10,8 @@
                                 <author>NBC</author>
                                 <respStmt>
                                         <resp>interviewee</resp>
-                                        <persName ref="#putin">Vladimir V. Putin</persName>
+                                        <persName></persName>
+                                        <!--<persName ref="#putin">Vladimir V. Putin</persName>-->
                                 </respStmt>
                                 <respStmt>
                                         <resp>interviewed by</resp>
@@ -368,7 +370,7 @@
                                 <w lemma="хотеть">хочу</w>
                                 <w lemma="обижать">обидеть</w>, 
                                 <w lemma="но">но</w>
-                                <ru:victim>
+                                <ru:actorDesc>
                                         <w lemma="соединять">Соединённые</w>
                                         <w lemma="штат">Штаты</w>
                                         <w lemma="везде">везде</w>, 
@@ -382,7 +384,7 @@
                                         <w lemma="кампания">кампании</w>
                                         <w lemma="другой">других</w>
                                         <w lemma="страна">стран</w>. 
-                                </ru:victim>
+                                </ru:actorDesc>
                                 <w lemma="вы">Вам</w>
                                 <w lemma="это">это</w>
                                 <w lemma="разве">разве</w>

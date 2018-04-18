@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+    <person xml:id="#navalnyi">
+        <name lang="ru">Алексей Навальный</name>
+        <name lang="en">Aleksei Naval'nyi</name>
+    </person>
+</people>
