@@ -1,0 +1,77 @@
+<docs><doc>
+			<id>1</id>
+	<candidate>putin</candidate>
+		  <path>file:/home/rfulop/workspace/russ-project/util/../analysis/mallet-input/zhirinovskii-zhirinovskii3.txt</path><topic num='0'>0.023809523809523808</topic><topic num='1'>0.023809523809523808</topic><topic num='2'>0.023809523809523808</topic><topic num='3'>0.023809523809523808</topic><topic num='4'>0.023809523809523808</topic><topic num='5'>0.023809523809523808</topic><topic num='6'>0.023809523809523808</topic><topic num='7'>0.023809523809523808</topic><topic num='8'>0.023809523809523808</topic><topic num='9'>0.16666666666666669</topic><topic num='10'>0.023809523809523808</topic><topic num='11'>0.023809523809523808</topic><topic num='12'>0.023809523809523808</topic><topic num='13'>0.023809523809523808</topic><topic num='14'>0.023809523809523808</topic><topic num='15'>0.023809523809523808</topic><topic num='16'>0.023809523809523808</topic><topic num='17'>0.023809523809523808</topic><topic num='18'>0.023809523809523808</topic><topic num='19'>0.16666666666666669</topic><topic num='20'>0.023809523809523808</topic><topic num='21'>0.023809523809523808</topic><topic num='22'>0.023809523809523808</topic><topic num='23'>0.023809523809523808</topic><topic num='24'>0.023809523809523808</topic><topic num='25'>0.023809523809523808</topic><topic num='26'>0.023809523809523808</topic><topic num='27'>0.023809523809523808</topic><topic num='28'>0.023809523809523808</topic><topic num='29'>0.023809523809523808</topic>
+	          </doc>
+		
+<doc>
+			<id>2</id>
+	<candidate>zhirinovskii</candidate>
+		  <path>file:/home/rfulop/workspace/russ-project/util/../analysis/mallet-input/zhirinovskii-zhirinovskii_interview2.txt</path><topic num='0'>0.023809523809523808</topic><topic num='1'>0.023809523809523808</topic><topic num='2'>0.023809523809523808</topic><topic num='3'>0.16666666666666669</topic><topic num='4'>0.023809523809523808</topic><topic num='5'>0.023809523809523808</topic><topic num='6'>0.023809523809523808</topic><topic num='7'>0.023809523809523808</topic><topic num='8'>0.023809523809523808</topic><topic num='9'>0.023809523809523808</topic><topic num='10'>0.023809523809523808</topic><topic num='11'>0.023809523809523808</topic><topic num='12'>0.023809523809523808</topic><topic num='13'>0.023809523809523808</topic><topic num='14'>0.023809523809523808</topic><topic num='15'>0.023809523809523808</topic><topic num='16'>0.023809523809523808</topic><topic num='17'>0.023809523809523808</topic><topic num='18'>0.16666666666666669</topic><topic num='19'>0.023809523809523808</topic><topic num='20'>0.023809523809523808</topic><topic num='21'>0.023809523809523808</topic><topic num='22'>0.023809523809523808</topic><topic num='23'>0.023809523809523808</topic><topic num='24'>0.023809523809523808</topic><topic num='25'>0.023809523809523808</topic><topic num='26'>0.023809523809523808</topic><topic num='27'>0.023809523809523808</topic><topic num='28'>0.023809523809523808</topic><topic num='29'>0.023809523809523808</topic>
+	          </doc>
+		
+<doc>
+			<id>3</id>
+	<candidate>putin</candidate>
+		  <path>file:/home/rfulop/workspace/russ-project/util/../analysis/mallet-input/putin-sezd-partii-edinaja-rossija.txt</path><topic num='0'>0.053820528836144084</topic><topic num='1'>0.04694982302727462</topic><topic num='2'>0.033208411409535704</topic><topic num='3'>0.013845513220903605</topic><topic num='4'>0.08442640016656255</topic><topic num='5'>0.00010410160316468873</topic><topic num='6'>0.00010410160316468873</topic><topic num='7'>0.030709972933583175</topic><topic num='8'>0.020716219029773057</topic><topic num='9'>0.06069123464501354</topic><topic num='10'>0.00010410160316468873</topic><topic num='11'>0.003227149698105351</topic><topic num='12'>0.00010410160316468873</topic><topic num='13'>0.07693108473870497</topic><topic num='14'>0.02134082864876119</topic><topic num='15'>0.06069123464501354</topic><topic num='16'>0.12502602540079116</topic><topic num='17'>0.00010410160316468873</topic><topic num='18'>0.0369560691234645</topic><topic num='19'>0.025088486362689986</topic><topic num='20'>0.00010410160316468873</topic><topic num='21'>0.07630647511971685</topic><topic num='22'>0.09067249635644388</topic><topic num='23'>0.08567561940453883</topic><topic num='24'>0.005100978555069748</topic><topic num='25'>0.01072246512596294</topic><topic num='26'>0.0369560691234645</topic><topic num='27'>0.00010410160316468873</topic><topic num='28'>0.00010410160316468873</topic><topic num='29'>0.00010410160316468873</topic>
+	          </doc>
+		
+<doc>
+			<id>4</id>
+	<candidate>putin</candidate>
+		  <path>file:/home/rfulop/workspace/russ-project/util/../analysis/mallet-input/putin-interviu-amerikanskomu-telekanalu-nbc.txt</path><topic num='0'>0.0035381750465549346</topic><topic num='1'>0.07728119180633147</topic><topic num='2'>0.021415270018621976</topic><topic num='3'>0.013594040968342644</topic><topic num='4'>0.03147113594040968</topic><topic num='5'>0.0404096834264432</topic><topic num='6'>0.044878957169459964</topic><topic num='7'>0.03147113594040968</topic><topic num='8'>0.10074487895716946</topic><topic num='9'>0.00018621973929236496</topic><topic num='10'>0.11638733705772812</topic><topic num='11'>0.00018621973929236496</topic><topic num='12'>0.030353817504655493</topic><topic num='13'>0.00018621973929236496</topic><topic num='14'>0.00018621973929236496</topic><topic num='15'>0.04152700186219739</topic><topic num='16'>0.00018621973929236496</topic><topic num='17'>0.002420856610800745</topic><topic num='18'>0.03594040968342644</topic><topic num='19'>0.001303538175046555</topic><topic num='20'>0.008007448789571695</topic><topic num='21'>0.00018621973929236496</topic><topic num='22'>0.00018621973929236496</topic><topic num='23'>0.0739292364990689</topic><topic num='24'>0.012476722532588452</topic><topic num='25'>0.00018621973929236496</topic><topic num='26'>0.016945996275605214</topic><topic num='27'>0.14096834264432032</topic><topic num='28'>0.07281191806331473</topic><topic num='29'>0.08063314711359405</topic>
+	          </doc>
+		
+<doc>
+			<id>5</id>
+	<candidate>putin</candidate>
+		  <path>file:/home/rfulop/workspace/russ-project/util/../analysis/mallet-input/putin-sezd-rossiiskogo-coiuza-promyshlennikov-i-predprinimatelei.txt</path><topic num='0'>0.031662781662781664</topic><topic num='1'>0.00019425019425019425</topic><topic num='2'>0.08294483294483294</topic><topic num='3'>0.06313131313131314</topic><topic num='4'>0.047979797979797977</topic><topic num='5'>0.021173271173271176</topic><topic num='6'>0.0980963480963481</topic><topic num='7'>0.047979797979797977</topic><topic num='8'>0.04098679098679098</topic><topic num='9'>0.004856254856254857</topic><topic num='10'>0.00019425019425019425</topic><topic num='11'>0.00019425019425019425</topic><topic num='12'>0.09343434343434344</topic><topic num='13'>0.00019425019425019425</topic><topic num='14'>0.13655788655788656</topic><topic num='15'>0.013014763014763014</topic><topic num='16'>0.07128982128982128</topic><topic num='17'>0.00019425019425019425</topic><topic num='18'>0.051476301476301466</topic><topic num='19'>0.0013597513597513598</topic><topic num='20'>0.011849261849261848</topic><topic num='21'>0.05846930846930847</topic><topic num='22'>0.00019425019425019425</topic><topic num='23'>0.038655788655788656</topic><topic num='24'>0.0013597513597513598</topic><topic num='25'>0.008352758352758354</topic><topic num='26'>0.056138306138306136</topic><topic num='27'>0.00019425019425019425</topic><topic num='28'>0.0036907536907536905</topic><topic num='29'>0.014180264180264182</topic>
+	          </doc>
+		
+<doc>
+			<id>6</id>
+		  <path>file:/home/rfulop/workspace/russ-project/util/../analysis/mallet-input/grudinin-grudinin_interview_1.txt</path><topic num='0'>0.023809523809523808</topic><topic num='1'>0.023809523809523808</topic><topic num='2'>0.023809523809523808</topic><topic num='3'>0.023809523809523808</topic><topic num='4'>0.023809523809523808</topic><topic num='5'>0.023809523809523808</topic><topic num='6'>0.023809523809523808</topic><topic num='7'>0.023809523809523808</topic><topic num='8'>0.023809523809523808</topic><topic num='9'>0.023809523809523808</topic><topic num='10'>0.023809523809523808</topic><topic num='11'>0.023809523809523808</topic><topic num='12'>0.023809523809523808</topic><topic num='13'>0.023809523809523808</topic><topic num='14'>0.023809523809523808</topic><topic num='15'>0.023809523809523808</topic><topic num='16'>0.023809523809523808</topic><topic num='17'>0.023809523809523808</topic><topic num='18'>0.023809523809523808</topic><topic num='19'>0.023809523809523808</topic><topic num='20'>0.023809523809523808</topic><topic num='21'>0.023809523809523808</topic><topic num='22'>0.023809523809523808</topic><topic num='23'>0.023809523809523808</topic><topic num='24'>0.023809523809523808</topic><topic num='25'>0.023809523809523808</topic><topic num='26'>0.16666666666666669</topic><topic num='27'>0.16666666666666669</topic><topic num='28'>0.023809523809523808</topic><topic num='29'>0.023809523809523808</topic>
+	          </doc>
+		
+<doc>
+			<id>7</id>
+	<candidate>putin</candidate>
+		  <path>file:/home/rfulop/workspace/russ-project/util/../analysis/mallet-input/putin-voenno-prakticheskaja-konferencija-po-itogam-spetsoperacii-v-Sirii.txt</path><topic num='0'>0.010431829209121786</topic><topic num='1'>0.000242600679281902</topic><topic num='2'>0.008976225133430374</topic><topic num='3'>0.03226589034449297</topic><topic num='4'>0.000242600679281902</topic><topic num='5'>0.08321203299369237</topic><topic num='6'>0.003153808830664725</topic><topic num='7'>0.03954391072295003</topic><topic num='8'>0.000242600679281902</topic><topic num='9'>0.000242600679281902</topic><topic num='10'>0.000242600679281902</topic><topic num='11'>0.18655992236778265</topic><topic num='12'>0.000242600679281902</topic><topic num='13'>0.030810286268801557</topic><topic num='14'>0.000242600679281902</topic><topic num='15'>0.03954391072295003</topic><topic num='16'>0.0497331392527899</topic><topic num='17'>0.030810286268801557</topic><topic num='18'>0.10359049005337216</topic><topic num='19'>0.000242600679281902</topic><topic num='20'>0.000242600679281902</topic><topic num='21'>0.05555555555555555</topic><topic num='22'>0.000242600679281902</topic><topic num='23'>0.08757884522076663</topic><topic num='24'>0.029354682193110142</topic><topic num='25'>0.2040271712760796</topic><topic num='26'>0.000242600679281902</topic><topic num='27'>0.000242600679281902</topic><topic num='28'>0.000242600679281902</topic><topic num='29'>0.0016982047549733142</topic>
+	          </doc>
+		
+	<doc>
+		<id>8</id>
+		<candidate>zhirinovskii</candidate>
+		<path>file:/home/rfulop/workspace/russ-project/util/../analysis/mallet-input/zhirinovskii-zhirinovskii_interview1.txt</path>
+		<topic num="0">0.023809523809523808</topic>
+		<topic num="1">0.023809523809523808</topic>
+		<topic num="2">0.16666666666666669</topic>
+		<topic num="3">0.023809523809523808</topic>
+		<topic num="4">0.023809523809523808</topic>
+		<topic num="5">0.023809523809523808</topic>
+		<topic num="6">0.023809523809523808</topic>
+		<topic num="7">0.023809523809523808</topic>
+		<topic num="8">0.023809523809523808</topic>
+		<topic num="9">0.023809523809523808</topic>
+		<topic num="10">0.023809523809523808</topic>
+		<topic num="11">0.023809523809523808</topic>
+		<topic num="12">0.023809523809523808</topic>
+		<topic num="13">0.023809523809523808</topic>
+		<topic num="14">0.023809523809523808</topic>
+		<topic num="15">0.023809523809523808</topic>
+		<topic num="16">0.023809523809523808</topic>
+		<topic num="17">0.023809523809523808</topic>
+		<topic num="18">0.023809523809523808</topic>
+		<topic num="19">0.023809523809523808</topic>
+		<topic num="20">0.023809523809523808</topic>
+		<topic num="21">0.023809523809523808</topic>
+		<topic num="22">0.023809523809523808</topic>
+		<topic num="23">0.16666666666666669</topic>
+		<topic num="24">0.023809523809523808</topic>
+		<topic num="25">0.023809523809523808</topic>
+		<topic num="26">0.023809523809523808</topic>
+		<topic num="27">0.023809523809523808</topic>
+		<topic num="28">0.023809523809523808</topic>
+		<topic num="29">0.023809523809523808</topic>
+	</doc>
+		</docs>

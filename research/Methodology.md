@@ -7,25 +7,34 @@ To build our analysis, we are applying an assortment of rhetorical tags to the d
 
 The following is a list of the specific tags that we are tracking.
 
-Actor description: <actorDesc> The way we describe actors or members of a particular society either in a negative or positive way.
-Authority: <ru:authority> Mentioning authorities to support one's claims.
-Anecdote: <ru:anecdote> Telling a story to make a point
-Categorization: <ru:cat> Assigning people to different groups.
-Consensus: <ru:consensus> Creating agreement and solidarity
-Disclaimer: <ru:disclaimer> Presenting an idea as something positive and then rejecting it by the use of terms such as 'but' in the second sentence.
-Evidentiality: <ru:evidence> Using evidence, true or not, to support one’s ideas. (update schema to represent)
-Hyperbole: <ru:hyperbole> A device for enhancing and exaggerating meaning.
-Implication: <ru:implication> Deducing or inferring implicit information.
-Irony: <ru:irony> Saying something and meaning something else.
-Lexicalization: <ru:lex> an overall ideological strategy for negative other-representation through the semantic features of the words.
-National Self Glorification: <ru:glory> A device to create positive self representation by glorifying one’s country.
-Number Game: <ru:stats> Using numbers and statistics to appear credible.
-Promise <ru:promise> The candidate makes a promise or says "we should"
-Polarization: <ru:polarization> Categorizing allies as having good attributes and opponents having bad attributes.
-Assumption: <ru:assumption> Makes an explicit assumption about something
-Vagueness: <ru:vague> Creating uncertainty and ambiguity.
-Victimization: <ru:victim> Telling bad stories about enemies
-Conclusion <ru:conclusion> Concludes something based on assumptions and evidence posited
+"Actor Description" tag marks when the speaker describes an individual or group. We marked whether the sentiment was positive, negative, or neutral.
+      
+"Anecdote" tag marks when the speaker uses a story as part of their argument.
+      
+"Assumption" tag marks when the speaker explicitly makes an assumption in their argument.
+    
+"Authority" tag marks when the speaker references an authority. We also annotated what sources the politicians referenced.
+      
+"Categorization" tag marks when the speaker assigns an individual to a group. We identified both the target of categorization, and the group to which they were assigned.
+      
+"Consensus Building" tag marks when the speaker identifies with a group, usually to curry political favor. 
+      
+"Disclaimer" tag marks when the speaker presents an idea as positive, only to reject it later.
+      
+"Evidence" tag marks when the speaker uses supposed evidence to prove a point. We marked whether the evidence was true, false, or unknown.
+      
+"Hyperbole" tag marks when the speaker exaggerates meaning by making questionable or absurd assumptions.
+      
+"Implication" tag marks when the speaker infers implicit information in making his/her argument.
+      
+"Irony" tag marks when the speaker says one thing but means something else, usually using sarcasm.
+     
+"National Self-Glorification" tag marks when the speaker tries to represent him/herself in a positive light by glorifying Russia.
+      
+"Statistics" tag marks when the speaker uses numbers to boost credibility. These figures may be either true or false.
+      
+"Vagueness" tag marks when the speaker blurs the lines between fact and fiction.
+   
 
 Several techniques such as "actor description", "consensus", "national self glorification", "polarization", and "victimization" are examples
 of manipulative tactics to rally support and create an "us" versus "them" scenario.  Techniques such as "anecdote", "evidentiality", 

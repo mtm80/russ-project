@@ -19,15 +19,15 @@ We're marking up occurrences of the following general patterns
 - **Hyperbole:** ```<ru:hyperbole>``` A device for enhancing and exaggerating meaning.
 - **Implication:** ```<ru:implication>``` Deducing or inferring implicit information.
 - **Irony:** ```<ru:irony>``` Saying something and meaning something else.
-- **Lexicalization:** ```<ru:lex>```  an overall ideological strategy for negative other-representation through the semantic features of the words.
 - **National Self Glorification:** ```<ru:glory>``` A device to create positive self representation by glorifying one’s country.
 - **Number Game:** ```<ru:stats>``` Using numbers and statistics to appear credible.
 - **Promise** ```<ru:promise>``` The candidate makes a promise or says "we should"
 - **Polarization:** ```<ru:polarization>``` Categorizing allies as having good attributes and opponents having bad attributes.
 - **Assumption:** ```<ru:assumption>``` Makes an explicit assumption about something
 - **Vagueness:** ```<ru:vague>``` Creating uncertainty and ambiguity.
-- **Victimization:** ```<ru:victim>``` Telling bad stories about enemies
-- **Conclusion** ```<ru:conclusion>``` Concludes something based on assumptions and evidence posited
+
+## unused?
+- **Lexiclization:** ```<ru:lex>```  an overall ideological strategy for negative other-representation through the semantic features of the words.
 
 ## Transformations
 All transformations and runner scripts (for on my home machine) are located in the ```/util/``` folder. Run the shell script at the UNIX command line. Requires Python 3.5 or greater.
