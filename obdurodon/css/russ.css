@@ -4,9 +4,13 @@ text-align:center;
     background-color: #e5e5e3;
 }
 
+p{
+    font-size: 20px;
+}
+
 .header {
     font-weight:bold;
-    margin:10%;
+    margin:0% 10%;
     font-family:arial, helvetica, sans-serif;
 }
 
@@ -37,23 +41,23 @@ section.pg {
     font-family:arial, helvetica, sans-serif;
 }
 
-ul {
+ul.menu {
     list-style-type:none;
     margin: 1%;
     padding: 0 10%;
     background-color: #f1f1f1;
 }
-li {display:inline;
+ul.menu li {display:inline;
 }
 
-li a {
+ul.menu li a {
     display:inline-block;
     color: #000;
     padding: 24px 12px;
     text-decoration: none;
 }
 
-li a:hover {
+ul.menu li a:hover {
     display:inline-block;
     background-color: #555;
     color: white;
@@ -99,3 +103,12 @@ li a:hover {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+article{
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+

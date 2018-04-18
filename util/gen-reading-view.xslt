@@ -8,7 +8,7 @@
                 select="doc('../analysis/topic-report-30.xml')"/>
         <!-- Match only topics that have a @name attribute value -->
         <xsl:key name="topicByWord" match="topic[@name]" use="word"/>
-        <xsl:key name="nameByRef" match="tei:respStmt/tei:persName | tei:respStmt/tei:name"
+        <xsl:key name="nameByRef" match="tei:titleStmt/tei:respStmt/tei:persName | tei:titleStmt/tei:respStmt/tei:name"
                 use="@ref"/>
         <xsl:template match="/">
                 <html xmlns="http://www.w3.org/1999/xhtml">

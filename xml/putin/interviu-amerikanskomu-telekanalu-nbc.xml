@@ -10,8 +10,7 @@
                                 <author>NBC</author>
                                 <respStmt>
                                         <resp>interviewee</resp>
-                                        <persName></persName>
-                                        <!--<persName ref="#putin">Vladimir V. Putin</persName>-->
+                                        <persName ref="#putin">Vladimir V. Putin</persName>
                                 </respStmt>
                                 <respStmt>
                                         <resp>interviewed by</resp>

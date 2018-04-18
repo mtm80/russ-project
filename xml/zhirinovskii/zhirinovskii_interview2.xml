@@ -8,11 +8,11 @@
                 <author>Ekho Moskvy</author>
                 <respStmt>
                     <resp>interviewee</resp>
-                    <persName ref="#zhirinovskii">Zhirinovsky</persName>
+                    <persName ref="#zhirinovskii">Vladimir Zhirinovsky</persName>
                 </respStmt>
                 <respStmt>
                     <resp>interviewed by</resp>
-                    <orgName ref="#naryshzkin">Aleksei Naryshzkin</orgName>
+                    <persName ref="#naryshkin">Aleksei Naryshzkin</persName>
                 </respStmt>
             </titleStmt>
             <publicationStmt>

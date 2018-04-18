@@ -11,7 +11,7 @@
                 об участии в выборах Президента</title>
                                 <respStmt>
                                         <resp>speaker</resp>
-                                        <persName>Person</persName>
+                                        <persName ref="#zhirinovskii">Vladimir Zhirinovskii</persName>
                                         <!--<persName ref="#zhirinovskii">Vladimir Volfovich Zhirinovskii</persName>-->
                                 </respStmt>
                         </titleStmt>
