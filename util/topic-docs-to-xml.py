@@ -13,4 +13,4 @@ def convert_row(row):
 	          </doc>
 		""" % (body)
 
-print("<docs>%s</docx>" % ('\n'.join(df.apply(convert_row, axis=1))))
+print("<docs>%s</docs>" % ('\n'.join(df.apply(convert_row, axis=1))))

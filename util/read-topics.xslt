@@ -8,8 +8,7 @@
         <xsl:output method="xml" indent="yes" doctype-system="about:legacy-compat"/>
         <xsl:variable name="doc-report" select="doc('../analysis/topic-docs.xml')"/>
         <xsl:template match="/">
-                <html 
-                        xmlns="http://www.w3.org/1999/xhtml">
+                <html xmlns="http://www.w3.org/1999/xhtml">
                         <head>
                                 <title>Topics</title>
                         </head>
