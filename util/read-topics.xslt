@@ -14,8 +14,8 @@
                         </head>
                         <body>
                                 <h1>Topics</h1>
-                                <xsl:variable select="$doc-report//doc[candidate='putin']" name="putin-docs"/>
-                                <xsl:variable select="$doc-report//doc[candidate='zhirinovskii']" name="zhirinovskii-docs"/>
+                                <xsl:variable select="$doc-report//doc[@candidate='putin']" name="putin-docs"/>
+                                <xsl:variable select="$doc-report//doc[@candidate='zhirinovskii']" name="zhirinovskii-docs"/>
                                 <xsl:variable select="//topic[@name]/@id" name="named-topic-ids"/>
                                 <xsl:variable select="1.0 div sum($putin-docs//topic[@num = $named-topic-ids])" name="putin-norm"/>
                                 <xsl:variable select="1.0 div sum($zhirinovskii-docs//topic[@num = $named-topic-ids])" name="zhirinovskii-norm"/>

@@ -1,6 +1,6 @@
 <?xml version='1.0' ?>
 <topicModel>
-  <topic id='0' alpha='0.16666666666666666' totalTokens='156'>
+  <topic id='0' alpha='0.16666666666666666' totalTokens='156' name="economy">
 	<word rank='1' count='13.0'>бизнес</word>
 	<word rank='2' count='8.0'>число</word>
 	<word rank='3' count='7.0'>деловой</word>
@@ -66,7 +66,7 @@
 	<word rank='19' count='2.0'>инструмент</word>
 	<word rank='20' count='2.0'>американец</word>
   </topic>
-  <topic id='3' alpha='0.16666666666666666' totalTokens='178'>
+  <topic id='3' alpha='0.16666666666666666' totalTokens='178' topic="military">
 	<word rank='1' count='14.0'>вооружение</word>
 	<word rank='2' count='9.0'>армия</word>
 	<word rank='3' count='6.0'>образец</word>
@@ -88,7 +88,7 @@
 	<word rank='19' count='3.0'>технический</word>
 	<word rank='20' count='3.0'>промышленный</word>
   </topic>
-  <topic id='4' alpha='0.16666666666666666' totalTokens='209'>
+  <topic id='4' alpha='0.16666666666666666' totalTokens='209' name="diplomatic">
 	<word rank='1' count='19.0'>очень</word>
 	<word rank='2' count='17.0'>политика</word>
 	<word rank='3' count='9.0'>международный</word>
@@ -220,7 +220,7 @@
 	<word rank='19' count='3.0'>повышение</word>
 	<word rank='20' count='3.0'>поддерживать</word>
   </topic>
-  <topic id='10' alpha='0.16666666666666666' totalTokens='174'>
+  <topic id='10' alpha='0.16666666666666666' totalTokens='174' name="interference-in-elections">
 	<word rank='1' count='23.0'>соединять</word>
 	<word rank='2' count='8.0'>нужно</word>
 	<word rank='3' count='7.0'>борьба</word>
@@ -286,7 +286,7 @@
 	<word rank='19' count='3.0'>убежденный</word>
 	<word rank='20' count='3.0'>прогресс</word>
   </topic>
-  <topic id='13' alpha='0.16666666666666666' totalTokens='157'>
+  <topic id='13' alpha='0.16666666666666666' totalTokens='157' name="syria">
 	<word rank='1' count='14.0'>оружие</word>
 	<word rank='2' count='12.0'>техника</word>
 	<word rank='3' count='9.0'>сирия</word>
@@ -330,7 +330,7 @@
 	<word rank='19' count='4.0'>гораздо</word>
 	<word rank='20' count='3.0'>высокий</word>
   </topic>
-  <topic id='15' alpha='0.16666666666666666' totalTokens='97'>
+  <topic id='15' alpha='0.16666666666666666' totalTokens='97' name="quality-of-life">
 	<word rank='1' count='7.0'>молодой</word>
 	<word rank='2' count='6.0'>современный</word>
 	<word rank='3' count='4.0'>перемена</word>
@@ -352,7 +352,7 @@
 	<word rank='19' count='2.0'>необходимо</word>
 	<word rank='20' count='2.0'>исторический</word>
   </topic>
-  <topic id='16' alpha='0.16666666666666666' totalTokens='184'>
+  <topic id='16' alpha='0.16666666666666666' totalTokens='184' topic="diplomacy">
 	<word rank='1' count='25.0'>штат</word>
 	<word rank='2' count='9.0'>американский</word>
 	<word rank='3' count='8.0'>очень</word>
@@ -374,7 +374,7 @@
 	<word rank='19' count='3.0'>линия</word>
 	<word rank='20' count='3.0'>должность</word>
   </topic>
-  <topic id='17' alpha='0.16666666666666666' totalTokens='237'>
+  <topic id='17' alpha='0.16666666666666666' totalTokens='237' topic="economy">
 	<word rank='1' count='32.0'>развитие</word>
 	<word rank='2' count='21.0'>задача</word>
 	<word rank='3' count='20.0'>должный</word>
@@ -396,7 +396,7 @@
 	<word rank='19' count='3.0'>ответственность</word>
 	<word rank='20' count='3.0'>вера</word>
   </topic>
-  <topic id='18' alpha='0.16666666666666666' totalTokens='119'>
+  <topic id='18' alpha='0.16666666666666666' totalTokens='119' type="economy">
 	<word rank='1' count='8.0'>ограничение</word>
 	<word rank='2' count='8.0'>создавать</word>
 	<word rank='3' count='6.0'>продолжать</word>
@@ -440,7 +440,7 @@
 	<word rank='19' count='3.0'>правда</word>
 	<word rank='20' count='2.0'>форма</word>
   </topic>
-  <topic id='20' alpha='0.16666666666666666' totalTokens='251'>
+  <topic id='20' alpha='0.16666666666666666' totalTokens='251' name="economy">
 	<word rank='1' count='26.0'>нужно</word>
 	<word rank='2' count='17.0'>экономика</word>
 	<word rank='3' count='16.0'>решение</word>
@@ -506,7 +506,7 @@
 	<word rank='19' count='2.0'>построить</word>
 	<word rank='20' count='2.0'>первых</word>
   </topic>
-  <topic id='23' alpha='0.16666666666666666' totalTokens='203'>
+  <topic id='23' alpha='0.16666666666666666' totalTokens='203' name="syria">
 	<word rank='1' count='10.0'>зона</word>
 	<word rank='2' count='8.0'>нужно</word>
 	<word rank='3' count='7.0'>химический</word>
@@ -638,7 +638,7 @@
 	<word rank='19' count='2.0'>устремлять</word>
 	<word rank='20' count='2.0'>участие</word>
   </topic>
-  <topic id='29' alpha='0.16666666666666666' totalTokens='160'>
+  <topic id='29' alpha='0.16666666666666666' totalTokens='160' topic="syria">
 	<word rank='1' count='11.0'>хотеть</word>
 	<word rank='2' count='8.0'>власть</word>
 	<word rank='3' count='7.0'>партнер</word>
