@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns="http://www.w3.org/2000/svg"
+     height="500">
+   <g transform="translate(40 370)">
+      <line x1="0"
+            y1="0"
+            x2="400"
+            y2="0"
+            stroke="black"
+            stroke-width="2"/>
+      <line x1="0"
+            y1="0"
+            x2="0"
+            y2="-360"
+            stroke="black"
+            stroke-width="2"/>
+      <text x="-35" y="-350" font-size="15">40%
+                                </text>
+      <rect x="44"
+            y="-318.181818181818"
+            height="318.181818181818"
+            width="40"
+            fill="blue"/>
+      <text x="57.333333333333336"
+            y="10"
+            transform="rotate(45 57.333333333333336 10)">military</text>
+      <rect x="108"
+            y="-238.6363636363635"
+            height="238.6363636363635"
+            width="40"
+            fill="blue"/>
+      <text x="121.33333333333333"
+            y="10"
+            transform="rotate(45 121.33333333333333 10)">quality-of-life</text>
+      <rect x="172"
+            y="-159.090909090909"
+            height="159.090909090909"
+            width="40"
+            fill="blue"/>
+      <text x="185.33333333333334"
+            y="10"
+            transform="rotate(45 185.33333333333334 10)">economy</text>
+      <rect x="236"
+            y="-79.5454545454545"
+            height="79.5454545454545"
+            width="40"
+            fill="blue"/>
+      <text x="249.33333333333334"
+            y="10"
+            transform="rotate(45 249.33333333333334 10)">diplomatic</text>
+      <rect x="300"
+            y="-79.5454545454545"
+            height="79.5454545454545"
+            width="40"
+            fill="blue"/>
+      <text x="313.3333333333333"
+            y="10"
+            transform="rotate(45 313.3333333333333 10)">interference-in-elections</text>
+   </g>
+</svg>

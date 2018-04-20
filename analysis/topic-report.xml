@@ -286,7 +286,7 @@
 	<word rank='19' count='3.0'>убежденный</word>
 	<word rank='20' count='3.0'>прогресс</word>
   </topic>
-  <topic id='13' alpha='0.16666666666666666' totalTokens='157' name="syria">
+  <topic id='13' alpha='0.16666666666666666' totalTokens='157' name="military">
 	<word rank='1' count='14.0'>оружие</word>
 	<word rank='2' count='12.0'>техника</word>
 	<word rank='3' count='9.0'>сирия</word>
@@ -506,7 +506,7 @@
 	<word rank='19' count='2.0'>построить</word>
 	<word rank='20' count='2.0'>первых</word>
   </topic>
-  <topic id='23' alpha='0.16666666666666666' totalTokens='203' name="syria">
+  <topic id='23' alpha='0.16666666666666666' totalTokens='203' name="military">
 	<word rank='1' count='10.0'>зона</word>
 	<word rank='2' count='8.0'>нужно</word>
 	<word rank='3' count='7.0'>химический</word>
@@ -638,7 +638,7 @@
 	<word rank='19' count='2.0'>устремлять</word>
 	<word rank='20' count='2.0'>участие</word>
   </topic>
-  <topic id='29' alpha='0.16666666666666666' totalTokens='160' topic="syria">
+  <topic id='29' alpha='0.16666666666666666' totalTokens='160' topic="military">
 	<word rank='1' count='11.0'>хотеть</word>
 	<word rank='2' count='8.0'>власть</word>
 	<word rank='3' count='7.0'>партнер</word>

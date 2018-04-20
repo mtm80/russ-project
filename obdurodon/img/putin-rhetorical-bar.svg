@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:ru="http://ru-rhetoric.obdurodon.org/rr"
+     xmlns="http://www.w3.org/2000/svg"
+     height="500">
+   <g transform="translate(40 370)">
+      <text x="-30" y="-345" font-size="20">40</text>36<rect x="15" y="-315" height="315" width="20" fill="blue"/>
+      <text x="20" y="10" color="black" transform="rotate(45 20 10)">promise</text>35<rect x="45" y="-306.25" height="306.25" width="20" fill="blue"/>
+      <text x="50" y="10" color="black" transform="rotate(45 50 10)">evidence</text>31<rect x="75" y="-271.25" height="271.25" width="20" fill="blue"/>
+      <text x="80" y="10" color="black" transform="rotate(45 80 10)">actorDesc</text>26<rect x="105" y="-227.5" height="227.5" width="20" fill="blue"/>
+      <text x="110" y="10" color="black" transform="rotate(45 110 10)">question</text>12<rect x="135" y="-105" height="105" width="20" fill="blue"/>
+      <text x="140" y="10" color="black" transform="rotate(45 140 10)">assumption</text>9<rect x="165" y="-78.75" height="78.75" width="20" fill="blue"/>
+      <text x="170" y="10" color="black" transform="rotate(45 170 10)">anecdote</text>9<rect x="195" y="-78.75" height="78.75" width="20" fill="blue"/>
+      <text x="200" y="10" color="black" transform="rotate(45 200 10)">glory</text>8<rect x="225" y="-70" height="70" width="20" fill="blue"/>
+      <text x="230" y="10" color="black" transform="rotate(45 230 10)">conclusion</text>7<rect x="255" y="-61.25" height="61.25" width="20" fill="blue"/>
+      <text x="260" y="10" color="black" transform="rotate(45 260 10)">implication</text>4<rect x="285" y="-35" height="35" width="20" fill="blue"/>
+      <text x="290" y="10" color="black" transform="rotate(45 290 10)">irony</text>2<rect x="315" y="-17.5" height="17.5" width="20" fill="blue"/>
+      <text x="320" y="10" color="black" transform="rotate(45 320 10)">authority</text>2<rect x="345" y="-17.5" height="17.5" width="20" fill="blue"/>
+      <text x="350" y="10" color="black" transform="rotate(45 350 10)">hyperbole</text>1<rect x="375" y="-8.75" height="8.75" width="20" fill="blue"/>
+      <text x="380" y="10" color="black" transform="rotate(45 380 10)">vague</text>1<rect x="405" y="-8.75" height="8.75" width="20" fill="blue"/>
+      <text x="410" y="10" color="black" transform="rotate(45 410 10)">sarcasm</text>1<rect x="435" y="-8.75" height="8.75" width="20" fill="blue"/>
+      <text x="440" y="10" color="black" transform="rotate(45 440 10)">polarization</text>1<rect x="465" y="-8.75" height="8.75" width="20" fill="blue"/>
+      <text x="470" y="10" color="black" transform="rotate(45 470 10)">presuppose</text>
+      <line x1="0"
+            y1="0"
+            x2="350"
+            y2="0"
+            stroke="black"
+            stroke-width="2"/>
+      <line x1="0"
+            y1="0"
+            x2="0"
+            y2="-360"
+            stroke="black"
+            stroke-width="2"/>
+   </g>
+</svg>
