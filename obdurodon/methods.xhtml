@@ -4,8 +4,8 @@
 
 <head>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="./css/russ.css" />
-        <link rel="stylesheet" type="text/css" href="./css/methods.css" />
+        <link rel="stylesheet" type="text/css" href="css/russ.css" />
+        <link rel="stylesheet" type="text/css" href="css/methods.css" />
         <title>Methodology</title>
 </head>
 
@@ -26,27 +26,44 @@
                 <section>
                         <h2>Rhetorical devices</h2>
                         <p>To best understand how each politician talks to the general public, we decided to develop a system
-                                for annotating rhetorical tags, adapted from Rashidi and Souzandehfar's work on discourse
-                                analysis. We settled on a set of 16 tags to help us profile the candidates' rhetorical style.</p>
+                                for annotating rhetorical tags, adapted from Rashidi and Souzandehfar's work </p>
+                        <p>Some of these rhetorical devices were not applicable to the project: for example, 
+                                the candidates did not use statistics often in their arguments, so we decided to merge it with 
+                                the "evidence" rhetorical device. We also added two rhetorical device tags to better describe 
+                                how Putin and Zhirinovskii talk. In the process of reading, we discovered that both candidates 
+                                tell stories or anecdotes to make their points. The candidates will sometimes make explicit 
+                                assumptions in their speeches, and we wanted to capture this as well.</p>
                         <table id="tag-table">
                                 <tr>
-                                        <th>Rhetorical device</th>
+                                        <th>Rhetorical device
+                                                <br/>
+                                                <span class="rashidi-tag">from Rashidi</span>
+                                                <br/>
+                                                <span class="sam-tag">homebrewed</span>
+                                        </th>
                                         <th>XML Tag</th>
                                         <th>Description</th>
                                         <th>Example</th>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Actor Description</td>
+                                        <td class="device-name rashidi-tag">
+                                                Actor Description
+                                        </td>
                                         <td class="device-tag">&lt;ru:actorDesc&gt;</td>
                                         <td>The &lt;evidence&gt; tag marks when the speaker describes an individual or group.
                                                 We marked whether the sentiment was positive, negative, or neutral.</td>
                                         <td>
                                                 <q>Соединенные Штаты везде по всем миру активно вмешиваются в выборные кампании
                                                         других стран.</q>
+                                                <br/>
+                                                <strong>target: </strong>United States<br/>
+                                                <strong>sentiment: </strong>negative
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Anecdote</td>
+                                        <td class="device-name sam-tag">
+                                                Anecdote
+                                        </td>
                                         <td class="device-tag">&lt;ru:anecdote&gt;</td>
                                         <td>The &lt;anecdote&gt; tag marks when the speaker uses a story as part of their argument.</td>
                                         <td>
@@ -65,7 +82,7 @@
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Assumption</td>
+                                        <td class="device-name sam-tag">Assumption</td>
                                         <td class="device-tag">&lt;ru:assumption&gt;</td>
                                         <td>The &lt;assumption&gt; tag marks when the speaker explicitly makes an assumption
                                                 in their argument.</td>
@@ -75,7 +92,7 @@
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Authority</td>
+                                        <td class="device-name rashidi-tag">Authority</td>
                                         <td class="device-tag">&lt;ru:authority&gt;</td>
                                         <td>The &lt;authority&gt; tag marks when the speaker references an authority. We also
                                                 annotated what sources the politicians referenced.</td>
@@ -86,10 +103,11 @@
                                                         счёт, это Вам лучше у него спросить, думаю, что он Вам скажет, что
                                                         он тоже уверен в этом, но, когда мы с ним говорили, я увидел, что
                                                         и он засомневался.</q>
+                                                <strong>authority: </strong>President Obama
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Categorization</td>
+                                        <td class="device-name rashidi-tag">Categorization</td>
                                         <td class="device-tag">&lt;ru:cat&gt;</td>
                                         <td>The &lt;cat&gt; tag marks when the speaker assigns an individual to a group. We identified
                                                 both the target of categorization, and the group to which they were assigned.</td>
@@ -98,7 +116,7 @@
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Consensus Building</td>
+                                        <td class="device-name rashidi-tag">Consensus Building</td>
                                         <td class="device-tag">&lt;ru:consensus&gt;</td>
                                         <td>The &lt;consensus&gt; tag marks when the speaker identifies with a group, usually
                                                 to curry political favor.</td>
@@ -107,26 +125,28 @@
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Disclaimer</td>
+                                        <td class="device-name rashidi-tag">Disclaimer</td>
                                         <td class="device-tag">&lt;ru:disclaimer&gt;</td>
                                         <td>The &lt;disclaimer&gt; tag marks when the speaker presents an idea as positive, only
                                                 to reject it later.</td>
                                         <td>
-                                                <q>Обязательно. У нас все возрастные…</q>
+                                                <q></q>
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Evidence</td>
+                                        <td class="device-name rashidi-tag">Evidence</td>
                                         <td class="device-tag">&lt;ru:evidence&gt;</td>
                                         <td>The &lt;evidence&gt; tag marks when the speaker uses supposed evidence to prove a
                                                 point. We marked whether the evidence was true, false, or unknown.</td>
                                         <td>
                                                 <q>В Европе взрывают, в Париже взрывают, в России взрывают, в Бельгии взрывают,
                                                         война идёт на Ближнем Востоке – вот о чём надо думать</q>
+                                                <br/>
+                                                <strong>truth: </strong>true
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Hyperbole</td>
+                                        <td class="device-name rashidi-tag">Hyperbole</td>
                                         <td class="device-tag">&lt;ru:hyperbole&gt;</td>
                                         <td>The &lt;hyperbole&gt; tag marks when the speaker exaggerates meaning by making questionable
                                                 or absurd assumptions.</td>
@@ -136,7 +156,7 @@
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Implication</td>
+                                        <td class="device-name rashidi-tag">Implication</td>
                                         <td class="device-tag">&lt;ru:implication&gt;</td>
                                         <td>The &lt;implication&gt; tag marks when the speaker infers implicit information in
                                                 making his/her argument.</td>
@@ -145,7 +165,7 @@
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Irony</td>
+                                        <td class="device-name rashidi-tag">Irony</td>
                                         <td class="device-tag">&lt;ru:irony&gt;</td>
                                         <td>The &lt;irony&gt; tag marks when the speaker says one thing but means something else,
                                                 usually using sarcasm.</td>
@@ -154,7 +174,7 @@
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">National Self-Glorification</td>
+                                        <td class="device-name rashidi-tag">National Self-Glorification</td>
                                         <td class="device-tag">&lt;ru:glory&gt;</td>
                                         <td>The &lt;glory&gt; tag marks when the speaker
                                         tries to represent him/herself in a positive light by glorifying Russia.</td>
@@ -163,16 +183,7 @@
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td class="device-name">Statistics</td>
-                                        <td class="device-tag">&lt;ru:stats&gt;</td>
-                                        <td>The &lt;stats&gt; tag marks when the speaker
-                                                uses numbers to boost credibility. These figures may be either true or false.</td>
-                                        <td>
-                                                
-                                        </td>
-                                </tr>
-                                <tr>
-                                        <td class="device-name">Vagueness</td>
+                                        <td class="device-name rashidi-tag">Vagueness</td>
                                         <td class="device-tag">&lt;ru:vague&gt;</td>
                                         <td>The &lt;vague&gt; tag marks when the speaker
                                         blurs the lines between fact and fiction.</td>
