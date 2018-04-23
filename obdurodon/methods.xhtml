@@ -26,18 +26,33 @@
                 <section>
                         <h2>Rhetorical devices</h2>
                         <p>To best understand how each politician talks to the general public, we decided to develop a system
-                                for annotating rhetorical tags, adapted from Rashidi and Souzandehfar's work </p>
-                        <p>Some of these rhetorical devices were not applicable to the project: for example, 
-                                the candidates did not use statistics often in their arguments, so we decided to merge it with 
-                                the "evidence" rhetorical device. We also added two rhetorical device tags to better describe 
-                                how Putin and Zhirinovskii talk. In the process of reading, we discovered that both candidates 
-                                tell stories or anecdotes to make their points. The candidates will sometimes make explicit 
+                                for annotating rhetorical tags, adapted from van Dijk's framework for ideological discourse
+                                analysis in
+                                <a href="http://www.discourses.org/OldArticles/Politics,%20Ideology%20and%20Discourse.pdf">“Politics, Ideology, and Discourse”</a>. His classification system for CDA is based on the
+                                “ideological square” that describes the general aims of ideological discourse:</p>
+                        <ul>
+                                <li>emphasize our positives</li>
+                                <li>emphasize opponents' negatives</li>
+                                <li>de-emphasize our negatives</li>
+                                <li>de-emphasize their positives</li>
+                        </ul>
+                        <p>To better understand the rhetorical tags and how they have been applied in other research, we looked
+                                at Rashidi and Souzandehfar&apos;s critical discourse analysis of the debates around the
+                                Iraq War. Although their analysis was applied to a specific topic, war, it gave us ideas
+                                on how to extend van Dijk's theory by tracking the targets of certain devices, the truth
+                                of arguments, and sentiment of certain descriptions.
+                        </p>
+                        <p>Some of these rhetorical devices were not applicable to the project. For example, the candidates
+                                did not use statistics often in their arguments, so we decided to merge it with the “evidence”
+                                rhetorical device. We also added two rhetorical device tags to better describe how Putin
+                                and Zhirinovskii talk. In the process of reading, we discovered that both candidates tell
+                                stories or anecdotes to make their points. The candidates will occaisionally make explicit
                                 assumptions in their speeches, and we wanted to capture this as well.</p>
                         <table id="tag-table">
                                 <tr>
                                         <th>Rhetorical device
                                                 <br/>
-                                                <span class="rashidi-tag">from Rashidi</span>
+                                                <span class="rashidi-tag">from van Dijk</span>
                                                 <br/>
                                                 <span class="sam-tag">homebrewed</span>
                                         </th>
@@ -56,7 +71,8 @@
                                                 <q>Соединенные Штаты везде по всем миру активно вмешиваются в выборные кампании
                                                         других стран.</q>
                                                 <br/>
-                                                <strong>target: </strong>United States<br/>
+                                                <strong>target: </strong>United States
+                                                <br/>
                                                 <strong>sentiment: </strong>negative
                                         </td>
                                 </tr>
@@ -152,7 +168,7 @@
                                                 or absurd assumptions.</td>
                                         <td>
                                                 <q>Вы думаете, что у меня есть время каждый день общаться с нашими послами во
-                                                                всём мире, что ли?</q>
+                                                        всём мире, что ли?</q>
                                         </td>
                                 </tr>
                                 <tr>
@@ -170,14 +186,15 @@
                                         <td>The &lt;irony&gt; tag marks when the speaker says one thing but means something else,
                                                 usually using sarcasm.</td>
                                         <td>
-                                                <q>Вы просто, знаете что: вы такие изобретательные люди там, такие молодцы. Вам скучно жить, видимо.</q>
+                                                <q>Вы просто, знаете что: вы такие изобретательные люди там, такие молодцы.
+                                                        Вам скучно жить, видимо.</q>
                                         </td>
                                 </tr>
                                 <tr>
                                         <td class="device-name rashidi-tag">National Self-Glorification</td>
                                         <td class="device-tag">&lt;ru:glory&gt;</td>
-                                        <td>The &lt;glory&gt; tag marks when the speaker
-                                        tries to represent him/herself in a positive light by glorifying Russia.</td>
+                                        <td>The &lt;glory&gt; tag marks when the speaker tries to represent him/herself in a
+                                                positive light by glorifying Russia.</td>
                                         <td>
                                                 <q>Я чувствую прямую живую связь с этой землёй, с историей, со страной.</q>
                                         </td>
@@ -185,25 +202,56 @@
                                 <tr>
                                         <td class="device-name rashidi-tag">Vagueness</td>
                                         <td class="device-tag">&lt;ru:vague&gt;</td>
-                                        <td>The &lt;vague&gt; tag marks when the speaker
-                                        blurs the lines between fact and fiction.</td>
+                                        <td>The &lt;vague&gt; tag marks when the speaker blurs the lines between fact and fiction.</td>
                                         <td>
-                                                <q>Кто это нам говорит, кто это обижается на нас за то, что мы вмешиваемся? Вы сами постоянно вмешиваетесь.</q>
+                                                <q>Кто это нам говорит, кто это обижается на нас за то, что мы вмешиваемся?
+                                                        Вы сами постоянно вмешиваетесь.</q>
                                         </td>
                                 </tr>
                         </table>
+
+
+                        <p>The occurence of these tactics throughout political discourse indicates the types of strategies that
+                                politicians employ to marshal support. We aggregated occurences of these devices in each
+                                candidates' speech to characterize the sample of interviews and speeches we chose. Since
+                                the sample was so small, driven by a short deadline and the convenience of marking up existing
+                                official transcripts, we don't claim that this sample is characteristic of the candidates'
+                                rhetoric in general.
+                        </p>
+
+                </section>
+                <section>
+                        <h2>Topic Modelling</h2>
+                        <p>As a secondary tool in this project, we constructed a topic model using Mallet's LDA module to help
+                                us quantify what Putin and Zhirinovskii talked most about in our sample. To remove topically
+                                meaningless words, we borrowed a
+                                <a href="https://github.com/chermen/stoplist_ru">stop word list</a> from a research project that analysed international diplomacy between
+                                Russia, Abkhazia, and South Ossetia. In general, we found this list to be less than satisfactory,
+                                as it did not stop on posessive pronouns. It also stopped on words that are very uncommon
+                                in spoken Russian, but we decided to leave them in because they weren't words that held much
+                                meaning. We decided to stop on all posessive pronouns except наш, because it held some meaning
+                                in terms of patriotism and otherness.
+                        </p>
+                        <p>In addition to removing stop words, we lemmatized the texts using Yandex's
+                                <a href="https://tech.yandex.ru/mystem/">Mystem</a> project. We chose to use Mystem over other 
+                                options for lemmatization, such as the NLTK stem module, because Mystem uses context clues 
+                                to figure out the role of the word in the sentence, providing better results. In some cases, 
+                                Mystem returned multiple lemmas for each word along with a weight, or estimated probability 
+                                that lemma was correctly chosen. After verifying that Mystem gave good results in the case of 
+                                ambiguity, we decided to take the lemma with the greatest weight.
+                        </p>
+                        <p>After these pre-processing steps, we ran Mystem on our documents, experimenting with topic counts 
+                                between 10 and 60. We found that 30 topics yielded the best results.
+                        </p>
+                        <p>For those who haven't used topic modelling before in their own research, it is important to note that 
+                                topic models provide an approximation of topics that would be understood by a human. For example, 
+                                a topic might include words like "конфликт", "вооруженный", "cирия", and "ракеты" but it might also 
+                                include neutral words like "говорить" and "думать". Since the computer model doesn't understand 
+                                what a military topic looks like, but "говорить" often co-occurs with these military terms, it may 
+                                be grouped in with the topic.
+                        </p>
                 </section>
 
-                <p>Several techniques such as "actor description", "consensus", "national self glorification", "polarization",
-                        and "victimization" are examples of manipulative tactics to rally support and create an "us" versus
-                        "them" scenario. Techniques such as "anecdote", "evidentiality", "number game", and "conclusion"
-                        are examples of a concrete and quantitative attempt to gain support. Other techniques such as "authority",
-                        "hyperbole", "irony", and "vagueness" indicate an abstract approach towards gathering support.</p>
-
-                <p>The occurence of these tactics throughout their discourse indicates the types of strategies that Russian
-                        politicians employ to gain favor among their fellow party members and voters. The results of the
-                        election may shed light on which of these tactics yields the greatest success.
-                </p>
         </article>
 </body>
 
