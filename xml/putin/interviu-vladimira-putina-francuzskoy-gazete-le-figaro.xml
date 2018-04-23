@@ -8,7 +8,6 @@
                                 <title>Интервью Владимира Путина французской газете Le Figaro</title>
                                 <author>Le Figaro</author>
                                 <respStmt>
-                                        <resp>interviewee</resp>
                                         <persName ref="#putin">Vladimir V. Putin</persName>
                                 </respStmt>
                                 <respStmt>

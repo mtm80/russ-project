@@ -4,7 +4,7 @@ text-align:center;
     background-color: #e5e5e3;
 }
 
-p{
+p, li{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
     font-size: 20px;
 }
 
@@ -28,7 +28,7 @@ section.vp {
 section.vz {
     background-color: dodgerblue;
     padding: 5%;
-    color:white;
+    color:white;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     opacity:1;
     font-family:arial, helvetica, sans-serif;
 }
@@ -110,5 +110,18 @@ article{
 
 h1, h2, h3, h4, h5{
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+#tag-table, #tag-table tr, #tag-table td,  #tag-table th{
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+
+#tag-table td, #tag-table th{
+        font-size: 20px;
+}
+
+q{
+        quotes: "«" "»";
 }
 

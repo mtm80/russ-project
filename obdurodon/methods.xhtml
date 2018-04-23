@@ -1,81 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro"
-            rel="stylesheet"/>
-        <link rel="stylesheet" type="text/css" href="./css/russ.css"/>
-        <title>Methodology</title>
-    </head>
-    <body>
-        <!--#include file="header.xhtml" --> 
-        <article>
-        <h1>Methodology</h1>
-            <p>To build our analysis, we are applying an assortment of rhetorical tags to the discourse files of the candidates.  These tags account for the rhetorical techniques that the candidates use during their interviews and and speeches.  Taking into account the topics that the candidates address, these rhetorical techniques shed light on how the candidates appeal to their respective voter base and attempt to attract those who might not normally favor their party.  Where foreign countries are concerned, we can learn how particular parties profess to approach foreign relations.  This is of particular interest given the tense relationship that Russian currently has with the United States and many European countries.</p>
-            
-            <p>The following is a list of the specific tags that we are tracking.</p>
-            
-            <section xmlns="http://www.w3.org/1999/xhtml">
-                <h2>Rhetorical devices</h2>
-                <p>To best understand how each politician talks to the general public, we decided to
-                    develop a system for annotating rhetorical tags, adapted from Rashidi and
-                    Souzandehfar's work on discourse analysis. We settled on a set of 16 tags to help 
-                    us profile the candidates' rhetorical style.</p>
-                <ul>
-                    <li>
-                        <span class="device-name">Actor Description</span>
-                        <span class="device-tag"> (&lt;ru:actorDesc&gt;) : </span>The &lt;evidence&gt; tag marks when the speaker describes an individual or group. We marked whether the sentiment was positive, negative, or neutral.</li>
-                    <li>
-                        <span class="device-name">Anecdote</span>
-                        <span class="device-tag"> (&lt;ru:anecdote&gt;) : </span>The &lt;anecdote&gt; tag marks when the speaker uses a story as part of their argument.</li>
-                    <li>
-                        <span class="device-name">Assumption</span>
-                        <span class="device-tag"> (&lt;ru:assumption&gt;) : </span>The &lt;assumption&gt; tag marks when the speaker explicitly makes an assumption in their argument.</li>
-                    <li>
-                        <span class="device-name">Authority</span>
-                        <span class="device-tag"> (&lt;ru:authority&gt;) : </span>The &lt;authority&gt; tag marks when the speaker references an authority. We also annotated what sources the politicians referenced.</li>
-                    <li>
-                        <span class="device-name">Categorization</span>
-                        <span class="device-tag"> (&lt;ru:cat&gt;) : </span>The &lt;cat&gt; tag marks when the speaker assigns an individual to a group. We identified both the target of categorization, and the group to which they were assigned.</li>
-                    <li>
-                        <span class="device-name">Consensus Building</span>
-                        <span class="device-tag"> (&lt;ru:consensus&gt;) : </span>The &lt;consensus&gt; tag marks when the speaker identifies with a group, usually to curry political favor. </li>
-                    <li>
-                        <span class="device-name">Disclaimer</span>
-                        <span class="device-tag"> (&lt;ru:disclaimer&gt;) : </span>The &lt;disclaimer&gt; tag marks when the speaker presents an idea as positive, only to reject it later.</li>
-                    <li>
-                        <span class="device-name">Evidence</span>
-                        <span class="device-tag"> (&lt;ru:evidence&gt;) : </span>The &lt;evidence&gt; tag marks when the speaker uses supposed evidence to prove a point. We marked whether the evidence was true, false, or unknown.</li>
-                    <li>
-                        <span class="device-name">Hyperbole</span>
-                        <span class="device-tag"> (&lt;ru:hyperbole&gt;) : </span>The &lt;hyperbole&gt; tag marks when the speaker exaggerates meaning by making questionable or absurd assumptions.</li>
-                    <li>
-                        <span class="device-name">Implication</span>
-                        <span class="device-tag"> (&lt;ru:implication&gt;) : </span>The &lt;implication&gt; tag marks when the speaker infers implicit information in making his/her argument.</li>
-                    <li>
-                        <span class="device-name">Irony</span>
-                        <span class="device-tag"> (&lt;ru:irony&gt;) : </span>The &lt;irony&gt; tag marks when the speaker says one thing but means something else, usually using sarcasm.</li>
-                    <li>
-                        <span class="device-name">National Self-Glorification</span>
-                        <span class="device-tag"> (&lt;ru:glory&gt;) : </span>The &lt;glory&gt; tag marks when the speaker tries to represent him/herself in a positive light by glorifying Russia.</li>
-                    <li>
-                        <span class="device-name">Statistics</span>
-                        <span class="device-tag"> (&lt;ru:stats&gt;) : </span>The &lt;stats&gt; tag marks when the speaker uses numbers to boost credibility. These figures may be either true or false.</li>
-                    <li>
-                        <span class="device-name">Vagueness</span>
-                        <span class="device-tag"> (&lt;ru:vague&gt;) : </span>The &lt;vague&gt; tag marks when the speaker blurs the lines between fact and fiction.</li>
-                </ul>
-            </section>
-            
-            <p>Several techniques such as "actor description", "consensus", "national self glorification", "polarization", and "victimization" are examples
-                of manipulative tactics to rally support and create an "us" versus "them" scenario.  Techniques such as "anecdote", "evidentiality", 
-                "number game", and "conclusion" are examples of a concrete and quantitative attempt to gain support.  Other techniques such as "authority", 
-                "hyperbole", "irony", and "vagueness" indicate an abstract approach towards gathering support.</p>  
-            
-            <p>The occurence of these tactics throughout their discourse indicates the types of strategies that Russian politicians employ to gain favor
-                among their fellow party members and voters.  The results of the election may shed light on which of these tactics yields the greatest 
-                success.</p>  
-        </article>
-    </body>
-</html>
 
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="./css/russ.css" />
+        <link rel="stylesheet" type="text/css" href="./css/methods.css" />
+        <title>Methodology</title>
+</head>
+
+<body>
+        <!--#include file="header.xhtml" -->
+        <article>
+                <h1>Methodology</h1>
+                <p>To build our analysis, we are applying an assortment of rhetorical tags to the discourse files of the candidates.
+                        These tags account for the rhetorical techniques that the candidates use during their interviews
+                        and and speeches. Taking into account the topics that the candidates address, these rhetorical techniques
+                        shed light on how the candidates appeal to their respective voter base and attempt to attract those
+                        who might not normally favor their party. Where foreign countries are concerned, we can learn how
+                        particular parties profess to approach foreign relations. This is of particular interest given the
+                        tense relationship that Russian currently has with the United States and many European countries.</p>
+
+                <p>The following is a list of the specific tags that we are tracking.</p>
+
+                <section>
+                        <h2>Rhetorical devices</h2>
+                        <p>To best understand how each politician talks to the general public, we decided to develop a system
+                                for annotating rhetorical tags, adapted from Rashidi and Souzandehfar's work on discourse
+                                analysis. We settled on a set of 16 tags to help us profile the candidates' rhetorical style.</p>
+                        <table id="tag-table">
+                                <tr>
+                                        <th>Rhetorical device</th>
+                                        <th>XML Tag</th>
+                                        <th>Description</th>
+                                        <th>Example</th>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Actor Description</td>
+                                        <td class="device-tag">&lt;ru:actorDesc&gt;</td>
+                                        <td>The &lt;evidence&gt; tag marks when the speaker describes an individual or group.
+                                                We marked whether the sentiment was positive, negative, or neutral.</td>
+                                        <td>
+                                                <q>Соединенные Штаты везде по всем миру активно вмешиваются в выборные кампании
+                                                        других стран.</q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Anecdote</td>
+                                        <td class="device-tag">&lt;ru:anecdote&gt;</td>
+                                        <td>The &lt;anecdote&gt; tag marks when the speaker uses a story as part of their argument.</td>
+                                        <td>
+                                                <q>Мы с Вами вчера встречались вечером, мы с Вами сегодня целый день вместе
+                                                        работали, сейчас опять встречаемся. Когда я пришёл на мероприятие
+                                                        нашей компании Russia Today и сел за стол, рядом сидел какой-то господин
+                                                        с одной стороны, с другой стороны кто-то ещё сидел, потом я выступил,
+                                                        ещё о чём-то поговорили, я встал и ушёл. И потом мне сказали: « Вы
+                                                        знаете, это американский гражданин, он тем-то занимался, он раньше
+                                                        в спецслужбах работал, а теперь он занимается тем-то и тем-то». Я
+                                                        сказал: « Ну и хорошо, вы с ним как-то сотрудничаете?» – « Нет, мы
+                                                        его просто пригласили как одного из гостей». Я говорю: « Ну молодцы,
+                                                        слава богу». Всё! Я с ним даже практически не разговаривал. Я с ним
+                                                        только поздоровался, сел рядом, потом попрощался, встал и ушел. Всё
+                                                        моё знакомство с господином Флинном.</q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Assumption</td>
+                                        <td class="device-tag">&lt;ru:assumption&gt;</td>
+                                        <td>The &lt;assumption&gt; tag marks when the speaker explicitly makes an assumption
+                                                in their argument.</td>
+                                        <td>
+                                                <q>Если бы было что-нибудь выдающееся, из ряда вон выходящее, он бы, конечно,
+                                                        доложил министру, министр – мне.</q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Authority</td>
+                                        <td class="device-tag">&lt;ru:authority&gt;</td>
+                                        <td>The &lt;authority&gt; tag marks when the speaker references an authority. We also
+                                                annotated what sources the politicians referenced.</td>
+                                        <td>
+                                                <q>Мы говорили об этом и с бывшим Президентом Обамой, мы говорили с некоторыми
+                                                        другими официальными лицами – никто никогда не предъявил мне никаких
+                                                        прямых доказательств. Когда мы говорили с Президентом Обамой на этот
+                                                        счёт, это Вам лучше у него спросить, думаю, что он Вам скажет, что
+                                                        он тоже уверен в этом, но, когда мы с ним говорили, я увидел, что
+                                                        и он засомневался.</q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Categorization</td>
+                                        <td class="device-tag">&lt;ru:cat&gt;</td>
+                                        <td>The &lt;cat&gt; tag marks when the speaker assigns an individual to a group. We identified
+                                                both the target of categorization, and the group to which they were assigned.</td>
+                                        <td>
+                                                <q></q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Consensus Building</td>
+                                        <td class="device-tag">&lt;ru:consensus&gt;</td>
+                                        <td>The &lt;consensus&gt; tag marks when the speaker identifies with a group, usually
+                                                to curry political favor.</td>
+                                        <td>
+                                                <q>Обязательно. У нас все возрастные…</q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Disclaimer</td>
+                                        <td class="device-tag">&lt;ru:disclaimer&gt;</td>
+                                        <td>The &lt;disclaimer&gt; tag marks when the speaker presents an idea as positive, only
+                                                to reject it later.</td>
+                                        <td>
+                                                <q>Обязательно. У нас все возрастные…</q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Evidence</td>
+                                        <td class="device-tag">&lt;ru:evidence&gt;</td>
+                                        <td>The &lt;evidence&gt; tag marks when the speaker uses supposed evidence to prove a
+                                                point. We marked whether the evidence was true, false, or unknown.</td>
+                                        <td>
+                                                <q>В Европе взрывают, в Париже взрывают, в России взрывают, в Бельгии взрывают,
+                                                        война идёт на Ближнем Востоке – вот о чём надо думать</q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Hyperbole</td>
+                                        <td class="device-tag">&lt;ru:hyperbole&gt;</td>
+                                        <td>The &lt;hyperbole&gt; tag marks when the speaker exaggerates meaning by making questionable
+                                                or absurd assumptions.</td>
+                                        <td>
+                                                <q>Вы думаете, что у меня есть время каждый день общаться с нашими послами во
+                                                                всём мире, что ли?</q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Implication</td>
+                                        <td class="device-tag">&lt;ru:implication&gt;</td>
+                                        <td>The &lt;implication&gt; tag marks when the speaker infers implicit information in
+                                                making his/her argument.</td>
+                                        <td>
+                                                <q>И у этого кандидата тоже были свои политические оппоненты и противники.</q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Irony</td>
+                                        <td class="device-tag">&lt;ru:irony&gt;</td>
+                                        <td>The &lt;irony&gt; tag marks when the speaker says one thing but means something else,
+                                                usually using sarcasm.</td>
+                                        <td>
+                                                <q>Вы просто, знаете что: вы такие изобретательные люди там, такие молодцы. Вам скучно жить, видимо.</q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">National Self-Glorification</td>
+                                        <td class="device-tag">&lt;ru:glory&gt;</td>
+                                        <td>The &lt;glory&gt; tag marks when the speaker
+                                        tries to represent him/herself in a positive light by glorifying Russia.</td>
+                                        <td>
+                                                <q>Я чувствую прямую живую связь с этой землёй, с историей, со страной.</q>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Statistics</td>
+                                        <td class="device-tag">&lt;ru:stats&gt;</td>
+                                        <td>The &lt;stats&gt; tag marks when the speaker
+                                                uses numbers to boost credibility. These figures may be either true or false.</td>
+                                        <td>
+                                                
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td class="device-name">Vagueness</td>
+                                        <td class="device-tag">&lt;ru:vague&gt;</td>
+                                        <td>The &lt;vague&gt; tag marks when the speaker
+                                        blurs the lines between fact and fiction.</td>
+                                        <td>
+                                                <q>Кто это нам говорит, кто это обижается на нас за то, что мы вмешиваемся? Вы сами постоянно вмешиваетесь.</q>
+                                        </td>
+                                </tr>
+                        </table>
+                </section>
+
+                <p>Several techniques such as "actor description", "consensus", "national self glorification", "polarization",
+                        and "victimization" are examples of manipulative tactics to rally support and create an "us" versus
+                        "them" scenario. Techniques such as "anecdote", "evidentiality", "number game", and "conclusion"
+                        are examples of a concrete and quantitative attempt to gain support. Other techniques such as "authority",
+                        "hyperbole", "irony", and "vagueness" indicate an abstract approach towards gathering support.</p>
+
+                <p>The occurence of these tactics throughout their discourse indicates the types of strategies that Russian
+                        politicians employ to gain favor among their fellow party members and voters. The results of the
+                        election may shed light on which of these tactics yields the greatest success.
+                </p>
+        </article>
+</body>
+
+</html>
