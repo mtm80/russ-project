@@ -1,0 +1,12 @@
+- update lower writeup to match tag table
+- talk about lack of representative sample, how we picked samples
+- discuss Rashidi and Souzandehfar's research
+- get Russian text reviewed
+- spread out dropdown so it fits on screen
+- change formatting for features, transform rhetorical tags to actual names, with descriptions
+- add header to list, sort alphabetically
+- make both divs scrollable in reading view
+- tooltip on the rhetorical devices
+- fix up the webpage to include links to other content
+- svg styling
+- proper bibliography

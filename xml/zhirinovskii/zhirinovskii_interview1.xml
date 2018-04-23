@@ -1610,7 +1610,7 @@
                                 коммунисты, ЛДПР, «Единая Россия»…</u>
                        <u resp="#zhirinovskii"><w lemma="конечно">Конечно</w>, <w lemma="конечно"
                                         >конечно</w>.
-                               <ru:cat> <w lemma="весь">Все</w>
+                               <ru:actorDesc> <w lemma="весь">Все</w>
                                 <w lemma="результат">результаты</w>
                                 <w lemma="положительный">положительные</w>
                                 <w lemma="по">по</w>
@@ -1637,7 +1637,7 @@
                                 <w lemma="нету">нету</w>. <w lemma="самый">Самая</w>
                                 <w lemma="пустой">пустая</w>
                                 <w lemma="область">область</w>.
-                               </ru:cat>
+                               </ru:actorDesc>
 </u>
                         <u resp="#kryuchov">А там результат достигнут в Смоленске какой-то?</u>
                         <u resp="#zhirinovskii">
@@ -3120,7 +3120,7 @@
                         <u resp="#kryuchov">Это понятно, но, тем не менее, палки в колеса будут
                                 вашему правительству…</u>
                         <u resp="#zhirinovskii">
-<ru:cat><w lemma="сколько">Сколько</w>
+<ru:actorDesc><w lemma="сколько">Сколько</w>
                                 <w lemma="потерять">потеряли</w>
                                 <w lemma="на">на</w>
                                 <w lemma="кипр">Кипре</w>… <w lemma="под">Под</w>
@@ -3138,11 +3138,11 @@
                                 <w lemma="бояться">боятся</w>. <w lemma="они">Они</w>
                                 <w lemma="же">же</w>
                                 <w lemma="видеть">видят</w>, <w lemma="что">что</w>
-                                <w lemma="происходить">происходит</w>.</ru:cat>
+                                <w lemma="происходить">происходит</w>.</ru:actorDesc>
 </u>
                         <u resp="#kryuchov">То есть рыбой не торгуем, деньги возвращаем…</u>
                        <u resp="#zhirinovskii">
-<ru:cat><w lemma="конечно">Конечно</w>. <w lemma="они">Они</w>
+<ru:actorDesc><w lemma="конечно">Конечно</w>. <w lemma="они">Они</w>
                                 <w lemma="же">же</w>
                                 <w lemma="бороться">борются</w>
                                 <w lemma="с">с</w>
@@ -3206,7 +3206,7 @@
                                 <w lemma="быть">есть</w>
                                 <w lemma="жесткий">жесткая</w>
                                 <w lemma="линия">линия</w>
-                                <w lemma="нужный">нужна</w>.</ru:cat>
+                                <w lemma="нужный">нужна</w>.</ru:actorDesc>
 </u>
                         <u resp="#ezhov">Начиная с какой суммы?</u>
                         <u resp="#zhirinovskii">
