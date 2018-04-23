@@ -1,5 +1,5 @@
 body {
-margin:3%;
+margin:3% 5%;
 text-align:center;
     background-color: #e5e5e3;
 }
@@ -10,7 +10,8 @@ p{
 
 .header {
     font-weight:bold;
-    margin:0% 10%;
+    margin: 0;
+    width: 100%;
     font-family:arial, helvetica, sans-serif;
 }
 
@@ -46,6 +47,7 @@ ul.menu {
     margin: 1%;
     padding: 0 10%;
     background-color: #f1f1f1;
+    margin: 1% 0;
 }
 ul.menu li {display:inline;
 }
