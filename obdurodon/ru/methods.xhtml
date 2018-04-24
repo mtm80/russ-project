@@ -183,35 +183,29 @@
                                 компанием Яндекс. Мы предпочитали Mystem, потому что он применяет контекстное снятие омонимии в ходе лемматизации, 
                                 придавая лучшие результаты. Он также может лемматизировть низнакомые слова.
                                 Иногда Mystem выводит несколько леммы на каждое введенное слово. В этом случае, мы выбрали лемму со 
-                                самой высокой вероятностей.
+                                самой высокой вероятностей.                                  
                         </p>
-                        <p>As a secondary tool in this project, we constructed a topic model using Mallet's LDA module to help
-                                us quantify what Putin and Zhirinovskii talked most about in our sample. To remove topically
-                                meaningless words, we borrowed a
-                                <a href="https://github.com/chermen/stoplist_ru">stop word list</a> from a research project that analysed international diplomacy between
-                                Russia, Abkhazia, and South Ossetia. In general, we found this list to be less than satisfactory,
-                                as it did not stop on posessive pronouns. It also stopped on words that are very uncommon
-                                in spoken Russian, but we decided to leave them in because they weren't words that held much
-                                meaning. We decided to stop on all posessive pronouns except наш, because it held some meaning
-                                in terms of patriotism and otherness.
-                        </p>
-                        <p>In addition to removing stop words, we lemmatized the texts using Yandex's
-                                <a href="https://tech.yandex.ru/mystem/">Mystem</a> project. We chose to use Mystem over other options for lemmatization, such as
-                                the NLTK stem module, because Mystem uses context clues to figure out the role of the word
-                                in the sentence, providing better results. In some cases, Mystem returned multiple lemmas
-                                for each word along with a weight, or estimated probability that lemma was correctly chosen.
-                                After verifying that Mystem gave good results in the case of ambiguity, we decided to take
-                                the lemma with the greatest weight.
-                        </p>
-                        <p>After these pre-processing steps, we ran Mystem on our documents, experimenting with topic counts
-                                between 10 and 60. We found that 30 topics yielded the best results.
-                        </p>
-                        <p>For those who haven't used topic modelling before in their own research, it is important to note
-                                that topic models provide an approximation of topics that would be understood by a human.
-                                For example, a topic might include words like "конфликт", "вооруженный", "cирия", and "ракеты"
-                                but it might also include neutral words like "говорить" and "думать". Since the computer
-                                model doesn't understand what a military topic looks like, but "говорить" often co-occurs
-                                with these military terms, it may be grouped in with the topic.
+                        <p>У нас было второе средство для нашего проекта, мы создали тематическое моделирование с помощью метода LDA
+                                для вычисления того, что Путин и Жириновский обсуждали в наших проанализированных речях.  Мы приняли 
+                                списку слов от другого проекта, проанализировавщего Россию, Абхазию, и Южную Оссетию, чтобы удалить 
+                                неполезные слова.  Во общее, мы не были доволны с тем, что были включены притяжательные местоимения.  
+                                Оно тоже вклюкило слова, которые редко пользуются в разговорном русском языке.  Несмотря на это, мы 
+                                решили не удалить те слова из-за того, что у них нет сложных значении.  Мы решили удалить все 
+                                притяжательные местоимения кроме <<наш>> потому что это слово имеет значение связано с патриотизмом и 
+                                иностранностю.</p>
+                        <p>Мы не только удалили неполезные слова, но мы пролематизировали тексты программой Яндекса, называющойся
+                                <<Mystem>>.  Мы выбрали Mystem вместо других программ как програма NTLK из-за того, что Mystem может 
+                                разбираться значение любого слова контекстом одного предложения и так обеспечить лучшие результаты.
+                                У нас были примеры того, что Mystem дали различные формы для каждого слова с вероятностю правильной 
+                                формы слова.  После проверки аккуратности ресультатов в случае двусмысленности, мы решили принять форму
+                                с лучшей аккуратностю.</p>
+                        <p>До аналисиса, мы использывали Mystem с нашими текстами, пробавая цифры тем между 10 и 60. Мы разбились, что
+                                были 30 тем, имеющих лучшие результаты.</p>
+                        <p>Для тех, у которых нет опыта с тематическим моделированием, надо признать, что моделирование обеспечивает
+                                вероятность тем, которые человек может понимать.  Например, тема может включать слова как <<Конфликт>>,
+                                <<вооруженные>>,<<сирия>>, и <<ракеты>>, но может тоже включать нейтральные слова как <<говорить>> и 
+                                <<думать>>.  Из-за того, что компьютерный модель не понимает военную тему, но <<говорить>> часто 
+                                появляется с этими военными темами, возможно то, что связывается с темой.                                
                         </p>
                 </section>
 
