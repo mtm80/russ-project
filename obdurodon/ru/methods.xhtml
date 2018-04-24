@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="../css/russ.css" />
+        <link rel="stylesheet" type="text/css" href="../css/methods.css" />
+        <title>Методология</title>
+</head>
+
+<body>
+        <!--#include file="ru-header.xhtml" -->
+        <article>
+                <h1>Методология</h1>
+                <p>Строя наш анализ, мы применили ряд реторических тегов к текстам выступлении и интервью кандидатов. Эти теги
+                        объясняют какие ораторские приемы, использованные кандидатами. Вниз написанно список приемов, использованные
+                        описать признаки и особенности их речи.
+                </p>
+                <table id="tag-table">
+                        <tr>
+                                <th>Ораторский прием
+                                        <br/>
+                                        <span class="rashidi-tag">от ван Дика</span>
+                                        <br/>
+                                        <span class="sam-tag">сам сочинил</span>
+                                </th>
+                                <th>XML тег</th>
+                                <th>Описание</th>
+                                <th>Пример</th>
+                        </tr>
+                        <tr>
+                                <td class="device-name rashidi-tag">
+                                        Описание человека
+                                </td>
+                                <td class="device-tag">&lt;ru:actorDesc&gt;</td>
+                                <td>Тег &lt;actorDesc&gt; помечает фразы, в которых кандидат описывает человека или группу людей.
+                                        В теге есть понятие тотальности, имеющее позитивное, нейтральное или нейгативное
+                                        значение.
+                                </td>
+                                <td>
+                                        <q>Соединенные Штаты везде по всем миру активно вмешиваются в выборные кампании других
+                                                стран.</q>
+                                        <br/>
+                                        <strong>объект: </strong>США
+                                        <br/>
+                                        <strong>тотальность: </strong>нейгативная
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name sam-tag">
+                                        Рассказ
+                                </td>
+                                <td class="device-tag">&lt;ru:anecdote&gt;</td>
+                                <td>Тег &lt;anecdote&gt; помечает историю рассказанна кандидатом.</td>
+                                <td>
+                                        <q>Мы с Вами вчера встречались вечером, мы с Вами сегодня целый день вместе работали,
+                                                сейчас опять встречаемся. Когда я пришёл на мероприятие нашей компании Russia
+                                                Today и сел за стол, рядом сидел какой-то господин с одной стороны, с другой
+                                                стороны кто-то ещё сидел, потом я выступил, ещё о чём-то поговорили, я встал
+                                                и ушёл. И потом мне сказали: « Вы знаете, это американский гражданин, он
+                                                тем-то занимался, он раньше в спецслужбах работал, а теперь он занимается
+                                                тем-то и тем-то». Я сказал: « Ну и хорошо, вы с ним как-то сотрудничаете?»
+                                                – « Нет, мы его просто пригласили как одного из гостей». Я говорю: « Ну молодцы,
+                                                слава богу». Всё! Я с ним даже практически не разговаривал. Я с ним только
+                                                поздоровался, сел рядом, потом попрощался, встал и ушел. Всё моё знакомство
+                                                с господином Флинном.</q>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name sam-tag">Предположение</td>
+                                <td class="device-tag">&lt;ru:assumption&gt;</td>
+                                <td>Тег &lt;assumption&gt; помечает фразу, высказывающая прямое предположение.</td>
+                                <td>
+                                        <q>Если бы было что-нибудь выдающееся, из ряда вон выходящее, он бы, конечно, доложил
+                                                министру, министр – мне.</q>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name rashidi-tag">Ссылка на источник</td>
+                                <td class="device-tag">&lt;ru:authority&gt;</td>
+                                <td>Тег &lt;authority&gt; помечает фразу, давающая ссылку на источник. Мы также записали, кто
+                                        источник этих ссылок.
+                                </td>
+                                <td>
+                                        <q>Мы говорили об этом и с бывшим Президентом Обамой, мы говорили с некоторыми другими
+                                                официальными лицами – никто никогда не предъявил мне никаких прямых доказательств.
+                                                Когда мы говорили с Президентом Обамой на этот счёт, это Вам лучше у него
+                                                спросить, думаю, что он Вам скажет, что он тоже уверен в этом, но, когда
+                                                мы с ним говорили, я увидел, что и он засомневался.</q>
+                                        <strong>источник: </strong>Президент Обама
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name rashidi-tag">Означение членства</td>
+                                <td class="device-tag">&lt;ru:cat&gt;</td>
+                                <td>Тег &lt;cat&gt; помечает фразу, означающая членства человека в группе. Мы также записали
+                                        объект означения и группу членства.[revise]</td>
+                                <td>
+                                        <q></q>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name rashidi-tag">Предположение консенсуса</td>
+                                <td class="device-tag">&lt;ru:consensus&gt;</td>
+                                <td>Тег &lt;consensus&gt; помечает фразу, предпологающая общее мнение согласия.</td>
+                                <td>
+                                        <q>Обязательно. У нас все возрастные…</q>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name rashidi-tag">Отрицание</td>
+                                <td class="device-tag">&lt;ru:disclaimer&gt;</td>
+                                <td>Тег &lt;disclaimer&gt; помечает фразу, опиывающая идея нейгативно, потом отвергающая ее.</td>
+                                <td>
+                                        <q></q>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name rashidi-tag">Доказательство</td>
+                                <td class="device-tag">&lt;ru:evidence&gt;</td>
+                                <td>Тег &lt;evidence&gt; помечает фразу, использовающая так называемых доказательство подтвердить
+                                        аргумент. Мы также проверили правдивость этих доказательств.</td>
+                                <td>
+                                        <q>В Европе взрывают, в Париже взрывают, в России взрывают, в Бельгии взрывают, война
+                                                идёт на Ближнем Востоке – вот о чём надо думать</q>
+                                        <br/>
+                                        <strong>truth: </strong>true
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name rashidi-tag">Преувеличение</td>
+                                <td class="device-tag">&lt;ru:hyperbole&gt;</td>
+                                <td>Тег &lt;hyperbole&gt; помечает фразу, преувеличающая значение через абсурдные подположения.</td>
+                                <td>
+                                        <q>Вы думаете, что у меня есть время каждый день общаться с нашими послами во всём мире,
+                                                что ли?</q>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name rashidi-tag">Implication</td>
+                                <td class="device-tag">&lt;ru:implication&gt;</td>
+                                <td>Тег &lt;implication&gt; помечает фразу, заключающая подразумеваемую информацию.</td>
+                                <td>
+                                        <q>И у этого кандидата тоже были свои политические оппоненты и противники.</q>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name rashidi-tag">Ирония</td>
+                                <td class="device-tag">&lt;ru:irony&gt;</td>
+                                <td>Тег &lt;irony&gt; помечает фразу, говорящая одно, и значаюая другое, например, сарказм.</td>
+                                <td>
+                                        <q>Вы просто, знаете что: вы такие изобретательные люди там, такие молодцы. Вам скучно
+                                                жить, видимо.</q>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name rashidi-tag">Патриотическое самопрославление</td>
+                                <td class="device-tag">&lt;ru:glory&gt;</td>
+                                <td>Тег &lt;glory&gt; помечает фразу, прославляющая Россию, и через патриотизм, прославляет оратора.</td>
+                                <td>
+                                        <q>Я чувствую прямую живую связь с этой землёй, с историей, со страной.</q>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="device-name rashidi-tag">Неопределённость</td>
+                                <td class="device-tag">&lt;ru:vague&gt;</td>
+                                <td>Тег &lt;vague&gt; помечает фразу, размывающая границы между реальностей и вымыселом.</td>
+                                <td>
+                                        <q>Кто это нам говорит, кто это обижается на нас за то, что мы вмешиваемся? Вы сами
+                                                постоянно вмешиваетесь.</q>
+                                </td>
+                        </tr>
+                </table>
+                <section>
+                        <h2>Тематическое моделирование</h2>
+                        <p>Во вторих, мы построили тематическую модел, при помощью метода машинного обучения LDA, чтобы 
+                                учточнить о чем Путин и Жириновский часто говорят во выбранных документах. Удалить шумовые 
+                                слова, мы использовали <a href="https://github.com/chermen/stoplist_ru">список</a> таких слов от исследования международных отношении России и 
+                                Абхазии. Вообщем, мы не были довольны с этим списком, поэтому мы добавили несколько слов, в 
+                                том числе слова «твой», «свой», и т.д.</p>
+                        <p>После удаления шумовых слов, мы лемматизировали весь текст, использовая программу Mystem, разработанна
+                                компанием Яндекс. Мы разрешили использовать Mystem, потому что он считает контекст в ходе лемматизации, 
+                                придавая лучшие результаты. 
+                        </p>
+                        <p>As a secondary tool in this project, we constructed a topic model using Mallet's LDA module to help
+                                us quantify what Putin and Zhirinovskii talked most about in our sample. To remove topically
+                                meaningless words, we borrowed a
+                                <a href="https://github.com/chermen/stoplist_ru">stop word list</a> from a research project that analysed international diplomacy between
+                                Russia, Abkhazia, and South Ossetia. In general, we found this list to be less than satisfactory,
+                                as it did not stop on posessive pronouns. It also stopped on words that are very uncommon
+                                in spoken Russian, but we decided to leave them in because they weren't words that held much
+                                meaning. We decided to stop on all posessive pronouns except наш, because it held some meaning
+                                in terms of patriotism and otherness.
+                        </p>
+                        <p>In addition to removing stop words, we lemmatized the texts using Yandex's
+                                <a href="https://tech.yandex.ru/mystem/">Mystem</a> project. We chose to use Mystem over other options for lemmatization, such as
+                                the NLTK stem module, because Mystem uses context clues to figure out the role of the word
+                                in the sentence, providing better results. In some cases, Mystem returned multiple lemmas
+                                for each word along with a weight, or estimated probability that lemma was correctly chosen.
+                                After verifying that Mystem gave good results in the case of ambiguity, we decided to take
+                                the lemma with the greatest weight.
+                        </p>
+                        <p>After these pre-processing steps, we ran Mystem on our documents, experimenting with topic counts
+                                between 10 and 60. We found that 30 topics yielded the best results.
+                        </p>
+                        <p>For those who haven't used topic modelling before in their own research, it is important to note
+                                that topic models provide an approximation of topics that would be understood by a human.
+                                For example, a topic might include words like "конфликт", "вооруженный", "cирия", and "ракеты"
+                                but it might also include neutral words like "говорить" and "думать". Since the computer
+                                model doesn't understand what a military topic looks like, but "говорить" often co-occurs
+                                with these military terms, it may be grouped in with the topic.
+                        </p>
+                </section>
+
+        </article>
+</body>
+
+</html>
