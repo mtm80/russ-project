@@ -45,7 +45,7 @@ section.pg {
 ul.menu {
     list-style-type:none;
     margin: 1%;
-    padding: 0 10%;
+    padding: 0 5%;
     background-color: #f1f1f1;
     margin: 1% 0;
 }
@@ -131,3 +131,10 @@ q{
         quotes: "«" "»";
 }
 
+.flag{
+        border: 1px solid black;
+}
+
+.flag > a {
+        padding: 0px;
+}
