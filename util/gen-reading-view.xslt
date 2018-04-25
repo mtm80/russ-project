@@ -17,7 +17,6 @@
                                 <title>
                                         <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
                                 </title>
-                                <script src="../../js/reading.js"/>
                                 <link
                                         href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro"
                                         rel="stylesheet"/>
@@ -25,6 +24,7 @@
                                 />
                         </head>
                         <body>
+                                <!--#include file="ru-header.xhtml" -->
                                 <div id="page">
                                         <div id="speech-text">
                                                 <h1>

@@ -26,17 +26,20 @@ p{
 #page{
     display:flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 #speech-text{
     flex: 1 1 auto;
     padding: 2%;
+    overflow-y:scroll;
 }
 
 #sidebar{
     flex: 0 0 auto;
     padding: 0 1%;
     border-left: black solid 1px;
+    overflow-y: auto;
 }
 
 #sidebar__menu{
