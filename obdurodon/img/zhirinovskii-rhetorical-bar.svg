@@ -1,28 +1,142 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns:xs="http://www.w3.org/2001/XMLSchema"
      xmlns:ru="http://ru-rhetoric.obdurodon.org/rr"
      xmlns="http://www.w3.org/2000/svg"
-     height="500">
+     height="600"
+     viewBox="0 0 600 550">
    <g transform="translate(40 370)">
-      <text x="-30" y="-345" font-size="20">80</text>82<rect x="15" y="-358.75" height="358.75" width="20" fill="blue"/>
-      <text x="20" y="10" color="black" transform="rotate(45 20 10)">evidence</text>50<rect x="45" y="-218.75" height="218.75" width="20" fill="blue"/>
-      <text x="50" y="10" color="black" transform="rotate(45 50 10)">promise</text>33<rect x="75" y="-144.375" height="144.375" width="20" fill="blue"/>
-      <text x="80" y="10" color="black" transform="rotate(45 80 10)">implication</text>28<rect x="105" y="-122.5" height="122.5" width="20" fill="blue"/>
-      <text x="110" y="10" color="black" transform="rotate(45 110 10)">assumption</text>22<rect x="135" y="-96.25" height="96.25" width="20" fill="blue"/>
-      <text x="140" y="10" color="black" transform="rotate(45 140 10)">polarization</text>16<rect x="165" y="-70" height="70" width="20" fill="blue"/>
-      <text x="170" y="10" color="black" transform="rotate(45 170 10)">anecdote</text>11<rect x="195" y="-48.125" height="48.125" width="20" fill="blue"/>
-      <text x="200" y="10" color="black" transform="rotate(45 200 10)">consensus</text>8<rect x="225" y="-35" height="35" width="20" fill="blue"/>
-      <text x="230" y="10" color="black" transform="rotate(45 230 10)">victim</text>7<rect x="255" y="-30.625" height="30.625" width="20" fill="blue"/>
-      <text x="260" y="10" color="black" transform="rotate(45 260 10)">hyperbole</text>5<rect x="285" y="-21.875" height="21.875" width="20" fill="blue"/>
-      <text x="290" y="10" color="black" transform="rotate(45 290 10)">cat</text>3<rect x="315" y="-13.125" height="13.125" width="20" fill="blue"/>
-      <text x="320" y="10" color="black" transform="rotate(45 320 10)">actorDesc</text>2<rect x="345" y="-8.75" height="8.75" width="20" fill="blue"/>
-      <text x="350" y="10" color="black" transform="rotate(45 350 10)">vague</text>1<rect x="375" y="-4.375" height="4.375" width="20" fill="blue"/>
-      <text x="380" y="10" color="black" transform="rotate(45 380 10)">glory</text>1<rect x="405" y="-4.375" height="4.375" width="20" fill="blue"/>
-      <text x="410" y="10" color="black" transform="rotate(45 410 10)">authority</text>1<rect x="435" y="-4.375" height="4.375" width="20" fill="blue"/>
-      <text x="440" y="10" color="black" transform="rotate(45 440 10)">stats</text>
+      <text x="-30" y="-345" font-size="20">90</text>
+      <text color="black"
+            x="20"
+            y="-340.55555555555554"
+            text-anchor="middle">85</text>
+      <rect x="10"
+            y="-330.55555555555554"
+            height="330.55555555555554"
+            width="20"
+            fill="blue"/>
+      <text x="15" y="10" color="black" transform="rotate(45 15 10)">Evidence<title>Use of evidence to prove a point</title>
+      </text>
+      <text color="black"
+            x="54"
+            y="-204.44444444444443"
+            text-anchor="middle">50</text>
+      <rect x="44"
+            y="-194.44444444444443"
+            height="194.44444444444443"
+            width="20"
+            fill="blue"/>
+      <text x="49" y="10" color="black" transform="rotate(45 49 10)">Promise<title/>
+      </text>
+      <text color="black"
+            x="88"
+            y="-138.33333333333334"
+            text-anchor="middle">33</text>
+      <rect x="78"
+            y="-128.33333333333334"
+            height="128.33333333333334"
+            width="20"
+            fill="blue"/>
+      <text x="83" y="10" color="black" transform="rotate(45 83 10)">Implication<title>Deducing or inferring implicit information</title>
+      </text>
+      <text color="black"
+            x="122"
+            y="-118.88888888888889"
+            text-anchor="middle">28</text>
+      <rect x="112"
+            y="-108.88888888888889"
+            height="108.88888888888889"
+            width="20"
+            fill="blue"/>
+      <text x="117" y="10" color="black" transform="rotate(45 117 10)">Assumption<title>Making an explicit assumption about something</title>
+      </text>
+      <text color="black" x="156" y="-80" text-anchor="middle">18</text>
+      <rect x="146" y="-70" height="70" width="20" fill="blue"/>
+      <text x="151" y="10" color="black" transform="rotate(45 151 10)">Anecdote<title>Using a story to make a point</title>
+      </text>
+      <text color="black" x="190" y="-80" text-anchor="middle">18</text>
+      <rect x="180" y="-70" height="70" width="20" fill="blue"/>
+      <text x="185" y="10" color="black" transform="rotate(45 185 10)">Actor Description<title>The way we describe actors or members of a particular society either in a negative, neutral, or positive way.</title>
+      </text>
+      <text color="black"
+            x="224"
+            y="-64.44444444444444"
+            text-anchor="middle">14</text>
+      <rect x="214"
+            y="-54.44444444444444"
+            height="54.44444444444444"
+            width="20"
+            fill="blue"/>
+      <text x="219" y="10" color="black" transform="rotate(45 219 10)">Polarization<title/>
+      </text>
+      <text color="black"
+            x="258"
+            y="-52.77777777777778"
+            text-anchor="middle">11</text>
+      <rect x="248"
+            y="-42.77777777777778"
+            height="42.77777777777778"
+            width="20"
+            fill="blue"/>
+      <text x="253" y="10" color="black" transform="rotate(45 253 10)">Consensus Building<title>Constructing a sense of agreement and solidarity between the speaker and others.</title>
+      </text>
+      <text color="black"
+            x="292"
+            y="-37.22222222222222"
+            text-anchor="middle">7</text>
+      <rect x="282"
+            y="-27.22222222222222"
+            height="27.22222222222222"
+            width="20"
+            fill="blue"/>
+      <text x="287" y="10" color="black" transform="rotate(45 287 10)">Hyperbole<title>Exaggerating, or "enhancing" meaning</title>
+      </text>
+      <text color="black"
+            x="326"
+            y="-17.77777777777778"
+            text-anchor="middle">2</text>
+      <rect x="316"
+            y="-7.777777777777778"
+            height="7.777777777777778"
+            width="20"
+            fill="blue"/>
+      <text x="321" y="10" color="black" transform="rotate(45 321 10)">Categorization<title>Assigning people to different groups</title>
+      </text>
+      <text color="black"
+            x="360"
+            y="-17.77777777777778"
+            text-anchor="middle">2</text>
+      <rect x="350"
+            y="-7.777777777777778"
+            height="7.777777777777778"
+            width="20"
+            fill="blue"/>
+      <text x="355" y="10" color="black" transform="rotate(45 355 10)">Vagueness<title>Creating uncertainty and ambiguity</title>
+      </text>
+      <text color="black"
+            x="394"
+            y="-13.88888888888889"
+            text-anchor="middle">1</text>
+      <rect x="384"
+            y="-3.888888888888889"
+            height="3.888888888888889"
+            width="20"
+            fill="blue"/>
+      <text x="389" y="10" color="black" transform="rotate(45 389 10)">National Self-Glorification<title>Using patriotism to represent oneself in a positive light</title>
+      </text>
+      <text color="black"
+            x="428"
+            y="-13.88888888888889"
+            text-anchor="middle">1</text>
+      <rect x="418"
+            y="-3.888888888888889"
+            height="3.888888888888889"
+            width="20"
+            fill="blue"/>
+      <text x="423" y="10" color="black" transform="rotate(45 423 10)">Authority<title>Reference to authority</title>
+      </text>
       <line x1="0"
             y1="0"
-            x2="350"
+            x2="476"
             y2="0"
             stroke="black"
             stroke-width="2"/>

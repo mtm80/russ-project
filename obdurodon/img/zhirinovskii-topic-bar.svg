@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns="http://www.w3.org/2000/svg"
-     height="500">
+<svg xmlns="http://www.w3.org/2000/svg" height="600" viewBox="0 0 500 500">
    <g transform="translate(40 370)">
       <line x1="0"
             y1="0"
-            x2="400"
+            x2="320"
             y2="0"
             stroke="black"
             stroke-width="2"/>
@@ -17,45 +14,45 @@
             stroke-width="2"/>
       <text x="-35" y="-350" font-size="15">40%
                                 </text>
-      <rect x="44"
+      <rect x="13.333333333333334"
             y="-318.181818181818"
             height="318.181818181818"
             width="40"
             fill="blue"/>
-      <text x="57.333333333333336"
+      <text x="26.666666666666668"
             y="10"
-            transform="rotate(45 57.333333333333336 10)">military</text>
-      <rect x="108"
+            transform="rotate(45 26.666666666666668 10)">military</text>
+      <rect x="77.33333333333333"
             y="-238.6363636363635"
             height="238.6363636363635"
             width="40"
             fill="blue"/>
-      <text x="121.33333333333333"
+      <text x="90.66666666666666"
             y="10"
-            transform="rotate(45 121.33333333333333 10)">quality-of-life</text>
-      <rect x="172"
+            transform="rotate(45 90.66666666666666 10)">quality of life</text>
+      <rect x="141.33333333333334"
             y="-159.090909090909"
             height="159.090909090909"
             width="40"
             fill="blue"/>
-      <text x="185.33333333333334"
+      <text x="154.66666666666669"
             y="10"
-            transform="rotate(45 185.33333333333334 10)">economy</text>
-      <rect x="236"
+            transform="rotate(45 154.66666666666669 10)">economy</text>
+      <rect x="205.33333333333334"
             y="-79.5454545454545"
             height="79.5454545454545"
             width="40"
             fill="blue"/>
-      <text x="249.33333333333334"
+      <text x="218.66666666666669"
             y="10"
-            transform="rotate(45 249.33333333333334 10)">diplomatic</text>
-      <rect x="300"
+            transform="rotate(45 218.66666666666669 10)">diplomatic</text>
+      <rect x="269.3333333333333"
             y="-79.5454545454545"
             height="79.5454545454545"
             width="40"
             fill="blue"/>
-      <text x="313.3333333333333"
+      <text x="282.66666666666663"
             y="10"
-            transform="rotate(45 313.3333333333333 10)">interference-in-elections</text>
+            transform="rotate(45 282.66666666666663 10)">interference in elections</text>
    </g>
 </svg>

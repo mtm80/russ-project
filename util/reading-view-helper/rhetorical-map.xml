@@ -5,6 +5,24 @@
         <short>Reference to authority</short>
         <long>The &lt;authority&gt; tag marks when the speaker references an authority. We also annotated what sources the politicians referenced.</long>
     </device>
+    <device tag="question">
+        <name>Rhetorical question</name>
+    </device>
+    <device tag="sarcasm">
+        <name>Sarcasm</name>
+    </device>
+    <device tag="presuppose">
+        <name>Presupposition</name>
+    </device>
+    <device tag="promise">
+        <name>Promise</name>
+    </device>
+    <device tag="polarization">
+        <name>Polarization</name>
+    </device>
+    <device tag="victim">
+        <name>Victimization</name>
+    </device>
     <device tag="evidence">
         <name>Evidence</name>
         <short>Use of evidence to prove a point</short>

@@ -1,3 +1,7 @@
+body{
+    margin: 1%;
+}
+
 h1, h2{
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -27,6 +31,7 @@ p{
     display:flex;
     flex-direction: row;
     height: 100vh;
+    text-align: left;
 }
 
 #speech-text{

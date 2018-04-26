@@ -1166,7 +1166,7 @@
                                 Кремле и на пресс-конференции… не произносят.</u>
                         <u resp="#ezhov">Вы, кстати, не боитесь произносить фамилию Навального?</u>
                         <u resp="#zhirinovskii">
-<ru:victim>
+<ru:actorDesc target="#opposition" type="negative">
         <w lemma="чтобы">Чтобы</w>
                                 <w lemma="вообще">вообще</w>
                                 <w lemma="они">их</w>
@@ -1180,11 +1180,11 @@
                                 <w lemma="издевательство">издевательство</w>
                                 <w lemma="над">над</w>
                                 <w lemma="весь">всеми</w>
-                                <w lemma="мы">нами</w>, <w lemma="понимать">понимаете</w>?</ru:victim>
+                                <w lemma="мы">нами</w>, <w lemma="понимать">понимаете</w>?</ru:actorDesc>
 </u>
                         <u resp="#ezhov">Что не произносят?</u>
                         <u resp="#zhirinovskii">
-<ru:victim><w lemma="кто">Кто</w>
+                                <ru:actorDesc target="#opposition" type="negative"><w lemma="кто">Кто</w>
                                 <w lemma="они">они</w>
                                 <w lemma="такой">такие</w>? <w lemma="ну">Ну</w>, <w lemma="должный"
                                         >должны</w>
@@ -1238,11 +1238,12 @@
                                 <w lemma="быть">был</w> — <w lemma="йельский">Йельский</w>
                                 <w lemma="университет">университет</w>, <w lemma="по-моему"
                                 >по-моему</w>. <w lemma="там">Там</w>
-                                <w lemma="завербовывать">завербовали</w>.</ru:victim>
+                                <w lemma="завербовывать">завербовали</w>.</ru:actorDesc>
 </u>
                         <u resp="#ezhov">Почему?</u>
                         <u resp="#zhirinovskii">
-<ru:victim><w lemma="извинять">Извините</w>, <w lemma="они">их</w>
+<ru:actorDesc target="#opposition" type="negative">
+        <w lemma="извинять">Извините</w>, <w lemma="они">их</w>
                                 <w lemma="присматривать">присматривают</w>. <w lemma="что">Что</w>, <w
                                         lemma="просто">просто</w>
                                 <w lemma="так">так</w>
@@ -1254,7 +1255,7 @@
                                 <w lemma="на">на</w>
                                 <w lemma="учеба">учебу</w>
                                 <w lemma="просто">просто</w>
-                                <w lemma="так">так</w>.</ru:victim>
+                                <w lemma="так">так</w>.</ru:actorDesc>
 </u>
                         <u resp="#kryuchov">Человек образование получал.</u>
                         <u resp="#zhirinovskii">
@@ -1292,7 +1293,7 @@
 </u>
                         <u resp="#kryuchov">Так поехали…</u>
                         <u resp="#zhirinovskii">
-                                <ru:victim>
+                                <ru:actorDesc target="#politicans" type="negative">
                                         <w lemma="так">Так</w>
                                         <w lemma="фсб">ФСБ</w>
                                         <w lemma="за">за</w>
@@ -1402,7 +1403,7 @@
                                                 lemma="кто">кто</w>
                                         <w lemma="с">с</w>
                                         <w lemma="власть">властью</w>
-                                        <w lemma="связанный">связан</w>. </ru:victim>
+                                        <w lemma="связанный">связан</w>. </ru:actorDesc>
                         </u>
                         <u resp="#ezhov">Слушайте, но какова вероятность, что губернатор
                                 какой-нибудь или министр тоже не присмотрен кем-то дистанционно,

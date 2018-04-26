@@ -5,11 +5,13 @@
         xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="tei">
         <xsl:output method="xml" indent="yes" encoding="UTF-8" doctype-system="about:legacy-compat"/>
         <xsl:variable name="mallet" as="document-node(element(topicModel))"
-                select="doc('../analysis/topic-report-30.xml')"/>
+                select="doc('../analysis/topic-report.xml')"/>
         <!-- Match only topics that have a @name attribute value -->
+        <xsl:variable name="tag-names" as="document-node(element(deviceMap))" select="doc('./reading-view-helper/rhetorical-map.xml')"/>
         <xsl:key name="topicByWord" match="topic[@name]" use="word"/>
         <xsl:key name="nameByRef" match="tei:titleStmt/tei:respStmt/tei:persName | tei:titleStmt/tei:respStmt/tei:name"
                 use="@ref"/>
+        <xsl:key name="nameByTag" match="device" use="@tag"/>
         <xsl:template match="/">
                 <html xmlns="http://www.w3.org/1999/xhtml">
                         <head>
@@ -20,11 +22,13 @@
                                 <link
                                         href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro"
                                         rel="stylesheet"/>
+                                <link rel="stylesheet" type="text/css" href="../../css/russ.css"/>
                                 <link rel="stylesheet" type="text/css" href="../../css/reading.css"
                                 />
+                                <script src="../../js/reading.js"></script>
                         </head>
                         <body>
-                                <!--#include file="ru-header.xhtml" -->
+                                <!--#include file="../../header.xhtml" -->
                                 <div id="page">
                                         <div id="speech-text">
                                                 <h1>
@@ -35,7 +39,7 @@
                                         </div>
                                         <div id="sidebar">
                                                 <div id="sidebar__menu">
-                                                  <h2> Rhetorical devices: </h2>
+                                                  <h2>Rhetorical devices</h2>
                                                   <form>
                                                   <xsl:for-each
                                                   select="distinct-values(//*[self::ru:*]/local-name())">
@@ -44,7 +48,7 @@
                                                   </xsl:call-template>
                                                   </xsl:for-each>
                                                   </form>
-                                                  <h2> Topics: </h2>
+                                                  <h2>Topics</h2>
                                                   <form>
                                                   <xsl:for-each
                                                   select="distinct-values($mallet//topic/@name)">
@@ -110,8 +114,11 @@
                 <input id="{$device-name}-selector" class="device-selector" type="radio"
                         name="device" value="{$device-name}"/>
                 <label for="{$device-name}-selector">
-                        <xsl:value-of select="$device-name"/>
+                        <xsl:value-of select="key('nameByTag', $device-name, $tag-names)/name"/>
                 </label>
+                <a href="../../methods.xhtml#{$device-name}-method">
+                        more
+                </a>
                 <br/>
         </xsl:template>
         <xsl:template name="topic-button">
