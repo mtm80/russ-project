@@ -46,7 +46,7 @@ ul.menu {
     list-style-type:none;
     margin: 1%;
     padding: 0 5%;
-    background-color: #f1f1f1;
+    background-color: rgb(53, 53, 53);
     margin: 1% 0;
 }
 ul.menu li {display:inline;
@@ -54,7 +54,7 @@ ul.menu li {display:inline;
 
 ul.menu li a {
     display:inline-block;
-    color: #000;
+    color: white;
     padding: 24px 48px;
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
@@ -62,8 +62,8 @@ ul.menu li a {
 
 ul.menu li a:hover {
     display:inline-block;
-    background-color: #555;
-    color: white;
+    background-color: #f1f1f1;
+    color: black;
 }
 
 .dropbtn {
@@ -114,8 +114,10 @@ article{
     text-align: left;
 }
 
-h1{
-	font-size: 35px;
+.header{
+        font-size: 35px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 50px 0px;
 }
 
 h1, h2, h3, h4, h5{
