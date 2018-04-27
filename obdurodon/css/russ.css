@@ -1,25 +1,14 @@
 body {
-margin:3% 5%;
+	margin:3% 5%;
 text-align:center;
     background-color: #e5e5e3;
 }
 
-p, li{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+p, li{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     font-size: 20px;
 }
 
-.header {
-    font-weight:bold;
-    margin: 0;
-    width: 100%;
-    font-family:arial, helvetica, sans-serif;
-}
-
-h3 {
-    margin:0
-}
-
-.menu
+#primary-nav-wrap
 {
         display:block;
         background-color: rgb(43, 43, 43);
@@ -28,38 +17,60 @@ h3 {
         padding: 0 5%;
 }
 
-#primary-nav-wrap li
-{
+#primary-nav-wrap li{
 	display:inline;
-}
-
-#primary-nav-wrap li:hover
-{
-	background: #ffffff;
-}
-
-#primary-nav-wrap li ul
-{
-	display:none;
-	position:absolute;
-	top:100%;
-	left:0;
-	background:rgb(43, 43, 43);
-	padding:0
 }
 
 #primary-nav-wrap a
 {
-	display:inline;
-        color: white;
-        padding: 24px 48px;
-        text-decoration: none;
-        font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+    	padding: 25px 25px;
+    	text-decoration: none;
+    	text-align:left;
+    	display: inline-block;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
-#primary-nav-wrap ul li:hover > ul
+.dropdown
 {
-	display:block
+	position: relative;
+	display:inline-block;
+}
+
+.dropdown-content
+{
+	display: none;
+	background-color: rgb(43, 43, 43);
+	position: absolute;
+        left:0;
+    	width: max-content;
+    	min-width: 50px;
+    	box-shadow: 0px 8px 16px 0px rgba(10,20,30,0.2);
+	z-index: 1;
+	text-align: left;
+}
+
+.dropdown-content li{
+	color:white;
+}
+
+.dropdown-content a{
+	color: white;
+        padding: 0;
+        text-decoration: none;
+        display: block;
+        font-family: 'Source Sans Pro', sans-serif;
+	white-space: nowrap;
+}
+
+#primary-nav-wrap a:hover
+{
+	background-color: white;
+	color: rgb(43, 43, 43);
+}
+
+.dropdown a:hover + ul, .dropdown-content:hover {
+    display: block;
 }
 
 article{
