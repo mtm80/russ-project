@@ -560,7 +560,7 @@
                                 <w lemma="украина">Украине</w>, 
                                 <w lemma="в">в</w>
                                 <w lemma="крым">Крыму</w>. 
-                                <ru:actorDesc target="#rossija" type="positive">
+                                <ru:glory>
                                 <w lemma="просто">Просто</w>
                                 <w lemma="потому">потому</w>, 
                                 <w lemma="что">что</w>
@@ -593,7 +593,7 @@
                                 <w lemma="путь">путь</w>
                                 <w lemma="нормальный">нормальных</w>
                                 <w lemma="отношение">отношений</w>. 
-                                </ru:actorDesc>
+                                </ru:glory>
                                 <w lemma="мы">Нам</w>
                                 <w lemma="нужно">нужно</w>
                                 <w lemma="говорить">говорить</w>
@@ -1299,12 +1299,12 @@
                                 <w lemma="что">что</w>
                                 <w lemma="там">там</w>
                                 <w lemma="будет">будет</w>. 
-                                <ru:actorDesc target="#russia" type="positive">
+                                <ru:glory>
                                 <w lemma="поэтому">Поэтому</w>
                                 <w lemma="инвестировать">инвестировать</w>
                                 <w lemma="хорошо">лучше</w>
                                 <w lemma="сюда">сюда</w>. 
-                                </ru:actorDesc>
+                                </ru:glory>
                                 <w lemma="а">А</w>
                                 <w lemma="наш">наша</w>
                                 <w lemma="задача">задача</w> – 
