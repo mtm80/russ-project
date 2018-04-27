@@ -5,14 +5,17 @@
          height="20"
          width="45.714285714285715"
          fill="green"/>
+   <text x="13" y="13" fill="white" font-size="10">+16</text>
    <rect x="45.714285714285715"
          y="0"
          height="20"
          width="42.857142857142854"
          fill="black"/>
+   <text x="60.714285714285715" y="13" fill="white" font-size="10">15</text>
    <rect x="88.57142857142857"
          y="0"
          height="20"
          width="11.428571428571429"
          fill="red"/>
+   <text x="89.57142857142857" y="13" fill="white" font-size="10">-4</text>
 </svg>
